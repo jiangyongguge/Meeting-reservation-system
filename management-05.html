@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>会议预约系统</title>
+    <!-- Bootstrap CSS -->
+    <link href="lib/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="lib/bootstrap-icons/bootstrap-icons.css">
+    <!-- Navigation CSS -->
+    <link rel="stylesheet" href="css/nav.css">
+    <!-- Appointment CSS -->
+    <link rel="stylesheet" href="css/appointment.css">
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="css/common.css">
+    <!-- Management-05 CSS -->
+    <link rel="stylesheet" href="css/management-05-style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="header company-header">
+        <!-- 顶部导航 -->
+        <div class="top-header">
+            <div class="container d-flex justify-content-between align-items-center">
+                <a class="logo" href="index.html">
+                    <img src="images/logo.png" alt="Logo">
+                </a>
+                <!-- 桌面端登录按钮 -->
+                <div class="d-flex align-items-center">
+                    <a href="company.html" class="other-link mr-4 d-none d-lg-block">公司简介</a>
+                    <a href="buy.html" class="other-link mr-4 d-none d-lg-block"><img src="images/buy.png" alt="">购买须知</a>
+                    <a href="login.html" class="btn btn-primary d-none d-lg-block">登录账号</a>
+                    <!-- 移动端菜单按钮 -->
+                    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- 主导航 -->
+        <nav class="main-nav navbar navbar-expand-lg">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <!-- 移动端登录按钮 -->
+                    <div class="d-lg-none mobile-login mb-3">
+                        <a href="company.html" class="other-link w-100">公司简介</a>
+                    </div>
+                    <div class="d-lg-none mobile-login mb-3">
+                        <a href="buy.html" class="other-link w-100"><img src="images/buy.png" alt="">购买须知</a>
+                    </div>
+                    <div class="d-lg-none mobile-login mb-3">
+                        <a href="login.html" class="btn btn-primary w-100">登录账号</a>
+                    </div>
+                    <!-- 导航菜单 -->
+                    <ul class="nav-list">
+                        <li class="nav-list-item"><a href="management-02.html" class="nav-item active">软件中心</a></li>
+                        <li class="nav-list-item"><a href="hardware.html" class="nav-item">硬件展示</a></li>
+                        <li class="nav-list-item"><a href="solution.html" class="nav-item">解决方案</a></li>
+                        <li class="nav-list-item"><a href="customer-case.html" class="nav-item">客户案例</a></li>
+                        <li class="nav-list-item"><a href="news.html" class="nav-item">新闻资讯</a></li>
+                        <li class="nav-list-item"><a href="tutorial.html" class="nav-item">使用教程</a></li>
+                        <li class="nav-list-item"><a href="recruitment.html" class="nav-item">招商代理</a></li>
+                        <li class="nav-list-item"><a href="contactUs.html" class="nav-item">联系我们</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 主要内容区 -->
+    <main>
+        <!-- 第一部分 -->
+        <section class="company-contact">
+            <div class="container bg-title">
+                <div class="container-box-left half-box">
+                    <h2 class="section-title-text f50">智慧电子班牌管理系统</h2>
+                    <p class="f28 section-title-other">智慧校园信息管理平台采用云计算、智能交
+                        互技术、多媒体技术为核心，依托现有网络，
+                        远程集中管理控制，在学校大门、教学楼、
+                        行政楼、教室、实验室等位置设立各种显示
+                        设备。</p>
+                    <div class="group-btn">
+                        <button type="submit" class="btn btn-big f26" style="background: var(--primary-color);color: #fff;">免费试用</button>
+                        <button type="submit" class="btn btn-big f26" style="background: #fff;color: var(--primary-color);">预约演示</button>
+                    </div>
+                </div>
+                <div  class="container-box-right half-box">
+                    <div class="video-part">
+                        <video width="100%" height="100%" style="margin: auto;position: absolute;top: 50%;left: 50%;min-width: 100%;min-height: 100%;object-fit: fill;
+                                -ms-transform: translateX(-50%) translateY(-50%);-webkit-transform: translateX(-50%) translateY(-50%);
+                                transform: translateX(-50%) translateY(-50%);"  controls autoplay loop muted>
+                            <source src="images/video.mp4" type="video/mp4">
+                            <source src="movie.ogg" type="video/ogg">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 第二部分 -->
+        <section class="contact-section">
+            <div class="container">
+                <!-- 多媒体信发应用价值定位 -->
+                <div class="case-part01">
+                    <div class="case-part01-title">
+                        <h2 class="title-center f50">多媒体信发应用价值定位</h2>
+                    </div>
+                    <div class="list-two">
+                        <ul>
+                            <li class="list-card">
+                                <h3 class="list-card-title f20">提高内部管理效率</h3>
+                                <p class="f18">多媒体信息发布系统可以用
+                                    于企业内部的信息传递和管
+                                    理，通过发布通知、公告和
+                                    规章制度等信息，提高企业
+                                    内部管理效率和管理水平。</p>
+                            </li>
+                            <li class="list-card">
+                                <h3 class="list-card-title f20">实现信息的动态
+                                    管理和远程控制</h3>
+                                <p class="f18">可以实现远程管理和控制，
+                                    方便企业对发布的信息进行
+                                    动态更新和管理，同时根据
+                                    需要随时调整和改变信息发
+                                    布的内容和形式。</p>
+                            </li>
+                            <li class="list-card">
+                                <h3 class="list-card-title f20">提升品牌形象和知名度</h3>
+                                <p class="f18">多媒体信息发布系统可以
+                                    用来展示企业的形象和品
+                                    牌价值，通过发布企业标
+                                    志、宣传视频等方式，提
+                                    升企业在公众心目中的形
+                                    象和知名度。</p>
+                            </li>
+                            <li class="list-card">
+                                <h3 class="list-card-title f20">降低发布成本</h3>
+                                <p class="f18">信息发布系统可以降低企
+                                    业在信息发布方面的成本，
+                                    包括印刷制作、发布等环
+                                    节的费用，提高了企业的
+                                    经济效益.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 第三部分 -->
+        <section class="contact-section other-bg">
+            <div class="container">
+                <div class="case-part02">
+                    <div class="case-part01-title">
+                        <h2 class="f50">信息发布功能特点</h2>
+                        <p class="f24">让数字屏幕管理控制更加智能、高效、安全</p>
+                    </div>
+                    <div class="template-list">
+                        <ul>
+                            <li class="template-item">
+                                <div class="template-img"><img src="images/icon14.png" alt=""></div>
+                                <h3 class="template-title f20">可视化编辑</h3>
+                                <p class="template-text f18">系统提供可视化内容编辑，
+                                    及丰富的行业内容模板，编
+                                    辑所见即所得。</p>
+                            </li>
+                            <li class="template-item">
+                                <div class="template-img"><img src="images/icon14.png" alt=""></div>
+                                <h3 class="template-title f20">智能分屏</h3>
+                                <p class="template-text f18">支持单一区域独立控制，
+                                    将屏幕上的显示分为若干
+                                    个区域。</p>
+                            </li>
+                            <li class="template-item">
+                                <div class="template-img"><img src="images/icon14.png" alt=""></div>
+                                <h3 class="template-title f20">支持多种终端</h3>
+                                <p class="template-text f18">多种设备轻松接入智慧门
+                                    牌屏、电视机、LCD.LED屏
+                                    独立发布节目单.</p>
+                            </li>
+                            <li class="template-item">
+                                <div class="template-img"><img src="images/icon14.png" alt=""></div>
+                                <h3 class="template-title f20">权限管理</h3>
+                                <p class="template-text f18">系统提供多级审核功能可
+                                    对不同的用户组、不同的功
+                                    能模块进行权限设置。</p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="template-item">
+                                <div class="template-img"><img src="images/icon14.png" alt=""></div>
+                                <h3 class="template-title f20">智能播放</h3>
+                                <p class="template-text f18">网络断开时可播出默认节目
+                                    可远程指定任一时刻，循环播
+                                    出设定好的播出列表</p>
+                            </li>
+                            <li class="template-item">
+                                <div class="template-img"><img src="images/icon14.png" alt=""></div>
+                                <h3 class="template-title f20">模板管理</h3>
+                                <p class="template-text f18">管理各类投放渠道的模板，
+                                    根据需求快速切换最佳的内
+                                    容模板.</p>
+                            </li>
+                            <li class="template-item">
+                                <div class="template-img"><img src="images/icon14.png" alt=""></div>
+                                <h3 class="template-title f20">监控管理</h3>
+                                <p class="template-text f18">可进行预览操作，终端的实时
+                                    播放信息，可在平台上进行
+                                    截屏监控。</p>
+                            </li>
+                            <li class="template-item">
+                                <div class="template-img"><img src="images/icon14.png" alt=""></div>
+                                <h3 class="template-title f20">电源管理</h3>
+                                <p class="template-text f18">能够灵活定义开机，关机的
+                                    时间与日期，实现电源无
+                                    人值守的管理。</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 第四部分 -->
+        <section class="contact-section">
+            <div class="container">
+                <div class="case-part04">
+                    <div class="case-part01-title">
+                        <h2 class="f50">企业信息发布系统作用</h2>
+                        <p class="f24">可以很大地提升企业单位的整体形象，以及优质、高效的信息服务</p>
+                    </div>
+                    <div class="computer-box">
+                        <div class="computer"><img src="images/img86.png" alt=""></div>
+                        <div class="computer-box-content">
+                            <div class="computer-list">
+                                <ul>
+                                    <li>
+                                        <h3 class="f30">信息发布</h3>
+                                        <p class="f16">可以展示企业宣传片、企业文化、企业新闻、企业产品等，以及公告、天气预报、服务资讯、直播会
+                                            议等即时信息。这有助于企业进行精准的信息发布，提高受众的关注度和信息接收效率。</p>
+                                    </li>
+                                    <li>
+                                        <h3 class="f30">远程集中管理</h3>
+                                        <p class="f16">系统采用网络和多媒体信息技术，可以通过B/S或C/S架构，轻松进行节目制作、编辑、发布、审批，
+                                            以及终端管理、指定播放终端、远程监控终端、日常维护等操作。这大大提高了管理效率，降低了运
+                                            营成本。</p>
+                                    </li>
+                                    <li>
+                                        <h3 class="f30">分级分区管理</h3>
+                                        <p class="f16">系统可以针对不同区域和受众群体，做到分级分区管理，有针对性地共享信息。这有助于满足不同区域
+                                            管理的需要，提高信息发布的针对性和有效性。</p>
+                                    </li>
+                                    <li>
+                                        <h3 class="f30">提高工作效率</h3>
+                                        <p class="f16">系统的自动化和智能化管理，可以提高工作效率，减少人工操作和错误，降低运营成本。</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                     </div>
+                    
+                </div>
+                <div class="case-part05">
+                    <div class="case-part01-title">
+                        <h2 class="f50">信息发布效果图及使流程</h2>
+                        <p class="f24">丰富细致的发布后台管理，满足你的各种环境需求</p>
+                    </div>
+                    <div class="bg-img">
+                        <div class="part5-img"><img src="images/img87.png" alt=""></div>
+                    </div>
+                    <div class="flow-box">
+                        <ul>
+                            <li class="flow-list">
+                                <div class="primary-content">
+                                    <p class="flow-nmb f20">1</p>
+                                    <h3 class="f24">登录系统</h3>
+                                </div>
+                                <div class="f18 light-text">登录信息发布软件后台</div>
+                            </li>
+                            <li class="flow-list">
+                                <div class="primary-content">
+                                    <p class="flow-nmb f20">2</p>
+                                    <h3 class="f24">上传素材</h3>
+                                </div>
+                                <div class="f18 light-text">将多媒体素材上传至系统后台</div>
+                            </li>
+                            <li class="flow-list">
+                                <div class="primary-content">
+                                    <p class="flow-nmb f20">3</p>
+                                    <h3 class="f24">制作节目</h3>
+                                </div>
+                                <div class="f18 light-text">自定义制作播放内容</div>
+                            </li>
+                            <li class="flow-list">
+                                <div class="primary-content">
+                                    <p class="flow-nmb f20">4</p>
+                                    <h3 class="f24">发布节目</h3>
+                                </div>
+                                <div class="f18 light-text">针对一台或多台设备发布内容</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <!-- 第五部分 -->
+        <section class="contact-section no-bg">
+            <div class="container">
+                <div class="case-part06">
+                    <div class="case-part01-title">
+                        <h2 class="f50">应用场景及各行业解决方案</h2>
+                        <p class="f24">多个行业及场景，满足行业全产品业态需求</p>
+                    </div>  
+                    <div class="flex-box">
+                        <ul>
+                            <li class="white-bg">
+                                <div class="white-bg-img"><img src="images/icon17.png" alt=""></div>
+                                <h3 class="f20">场馆</h3>
+                                <p class="f18">科技馆/博物馆/图书馆/体育
+                                    馆智慧场馆、智能引导、触摸
+                                    查询.</p>
+                            </li>
+                            <li class="white-bg">
+                                <div class="white-bg-img"><img src="images/icon18.png" alt=""></div>
+                                <h3 class="f20">政府</h3>
+                                <p class="f18">政府大楼/政务中心/公检法监
+                                    狱党建、宣教、政务信息发布
+                                    平台</p>
+                            </li>
+                            <li  class="white-bg">
+                                <div class="white-bg-img"><img src="images/icon19.png" alt=""></div>
+                                <h3 class="f20">酒店</h3>
+                                <p class="f18">大堂/客房/多功能厅/公共
+                                    空间数字标牌、酒店宣传、
+                                    信息发布</p>
+                            </li>
+                            <li  class="white-bg">
+                                <div class="white-bg-img"><img src="images/icon20.png" alt=""></div>
+                                <h3 class="f20">工厂</h3>
+                                <p class="f18">厂区/办公区/会议室，数字
+                                    看板数字大屏、会议预定</p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="white-bg">
+                                <div class="white-bg-img"><img src="images/icon21.png" alt=""></div>
+                                <h3 class="f20">教育</h3>
+                                <p class="f18">中小学校/大专院校，校园
+                                    多媒体信息发布系统</p>
+                            </li>
+                            <li class="white-bg">
+                                <div class="white-bg-img"><img src="images/icon22.png" alt=""></div>
+                                <h3 class="f20">交通</h3>
+                                <p class="f18">机场/地铁站/公交站台，
+                                    交通枢纽一体化信息发布平台</p>
+                            </li>
+                            <li  class="white-bg">
+                                <div class="white-bg-img"><img src="images/icon23.png" alt=""></div>
+                                <h3 class="f20">商超</h3>
+                                <p class="f18">商场/超市/连锁店，广告宣传、
+                                    电子餐牌、超市价签</p>
+                            </li>
+                            <li  class="white-bg">
+                                <div class="white-bg-img"><img src="images/icon24.png" alt=""></div>
+                                <h3 class="f20">楼宇</h3>
+                                <p class="f18">办公楼/小区/园区，广告屏电
+                                    梯屏、会议室屏、LED大屏</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>     
+        <!-- 第六部分 -->
+        <section class="contact-section no-have">
+            <div class="container">
+                <div class="case-part07">
+                    <div class="case-part01-title">
+                        <h2 class="f40">KEEYAR最新动态</h2>
+                    </div>  
+                    <div class="flex-box">
+                        <ul>
+                            <li class="dynamic">
+                                <div class="dynamic-title">
+                                    <p class="f14">COMPANY ARTICLE</p>
+                                    <div class="f26">公司文章<span>|</span>智慧商业服务商</div>
+                                </div>
+                                <div class="dynamic-content">
+                                    <ul>
+                                        <li class="f16">
+                                            <label for="">09-12</label>
+                                            <p>谷一科技端午放假通知</p>
+                                        </li>
+                                        <li class="f16">
+                                            <label for="">09-12</label>
+                                            <p>谷一科技端午放假通知</p>
+                                        </li>
+                                        <li class="f16">
+                                            <label for="">09-12</label>
+                                            <p>谷一科技端午放假通知</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="dynamic">
+                                <div class="dynamic-title">
+                                    <p class="f14">COMPANY ARTICLE</p>
+                                    <div class="f26">技术文章<span>|</span>产品升级教程</div>
+                                </div>
+                                <div class="dynamic-content">
+                                    <ul>
+                                        <li class="f16">
+                                            <label for="">09-12</label>
+                                            <p>谷一科技端午放假通知</p>
+                                        </li>
+                                        <li class="f16">
+                                            <label for="">09-12</label>
+                                            <p>谷一科技端午放假通知</p>
+                                        </li>
+                                        <li class="f16">
+                                            <label for="">09-12</label>
+                                            <p>谷一科技端午放假通知</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="dynamic">
+                                <div class="dynamic-title">
+                                    <p class="f14">COMPANY ARTICLE</p>
+                                    <div class="f26">行业咨询<span>|</span>专注&nbsp;口碑&nbsp;极致</div>
+                                </div>
+                                <div class="dynamic-content">
+                                    <ul>
+                                        <li class="f16">
+                                            <label for="">09-12</label>
+                                            <p>谷一科技端午放假通知</p>
+                                        </li>
+                                        <li class="f16">
+                                            <label for="">09-12</label>
+                                            <p>谷一科技端午放假通知</p>
+                                        </li>
+                                        <li class="f16">
+                                            <label for="">09-12</label>
+                                            <p>谷一科技端午放假通知</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>     
+        <!-- 预约表单部分 -->
+        <section class="appointment-section">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <!-- 左侧文字说明 -->
+                    <div class="col-lg-7" style="padding-left: 0;">
+                        <div class="appointment-content">
+                            <h2>如何使用会议预约系统</h2>
+                            <p class="subtitle">我们的销售和支持人员随时准备帮助您解决各种问题</p>
+                        </div>
+                    </div>
+                    <!-- 右侧表单 -->
+                    <div class="col-lg-5" style="padding: 0;">
+                        <div class="appointment-form">
+                            <form id="appointmentForm">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="name" placeholder="请输入姓名">
+                                    <label for="name">请输入姓名</label>
+                                </div>
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" placeholder="请输入邮箱">
+                                    <label for="email">请输入邮箱</label>
+                                </div>
+                                <div class="form-floating">
+                                    <input type="tel" class="form-control" id="phone" placeholder="请输入电话">
+                                    <label for="phone">请输入电话</label>
+                                </div>
+                                <div class="form-floating">
+                                    <textarea class="form-control" id="message" placeholder="请描述您的需求"></textarea>
+                                    <label for="message">请描述您的需求</label>
+                                </div>
+                            </form>
+                            <button type="submit" class="btn btn-primary">申请试用</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row justify-content-between" style="width: 100%;">
+                <!-- 左侧联系方式 -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="footer-info">
+                        <div class="footer-contact">
+                            <div class="contact-info-item">
+                                <img src="images/email.png" alt="Email">
+                                <span>joykey2024@126.com</span>
+                            </div>
+                            <div class="contact-info-item">
+                                <div class="d-flex gap-3 mb-2">
+                                    <img src="images/phone.png" alt="Phone">
+                                    <img src="images/chart.png" alt="WeChat">
+                                </div>
+                                <span>13995508268</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 右侧三列链接 -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="row g-4">
+                        <!-- 获取我们的消息 -->
+                        <div class="col-md-4">
+                            <div class="footer-links">
+                                <h5>获取我们的消息</h5>
+                                <ul>
+                                    <li><a href="#">在线咨询</a></li>
+                                    <li><a href="#">部署预览</a></li>
+                                    <li>
+                                        <a href="#">微信公众号</a>
+                                        <div class="wei-code"><img src="images/wei-code.png" alt=""></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- More链接 -->
+                        <div class="col-md-4">
+                            <div class="footer-links">
+                                <h5>More</h5>
+                                <ul>
+                                    <li><a href="#">会议预约系统</a></li>
+                                    <li><a href="#">解决方案</a></li>
+                                    <li><a href="#">会议门牌</a></li>
+                                    <li><a href="#">客户案例</a></li>
+                                    <li><a href="#">新闻资讯</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Help链接 -->
+                        <div class="col-md-4">
+                            <div class="footer-links">
+                                <h5>Help</h5>
+                                <ul>
+                                    <li><a href="#">帮助 & 技术支持</a></li>
+                                    <li><a href="#">客户服务</a></li>
+                                    <li><a href="#">联系我们</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="lib/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script>
+        // 控制导航栏滚动阴影
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 0) {
+                header.style.boxShadow = '#792dd51a 0px 2px 10px';
+            } else {
+                header.style.boxShadow = 'none';
+            }
+        });
+        // 导航栏滚动背景切换
+        // 修改现有滚动监听逻辑
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.company-header');
+            const showOffset = 100;
+            
+            if (window.scrollY > showOffset) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+            
+            // 新增移动端背景同步逻辑
+            if (window.innerWidth < 992) {
+                const topHeader = document.querySelector('.top-header');
+                topHeader.style.background = window.scrollY > showOffset ? 'white' : 'transparent';
+            }
+            
+        });
+        
+        // 初始化时隐藏移动端导航背景
+        // if (window.innerWidth < 992) {
+        //     document.querySelector('.company-header').style.background = 'white';
+        // }
+        // 修改后的菜单事件监听
+        const mainNav = document.getElementById('mainNav');
+        const topHeader = document.querySelector('.top-header');
+        
+        mainNav.addEventListener('show.bs.collapse', function() {
+            document.querySelector('.main-nav').style.background = 'white';
+            topHeader.style.background = 'white';  // 新增logo背景设置
+        });
+        
+        mainNav.addEventListener('hide.bs.collapse', function() {
+            document.querySelector('.main-nav').style.background = 'transparent';
+            if (window.scrollY < 100) {  // 仅在未滚动时恢复透明
+                topHeader.style.background = 'transparent';
+            }
+        });
+
+        // 新增硬件菜单切换逻辑
+        document.querySelectorAll('.hardware-menu-item').forEach(item => {
+            item.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // 移除所有active状态
+                document.querySelectorAll('.hardware-menu-item').forEach(i => {
+                    i.classList.remove('active');
+                });
+                
+                // 为当前项添加active状态
+                this.classList.add('active');
+                
+                // 更新内容区标题和描述
+                const title = this.querySelector('p').textContent;
+                document.querySelector('.hardware-name').textContent = title;
+            });
+        });
+    </script>
+</body>
+</html>

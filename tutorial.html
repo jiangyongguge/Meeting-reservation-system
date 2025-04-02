@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>会议预约系统</title>
+    <!-- Bootstrap CSS -->
+    <link href="lib/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="lib/bootstrap-icons/bootstrap-icons.css">
+    <!-- Navigation CSS -->
+    <link rel="stylesheet" href="css/nav.css">
+    <!-- Appointment CSS -->
+    <link rel="stylesheet" href="css/appointment.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/tutorial-style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="header">  <!-- 添加company-header类 -->
+        <!-- 顶部导航 -->
+        <div class="top-header">
+            <div class="container d-flex justify-content-between align-items-center">
+                <a class="logo" href="index.html">
+                    <img src="images/logo.png" alt="Logo">
+                </a>
+                <!-- 桌面端登录按钮 -->
+                <div class="d-flex align-items-center">
+                    <a href="company.html" class="other-link mr-4 d-none d-lg-block">公司简介</a>
+                    <a href="buy.html" class="other-link mr-4 d-none d-lg-block"><img src="images/buy.png" alt="">购买须知</a>
+                    <a href="login.html" class="btn btn-primary d-none d-lg-block">登录账号</a>
+                    <!-- 移动端菜单按钮 -->
+                    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- 主导航 -->
+        <nav class="main-nav navbar navbar-expand-lg">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <!-- 移动端登录按钮 -->
+                    <div class="d-lg-none mobile-login mb-3">
+                        <a href="company.html" class="other-link w-100">公司简介</a>
+                    </div>
+                    <div class="d-lg-none mobile-login mb-3">
+                        <a href="buy.html" class="other-link w-100"><img src="images/buy.png" alt="">购买须知</a>
+                    </div>
+                    <div class="d-lg-none mobile-login mb-3">
+                        <a href="login.html" class="btn btn-primary w-100">登录账号</a>
+                    </div>
+                    <!-- 导航菜单 -->
+                    <ul class="nav-list">
+                        <li class="nav-list-item"><a href="management-02.html" class="nav-item">软件中心</a></li>
+                        <li class="nav-list-item"><a href="hardware.html" class="nav-item">硬件展示</a></li>
+                        <li class="nav-list-item"><a href="solution.html" class="nav-item">解决方案</a></li>
+                        <li class="nav-list-item"><a href="customer-case.html" class="nav-item">客户案例</a></li>
+                        <li class="nav-list-item"><a href="news.html" class="nav-item">新闻资讯</a></li>
+                        <li class="nav-list-item"><a href="tutorial.html" class="nav-item active">使用教程</a></li>
+                        <li class="nav-list-item"><a href="recruitment.html" class="nav-item">招商代理</a></li>
+                        <li class="nav-list-item"><a href="contactUs.html" class="nav-item">联系我们</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 主要内容区 -->
+    <main>
+        <!-- 入门详情 -->
+        <section class="contact-section">
+            <div class="container">
+                <h2 class="tutorial-title">内容</h2>
+                <div class="tutorial-content">
+                    <div class="tutorial-left">
+                        <div class="tutorial-menu">
+                            <ul class="menu-list">
+                                <li>
+                                    <a href="#" class="menu-item primary-text active" data-target="0">入门</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="menu-item primary-text" data-target="0">常见问题</a>
+                                </li>
+                                <li>
+                                    <div class="menu-name" data-target="1">现场案例图集</div>
+                                    <ul class="sub-menu">
+                                        <li><a href="#" class="menu-item" data-target="1">点我切换右侧内容</a></li>
+                                        <li><a href="#" class="menu-item" data-target="1">设备联动配置</a></li>
+                                        <li><a href="#" class="menu-item" data-target="1">会议室预约流程</a></li>
+                                        <li><a href="#" class="menu-item" data-target="1">设备联动配置</a></li>
+                                        <li><a href="#" class="menu-item" data-target="1">会议室预约流程</a></li>
+                                        <li><a href="#" class="menu-item" data-target="1">设备联动配置</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="menu-name" data-target="1">KEEYAR系统管理平台</div>
+                                    <ul class="sub-menu">
+                                        <li><a href="#" class="menu-item" data-target="2">点我切换右侧内容</a></li>
+                                        <li><a href="#" class="menu-item" data-target="2">信息发布系统</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="menu-name" data-target="1">KEEYAR系统管理平台</div>
+                                    <ul class="sub-menu">
+                                        <li><a href="#" class="menu-item" data-target="3">点我切换右侧内容</a></li>
+                                        <li><a href="#" class="menu-item" data-target="3">信息发布系统</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="menu-name" data-target="1">KEEYAR系统管理平台</div>
+                                    <ul class="sub-menu">
+                                        <li><a href="#" class="menu-item" data-target="4">会议预约系统</a></li>
+                                        <li><a href="#" class="menu-item" data-target="4">信息发布系统</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                       </div> 
+                    </div>
+                    <div class="tutorial-right">
+                        <!-- 入门 -->
+                        <div class="content-item active">
+                            <h3 class="right-text">入门</h3>
+                            <div>
+                                <h2 class="video-title">视频教程</h2>
+                                <p class="video-text">预约完成后，已安排的会议将立即显示在会议室设备的显示屏上。在议程的右侧，您可以
+                                    看到会议的名称、日期和时间。会议开始后，您还可以看到参与者。</p>
+                                <div class="video-box">
+                                    <ul>
+                                        <li class="video-item">
+                                            <a href="">
+                                                <div class="video-item-img"><img src="images/img25.png" alt=""></div>
+                                                <p>KEERAY后台预约会议</p>
+                                            </a>
+                                        </li>
+                                        <li class="video-item">
+                                            <a href="">
+                                                <div class="video-item-img"><img src="images/img25.png" alt=""></div>
+                                                <p>KEERAY后台预约会议</p>
+                                            </a>
+                                        </li>
+                                        <li class="video-item">
+                                            <a href="">
+                                                <div class="video-item-img"><img src="images/img25.png" alt=""></div>
+                                                <p>KEERAY后台预约会议</p>
+                                            </a>
+                                        </li>
+                                        <li class="video-item">
+                                            <a href="">
+                                                <div class="video-item-img"><img src="images/img25.png" alt=""></div>
+                                                <p>KEERAY后台预约会议</p>
+                                            </a>
+                                        </li>
+                                        <li class="video-item">
+                                            <a href="">
+                                                <div class="video-item-img"><img src="images/img25.png" alt=""></div>
+                                                <p>KEERAY后台预约会议</p>
+                                            </a>
+                                        </li>
+                                        <li class="video-item">
+                                            <a href="">
+                                                <div class="video-item-img"><img src="images/img25.png" alt=""></div>
+                                                <p>KEERAY后台预约会议</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="ask-box">
+                                    <h2>经常问的问题</h2> 
+                                    <div class="ask-content">
+                                        <ul>
+                                            <li class="ask-item">
+                                                <div class="ask-item-name">
+                                                    <img src="images/down.png" alt="">
+                                                    <span>GOODEEY会议室触摸显示屏产品都有哪些类型和尺寸？</span>
+                                                </div>
+                                                <div class="ask-item-text">您可以通过PC会议管理后台/微信小程序/会议门牌终端进行行预约会议.</div>
+                                            </li>
+                                            <li class="ask-item">
+                                                <div class="ask-item-name">
+                                                    <img src="images/down.png" alt="">
+                                                    <span>灯带显示屏得灯带有什么作用？</span>
+                                                </div>
+                                                <div class="ask-item-text">您可以通过PC会议管理后台/微信小程序/会议门牌终端进行行预约会议.</div>
+                                            </li>
+                                            <li class="ask-item">
+                                                <div class="ask-item-name">
+                                                    <img src="images/down.png" alt="">
+                                                    <span>预约会议室有几种预约方式？</span>
+                                                </div>
+                                                <div class="ask-item-text">您可以通过PC会议管理后台/微信小程序/会议门牌终端进行行预约会议.</div>
+                                            </li>
+                                            <li class="ask-item">
+                                                <div class="ask-item-name">
+                                                    <img src="images/down.png" alt="">
+                                                    <span>显示屏是否支持嵌入墙体安装?</span>
+                                                </div>
+                                                <div class="ask-item-text">您可以通过PC会议管理后台/微信小程序/会议门牌终端进行行预约会议.</div>
+                                            </li>
+                                            <li class="ask-item">
+                                                <div class="ask-item-name">
+                                                    <img src="images/down.png" alt="">
+                                                    <span>是否可以接受第三方触摸显示屏用于会议显示终端？</span>
+                                                </div>
+                                                <div class="ask-item-text">您可以通过PC会议管理后台/微信小程序/会议门牌终端进行行预约会议.</div>
+                                            </li>
+                                            <li class="ask-item">
+                                                <div class="ask-item-name">
+                                                    <img src="images/down.png" alt="">
+                                                    <span>谷一会议室显示屏都如何供电，全部都支持POE供电吗？</span>
+                                                </div>
+                                                <div class="ask-item-text">您可以通过PC会议管理后台/微信小程序/会议门牌终端进行行预约会议.</div>
+                                            </li>
+                                            <li class="ask-item">
+                                                <div class="ask-item-name">
+                                                    <img src="images/down.png" alt="">
+                                                    <span>如何安装KEEYAR会议预约应用？</span>
+                                                </div>
+                                                <div class="ask-item-text">您可以通过PC会议管理后台/微信小程序/会议门牌终端进行行预约会议.</div>
+                                            </li>
+                                            <li class="ask-item">
+                                                <div class="ask-item-name">
+                                                    <img src="images/down.png" alt="">
+                                                    <span>GOODEEY会议室触摸显示屏产品都有哪些类型和尺寸？</span>
+                                                </div>
+                                                <div class="ask-item-text">您可以通过PC会议管理后台/微信小程序/会议门牌终端进行行预约会议.</div>
+                                            </li>
+                                            <li class="ask-item">
+                                                <div class="ask-item-name">
+                                                    <img src="images/down.png" alt="">
+                                                    <span>灯带显示屏得灯带有什么作用？</span>
+                                                </div>
+                                                <div class="ask-item-text">您可以通过PC会议管理后台/微信小程序/会议门牌终端进行行预约会议.</div>
+                                            </li>
+                                        </ul>
+                                    </div> 
+                                </div>
+                                <button type="button" class="backBtn">阅读产品</button>
+                            </div>
+
+                        </div>
+                        <div class="content-item">
+                            <div class="news-title">
+                                <h3>长飞光纤光缆股份有限公司</h3>
+                                <span class="news-time">2024-06-17</span>
+                            </div>
+                            <div class="news-content-container">
+                                <ul>
+                                    <li><img src="images/img26.png" alt=""></li>
+                                    <li><img src="images/img27.png" alt=""></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="content-item">
+                            <div class="news-title">
+                                <h3>信息发布系统</h3>
+                                <span class="news-time">2024-06-17</span>
+                            </div>
+                            <div class="news-content-container">
+                                <p>信息发布系统介绍及特点</p>
+                                <p>一、系统介绍</p>
+                                <p>随着等离子、液晶等各种显示屏设备的普及，在政府、银行、商场、酒店、医院、学校、营业厅、
+                                商业楼宇、楼盘、社区、会展中心、车站、机场等公共场所，各种各样的广告、通知、宣传等信
+                                息铺天盖地，信息发布无处不在，如何才能够高效地、灵活地、集中管理这些日益庞大的信息呢？
+                                正是基于此需求，多媒体信息发布管理系统才应运而生。</p>
+                                
+                                <p>信息发布管理系统是基于网络的编辑管理软件系统，是一套专门用于对各种电子信息进行编辑、
+                                网络发布和远程控制管理的综合信息显示系统平台，利用该平台可以对各种文字、图像、动画、
+                                幻灯片、音视频文件、电视、外部动态数据、数字/模拟音视频采集等各种信息素材进行编辑制作，
+                                通过局域网或互联网统一管理控制、发布显示等。</p>
+                                <p>二、系统拓扑图</p>
+                                <div class="tupian"><img src="images/img28.png" alt=""></div>
+                                <p>三、功能特性</p>
+                                <p>
+                                    1、网络集中<br>
+                                   控制管理远程集中控制终端设备的信息发布管理，系统占用网络带宽极少，适用各种网络
+                                </p>
+                                <p>
+                                    2、分屏显示<br>
+                                    屏幕可划分多个区域显示，区域大小可以任意拖拉和设定大小，画面内容任意组合，可同时显示
+                                    视频、文字、图像、天气等任意组合信息，画面精彩丰富
+                                    3、支持多种文件格式<br>
+                                    支持发布多种多媒体格式信息，包括视频、文字、动画、幻灯片、图片、背景音乐、实时新闻、
+                                    时间天气、网页、电视直播、MMS、RTSP等。
+                                </p>
+                                <p>
+                                    3、支持多种文件格式<br>
+                                    支持发布多种多媒体格式信息，包括视频、文字、动画、幻灯片、图片、背景音乐、实时新闻、
+                                    时间天气、网页、电视直播、MMS、RTSP等。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="content-item">
+                            <div class="news-title">
+                                <h3>会议室预约系统的功能有哪些作用</h3>
+                                <span class="news-time">2024-06-17</span>
+                            </div>
+                            <div class="news-content-container">
+                                <h3>电子人员去向公示牌/办公室门牌</h3>
+                                <p>电子式人员去向公示牌将人员信息、人员去向、值班安排、滚动字幕、作息时间、单位（部门）
+                                    职能、宣传海报和视频等信息融合到电子屏上进行动态公示，公示屏提供多种版面供选用，也可
+                                    以自主调整版面，去向状态可自定义，人员可动态增减，可按办公室、楼层(部门)分散公示和大
+                                    厅集中公示，手机和办公电脑都可以直接变更工作人员基本信息，人员去向状态可在触摸公示屏、
+                                    手机和办公电脑更改。公示屏安装简单，操作方便无需专门培训即可使用，助力单位直观、智能
+                                    和高效管理。</p>
+                                <div class="tupian margin-btm"><img src="images/img29.png" alt=""></div>
+                                <h3>应用场景</h3>
+                                <p>统一管理<br>
+                                    所有公示屏都可以通过一套信息动态公示管理平台进行集中管理</p>
+                                <p>多种去向更改方式<br>
+                                    既支持通过办公电脑更改去向状态，又支持触摸公示屏和手机更改去向状态</p>
+                                <p>扩展接口<br>
+                                    公示屏可接入人脸识别、指纹和门禁等实现同步公示去向状态，接入实景引导平台，通过扫码高效
+                                    精准找到公示人员统计分析<br>
+                                    管理后台对去向数据进行多维度统计分析，并生成统计报表用于绩效考核</p>
+                                <p>移动化管理模式<br>
+                                    可通过手机对公示屏管控，可随时随地“掌”管去向状态，提高了工作效率。</p>
+                                <div class="tupian margin-btm"><img src="images/img30.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 预约表单部分 -->
+        <section class="appointment-section">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <!-- 左侧文字说明 -->
+                    <div class="col-lg-7" style="padding-left: 0;">
+                        <div class="appointment-content">
+                            <h2>如何使用会议预约系统</h2>
+                            <p class="subtitle">我们的销售和支持人员随时准备帮助您解决各种问题</p>
+                        </div>
+                    </div>
+                    <!-- 右侧表单 -->
+                    <div class="col-lg-5" style="padding: 0;">
+                        <div class="appointment-form">
+                            <form id="appointmentForm">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="name" placeholder="请输入姓名">
+                                    <label for="name">请输入姓名</label>
+                                </div>
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" placeholder="请输入邮箱">
+                                    <label for="email">请输入邮箱</label>
+                                </div>
+                                <div class="form-floating">
+                                    <input type="tel" class="form-control" id="phone" placeholder="请输入电话">
+                                    <label for="phone">请输入电话</label>
+                                </div>
+                                <div class="form-floating">
+                                    <textarea class="form-control" id="message" placeholder="请描述您的需求"></textarea>
+                                    <label for="message">请描述您的需求</label>
+                                </div>
+                            </form>
+                            <button type="submit" class="btn btn-primary">申请试用</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row justify-content-between" style="width: 100%;">
+                <!-- 左侧联系方式 -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="footer-info">
+                        <div class="footer-contact">
+                            <div class="contact-info-item">
+                                <img src="images/email.png" alt="Email">
+                                <span>joykey2024@126.com</span>
+                            </div>
+                            <div class="contact-info-item">
+                                <div class="d-flex gap-3 mb-2">
+                                    <img src="images/phone.png" alt="Phone">
+                                    <img src="images/chart.png" alt="WeChat">
+                                </div>
+                                <span>13995508268</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 右侧三列链接 -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="row g-4">
+                        <!-- 获取我们的消息 -->
+                        <div class="col-md-4">
+                            <div class="footer-links">
+                                <h5>获取我们的消息</h5>
+                                <ul>
+                                    <li><a href="#">在线咨询</a></li>
+                                    <li><a href="#">部署预览</a></li>
+                                    <li>
+                                        <a href="#">微信公众号</a>
+                                        <div class="wei-code"><img src="images/wei-code.png" alt=""></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- More链接 -->
+                        <div class="col-md-4">
+                            <div class="footer-links">
+                                <h5>More</h5>
+                                <ul>
+                                    <li><a href="#">会议预约系统</a></li>
+                                    <li><a href="#">解决方案</a></li>
+                                    <li><a href="#">会议门牌</a></li>
+                                    <li><a href="#">客户案例</a></li>
+                                    <li><a href="#">新闻资讯</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Help链接 -->
+                        <div class="col-md-4">
+                            <div class="footer-links">
+                                <h5>Help</h5>
+                                <ul>
+                                    <li><a href="#">帮助 & 技术支持</a></li>
+                                    <li><a href="#">客户服务</a></li>
+                                    <li><a href="#">联系我们</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="lib/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    
+    <script>
+        // 控制导航栏滚动阴影
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 0) {
+                header.style.boxShadow = '#792dd51a 0px 2px 10px';
+            } else {
+                header.style.boxShadow = 'none';
+            }
+        });
+
+        // 教程目录切换逻辑
+        document.querySelectorAll('.tutorial-menu .menu-item').forEach(item => {
+            item.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetIndex = this.dataset.target;
+                
+                // 切换右侧内容
+                document.querySelectorAll('.tutorial-right .content-item').forEach((item, index) => {
+                    item.classList.toggle('active', index === Number(targetIndex));
+                });
+                
+                // 更新目录激活状态
+                document.querySelectorAll('.tutorial-menu .menu-item').forEach(link => {
+                    link.classList.remove('active');
+                });
+                this.classList.add('active');
+            });
+        });
+        // 修改后的折叠面板逻辑
+        document.querySelectorAll('.ask-item-name').forEach(item => {
+            item.addEventListener('click', function(e) {
+                e.preventDefault();
+                const textItem = this.nextElementSibling;
+                const arrowImg = this.querySelector('img');
+                
+                // 切换所有状态
+                this.classList.toggle('active');
+                arrowImg.classList.toggle('active');
+                textItem.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

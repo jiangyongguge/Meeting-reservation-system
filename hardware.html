@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>会议预约系统</title>
+    <!-- Bootstrap CSS -->
+    <link href="lib/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="lib/bootstrap-icons/bootstrap-icons.css">
+    <!-- Navigation CSS -->
+    <link rel="stylesheet" href="css/nav.css">
+    <!-- Appointment CSS -->
+    <link rel="stylesheet" href="css/appointment.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/hardware-style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="header">  <!-- 添加company-header类 -->
+        <!-- 顶部导航 -->
+        <div class="top-header">
+            <div class="container d-flex justify-content-between align-items-center">
+                <a class="logo" href="index.html">
+                    <img src="images/logo.png" alt="Logo">
+                </a>
+                <!-- 桌面端登录按钮 -->
+                <div class="d-flex align-items-center">
+                    <a href="company.html" class="other-link mr-4 d-none d-lg-block">公司简介</a>
+                    <a href="buy.html" class="other-link mr-4 d-none d-lg-block"><img src="images/buy.png" alt="">购买须知</a>
+                    <a href="login.html" class="btn btn-primary d-none d-lg-block">登录账号</a>
+                    <!-- 移动端菜单按钮 -->
+                    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- 主导航 -->
+        <nav class="main-nav navbar navbar-expand-lg">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <!-- 移动端登录按钮 -->
+                    <div class="d-lg-none mobile-login mb-3">
+                        <a href="company.html" class="other-link w-100">公司简介</a>
+                    </div>
+                    <div class="d-lg-none mobile-login mb-3">
+                        <a href="buy.html" class="other-link w-100"><img src="images/buy.png" alt="">购买须知</a>
+                    </div>
+                    <div class="d-lg-none mobile-login mb-3">
+                        <a href="login.html" class="btn btn-primary w-100">登录账号</a>
+                    </div>
+                    <!-- 导航菜单 -->
+                    <ul class="nav-list">
+                        <li class="nav-list-item"><a href="management-02.html" class="nav-item">软件中心</a></li>
+                        <li class="nav-list-item"><a href="hardware.html" class="nav-item active">硬件展示</a></li>
+                        <li class="nav-list-item"><a href="solution.html" class="nav-item">解决方案</a></li>
+                        <li class="nav-list-item"><a href="customer-case.html" class="nav-item">客户案例</a></li>
+                        <li class="nav-list-item"><a href="news.html" class="nav-item">新闻资讯</a></li>
+                        <li class="nav-list-item"><a href="tutorial.html" class="nav-item">使用教程</a></li>
+                        <li class="nav-list-item"><a href="recruitment.html" class="nav-item">招商代理</a></li>
+                        <li class="nav-list-item"><a href="contactUs.html" class="nav-item">联系我们</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 主要内容区 -->
+    <main>
+        <!-- 购买详情 -->
+        <section class="contact-section">
+            <div class="container">
+                <div class="hardware-menu">
+                    <!-- 默认选中第一个 -->
+                    <div class="hardware-menu-item active">
+                        <a href="hardware.html" class="hardware-menu-link">
+                            <div class="hardware-img"><img src="images/img11.png" alt="D系列"></div>
+                            <p>超薄D系列</p>
+                        </a>
+                    </div>
+                    <div class="hardware-menu-item">
+                        <a href="#" class="hardware-menu-link">
+                            <div class="hardware-img"><img src="images/img12.png" alt="Pro系列"></div>
+                            <p>超薄 B系列</p>
+                        </a>
+                    </div>
+                    <div class="hardware-menu-item">
+                        <a href="#" class="hardware-menu-link">
+                            <div class="hardware-img"><img src="images/img13.png" alt="X系列"></div>
+                            <p>超薄 C系列</p>
+                        </a>
+                    </div>
+                    <div class="hardware-menu-item">
+                        <a href="#" class="hardware-menu-link">
+                            <div class="hardware-img"><img src="images/img14.png" alt="Mini系列"></div>
+                            <p>超窄框 Z系列</p>
+                        </a>
+                    </div>
+                    <div class="hardware-menu-item">
+                        <a href="#" class="hardware-menu-link">
+                            <div class="hardware-img"><img src="images/img16.png" alt="Mini系列"></div>
+                            <p>常规 F系列</p>
+                        </a>
+                    </div>
+                    <div class="hardware-menu-item">
+                        <a href="#" class="hardware-menu-link">
+                            <div class="hardware-img"><img src="images/img17.png" alt="Mini系列"></div>
+                            <p>数字标牌系列</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="hardware-content">
+                    <div class="hardware-text">
+                        <h2 class="section-title">超薄D系列</h2>
+                        <p class="title-other">中框为全铝CNC冲铣的加强结构，非折弯中框，无接缝。双侧具备七色发光灯条。
+                            低功耗工业设计,机身最薄处不厚于13mm。</p>
+                    </div>
+                    <div class="hardware-features">
+                        <div class="features-left">
+                             <div class="perture-big">
+                                 <img src="images/img18.png" alt="">
+                             </div>
+                             <div class="perture-smail">
+                                 <ul>
+                                     <li><img src="images/img18.png" alt=""></li>
+                                     <li><img src="images/img19.png" alt=""></li>
+                                     <li><img src="images/img20.png" alt=""></li>
+                                     <li><img src="images/img21.png" alt=""></li>
+                                 </ul>
+                             </div>
+                        </div> 
+                        <div class="features-right">
+                         <h3 class="hardware-name">会议门牌规格</h3>
+                         <div>
+                            <div class="hardware-text-one">
+                                <ul>
+                                    <li>8″/10.1″/13.3″/15.6″/18.5″/21.5″</li>
+                                    <li>RK3568，四核，2+16G， Android 11.0</li>
+                                    <li>投射式电容触摸，不于少10点触摸。</li>
+                                    <li>双侧具备七色发光灯条。</li>
+                                    <li>单目200W宽动态防逆光</li>
+                                    <li>TYPE-C/ RS48/干接点</li>
+                                    <li>支持DC12V与POE供电</li>
+                                </ul>
+                            </div>
+                            <div class="hardware-text-two">
+                                超薄 D系列采用铝合金背板，用料简单实用，轻便灵捷，是倍受国内外客户
+                                青睐的一款，采用现代设计，造型独特耐看。会议室门牌强烈推荐此系列，
+                                不仅颜值出众，还能方便地对接门禁。支持壁挂式安装，支持适配86底盒嵌
+                                入式安装方式。支持网口和RS485/DC 12V从机身背部输出、让整个机身四
+                                边不露出任何接线，方便工程隐藏式布线
+                            </div>
+                         </div>
+                         <button type="button" class="backBtn">留言咨询</button>
+                        </div>
+                     </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- 预约表单部分 -->
+        <section class="appointment-section">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <!-- 左侧文字说明 -->
+                    <div class="col-lg-7" style="padding-left: 0;">
+                        <div class="appointment-content">
+                            <h2>如何使用会议预约系统</h2>
+                            <p class="subtitle">我们的销售和支持人员随时准备帮助您解决各种问题</p>
+                        </div>
+                    </div>
+                    <!-- 右侧表单 -->
+                    <div class="col-lg-5" style="padding: 0;">
+                        <div class="appointment-form">
+                            <form id="appointmentForm">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="name" placeholder="请输入姓名">
+                                    <label for="name">请输入姓名</label>
+                                </div>
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" placeholder="请输入邮箱">
+                                    <label for="email">请输入邮箱</label>
+                                </div>
+                                <div class="form-floating">
+                                    <input type="tel" class="form-control" id="phone" placeholder="请输入电话">
+                                    <label for="phone">请输入电话</label>
+                                </div>
+                                <div class="form-floating">
+                                    <textarea class="form-control" id="message" placeholder="请描述您的需求"></textarea>
+                                    <label for="message">请描述您的需求</label>
+                                </div>
+                            </form>
+                            <button type="submit" class="btn btn-primary">申请试用</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row justify-content-between" style="width: 100%;">
+                <!-- 左侧联系方式 -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="footer-info">
+                        <div class="footer-contact">
+                            <div class="contact-info-item">
+                                <img src="images/email.png" alt="Email">
+                                <span>joykey2024@126.com</span>
+                            </div>
+                            <div class="contact-info-item">
+                                <div class="d-flex gap-3 mb-2">
+                                    <img src="images/phone.png" alt="Phone">
+                                    <img src="images/chart.png" alt="WeChat">
+                                </div>
+                                <span>13995508268</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 右侧三列链接 -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="row g-4">
+                        <!-- 获取我们的消息 -->
+                        <div class="col-md-4">
+                            <div class="footer-links">
+                                <h5>获取我们的消息</h5>
+                                <ul>
+                                    <li><a href="#">在线咨询</a></li>
+                                    <li><a href="#">部署预览</a></li>
+                                    <li>
+                                        <a href="#">微信公众号</a>
+                                        <div class="wei-code"><img src="images/wei-code.png" alt=""></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- More链接 -->
+                        <div class="col-md-4">
+                            <div class="footer-links">
+                                <h5>More</h5>
+                                <ul>
+                                    <li><a href="#">会议预约系统</a></li>
+                                    <li><a href="#">解决方案</a></li>
+                                    <li><a href="#">会议门牌</a></li>
+                                    <li><a href="#">客户案例</a></li>
+                                    <li><a href="#">新闻资讯</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Help链接 -->
+                        <div class="col-md-4">
+                            <div class="footer-links">
+                                <h5>Help</h5>
+                                <ul>
+                                    <li><a href="#">帮助 & 技术支持</a></li>
+                                    <li><a href="#">客户服务</a></li>
+                                    <li><a href="#">联系我们</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="lib/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <!-- 在自定义JS部分添加以下代码 -->
+    <script>
+        // 控制导航栏滚动阴影
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 0) {
+                header.style.boxShadow = '#792dd51a 0px 2px 10px';
+            } else {
+                header.style.boxShadow = 'none';
+            }
+        });
+    
+        // 新增硬件菜单切换逻辑
+        document.querySelectorAll('.hardware-menu-item').forEach(item => {
+            item.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // 移除所有active状态
+                document.querySelectorAll('.hardware-menu-item').forEach(i => {
+                    i.classList.remove('active');
+                });
+                
+                // 为当前项添加active状态
+                this.classList.add('active');
+                
+                // 更新内容区标题和描述
+                const title = this.querySelector('p').textContent;
+                document.querySelector('.section-title').textContent = title;
+            });
+        });
+    
+        // 新增缩略图切换功能
+        document.querySelectorAll('.perture-smail li').forEach(thumb => {
+            thumb.addEventListener('click', function() {
+                const bigImg = this.closest('.features-left').querySelector('.perture-big img');
+                const newSrc = this.querySelector('img').src;
+                bigImg.src = newSrc;
+            });
+        });
+    </script>
+</body>
+</html>

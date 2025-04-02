@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>会议预约系统</title>
+    <!-- Bootstrap CSS -->
+    <link href="lib/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="lib/bootstrap-icons/bootstrap-icons.css">
+    <!-- Navigation CSS -->
+    <link rel="stylesheet" href="css/nav.css">
+    <!-- Appointment CSS -->
+    <link rel="stylesheet" href="css/appointment.css">
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="css/common.css">
+    <!-- Index CSS -->
+    <link rel="stylesheet" href="css/index-style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="header company-header">
+        <!-- 顶部导航 -->
+        <div class="top-header">
+            <div class="container d-flex justify-content-between align-items-center">
+                <a class="logo" href="index.html">
+                    <img src="images/logo.png" alt="Logo">
+                </a>
+                <!-- 桌面端登录按钮 -->
+                <div class="d-flex align-items-center">
+                    <a href="company.html" class="other-link mr-4 d-none d-lg-block">公司简介</a>
+                    <a href="buy.html" class="other-link mr-4 d-none d-lg-block"><img src="images/buy.png" alt="">购买须知</a>
+                    <a href="login.html" class="btn btn-primary d-none d-lg-block">登录账号</a>
+                    <!-- 移动端菜单按钮 -->
+                    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- 主导航 -->
+        <nav class="main-nav navbar navbar-expand-lg">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <!-- 移动端登录按钮 -->
+                    <div class="d-lg-none mobile-login mb-3">
+                        <a href="company.html" class="other-link w-100">公司简介</a>
+                    </div>
+                    <div class="d-lg-none mobile-login mb-3">
+                        <a href="buy.html" class="other-link w-100"><img src="images/buy.png" alt="">购买须知</a>
+                    </div>
+                    <div class="d-lg-none mobile-login mb-3">
+                        <a href="login.html" class="btn btn-primary w-100">登录账号</a>
+                    </div>
+                    <!-- 导航菜单 -->
+                    <ul class="nav-list">
+                        <li class="nav-list-item"><a href="management-02.html" class="nav-item">软件中心</a></li>
+                        <li class="nav-list-item"><a href="hardware.html" class="nav-item">硬件展示</a></li>
+                        <li class="nav-list-item"><a href="solution.html" class="nav-item">解决方案</a></li>
+                        <li class="nav-list-item"><a href="customer-case.html" class="nav-item">客户案例</a></li>
+                        <li class="nav-list-item"><a href="news.html" class="nav-item">新闻资讯</a></li>
+                        <li class="nav-list-item"><a href="tutorial.html" class="nav-item">使用教程</a></li>
+                        <li class="nav-list-item"><a href="recruitment.html" class="nav-item">招商代理</a></li>
+                        <li class="nav-list-item"><a href="contactUs.html" class="nav-item">联系我们</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 主要内容区 -->
+    <main>
+        <!-- 第一部分 -->
+        <section class="company-contact">
+            <div class="container bg-title">
+                <div class="container-box-left half-box">
+                    <h2 class="section-title-text f48">会议室预约系统</h2>
+                    <p class="section-title-text-en">KEEYAR!</p>
+                    <p class="f34 section-title-other">一种管理会议室空间的现代方式</p>
+                        <button type="submit" class="btn btn-big f26">了解更多</button>
+                </div>
+                <div  class="container-box-right half-box">
+                    <div class="video-part">
+                        <video width="100%" height="100%" style="margin: auto;position: absolute;top: 50%;left: 50%;min-width: 100%;min-height: 100%;object-fit: fill;
+                                -ms-transform: translateX(-50%) translateY(-50%);-webkit-transform: translateX(-50%) translateY(-50%);
+                                transform: translateX(-50%) translateY(-50%);"  controls autoplay loop muted>
+                            <source src="images/video.mp4" type="video/mp4">
+                            <source src="movie.ogg" type="video/ogg">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 第二部分 -->
+        <section class="contact-section one-bg">
+            <div class="container">
+                <div class="case-part01">
+                    <div class="case-part01-title">
+                        <h2 class="f44" style="font-weight: 600;">让您的工作场所更美好</h2>
+                        <p class="f28">全面优化公司会议室流程的灵活解决方案</p>
+                    </div>
+                    <div class="list-two">
+                        <ul>
+                            <li class="list-card">
+                                <div class="list-card-img"><img src="images/img65.png" alt=""></div>
+                                <p class="f16">随时随地预订会议<br>
+                                    后台预约、小程序预约。</p>
+                            </li>
+                            <li class="list-card">
+                                <div class="list-card-img"><img src="images/img66.png" alt=""></div>
+                                <p class="f16">直接在会议门牌快速预订您的会议。<br>
+                                    适合临时召开会议。</p>
+                            </li>
+                            <li class="list-card">
+                                <div class="list-card-img"><img src="images/img67.png" alt=""></div>
+                                <p class="f16">直接在会议门牌快速预订您的会议。<br>
+                                    适合临时召开会议。</p>
+                            </li>
+                        </ul>
+                        <button type="button" class="backBtn f16">免费试用</button> 
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 第三部分 -->
+        <section class="contact-section other-bg">
+            <div class="container">
+                <div class="case-part02">
+                    <div class="case-part01-title">
+                        <h2 class="f44" style="font-weight: 600;">立即预订您的会议</h2>
+                        <p class="f28">KEEYAR重新定义您的会议室</p>
+                    </div>
+                    <div class="partner-list">
+                        <ul>
+                            <li class="partner-list-item partner-size-start">
+                                <div class="partner-item-box">
+                                    <div class="icon-size"><img src="images/icon01.png" alt=""></div>
+                                    <h3 class="f24">智慧办公 & 轻松预订</h3>
+                                    <p class="f16">通过GOODEEY后台/小程序，也可以直接在会议室
+                                        的触摸屏面板上临时预订您的会议，并提供许多独
+                                        特的功能，可帮助您有效地计划和组织会议。</p>
+                                </div>
+                                <div class="partner-item-box">
+                                    <div class="icon-size"><img src="images/icon02.png" alt=""></div>
+                                    <h3 class="f24">会议报告 & 数据统计</h3>
+                                    <p class="f16">GOODEEY会议预约后台有一个强大的的会议管理分
+                                        析工具。有关会议室使用情况和用户使用以及参会
+                                        人签到的详细统计信息。</p>
+                                </div>
+                            </li>
+                            <li class="partner-list-item partner-size-start">
+                                <div class="partner-item-box">
+                                    <div class="icon-size"><img src="images/icon03.png" alt=""></div>
+                                    <h3 class="f24">会议服务</h3>
+                                    <p class="f16">需要打扫会议室、茶水或其服务？从未如此简单，
+                                        只需点击触摸屏面板上的图标呼叫即可。</p>
+                                </div>
+                                <div class="partner-item-box">
+                                    <div class="icon-size"><img src="images/icon04.png" alt=""></div>
+                                    <h3 class="f24">需要帮助 & 快速简单</h3>
+                                    <p class="f16">我们的 Support 或 Support+ 服务确保我们在客户
+                                        需要时随时为他们服务。</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <button type="button" class="backBtn f16">更多功能</button>
+                </div>
+            </div>
+        </section>
+        <!-- 第四部分 -->
+        <section class="contact-section">
+            <div class="container">
+                <div class="list-bottom">
+                    <img src="images/img69.png" alt="">
+                </div>
+                <div class="case-part02">
+                    <div class="case-part01-title">
+                        <h2 class="f44" style="font-weight: 600;">优化您的会议和公司流程</h2>
+                        <p class="f28">员工将40%的时间花在会议预约流程上。 通常是徒劳的。</p>
+                    </div>
+                    <div class="zizhi-bg">
+                        <div class="zizhi-list">
+                            <div class="list-one">
+                                <ul>
+                                    <li>
+                                        <h3 class="f24">节省您的办公时间和空间</h3>
+                                        <p class="f16">会议计划和组织成本
+                                            会议中断和会议室争议
+                                           时间无用会议室
+                                           维护复杂
+                                           会议室状态不受控制</p>
+                                    </li>
+                                    <li>
+                                        <img src="images/img68.png" alt="">
+                                    </li>
+                                    <li>
+                                        <h3 class="f24">改善您的会议质量和效率</h3>
+                                        <p class="f16">轻松规划和有效的会议管理
+                                            及时的临时预订和会议
+                                            会议室占用率概览和环境数字化
+                                            报告和改进会议室的使用
+                                            后台快速查看会议室状态</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 第五部分 -->
+        <section class="contact-section no-bg">
+            <div class="container">
+                <div class="case-part03">
+                    <div class="case-part01-title">
+                        <h2 class="f44" style="font-weight: 600;">使用流程和用户习惯</h2>
+                        <p class="f28">KEEYAR会议预约系统符合全球98%公司的会议流程和数据概览。</p>
+                        <div class="title-img"><img src="images/img70.png" alt=""></div>
+                    </div>  
+                </div>
+                <!-- 不改变您的办公习惯 -->
+                <div class="hardware-features floor-one">
+                    <div class="features-left">
+                         <div class="perture-big">
+                             <img src="images/img71.png" alt="">
+                         </div>
+                    </div> 
+                    <div class="features-right">
+                        <h3 class="hardware-name-text f28">不改变您的办公习惯</h3>
+                        <div class="hardware-text-two f18">
+                            轻松连接您的办公系统（钉钉/企业微信/OUTLOOK/OA）。您的数据保留在您的办公系统或本地服务器上。
+                        </div>
+                        <div class="bottom-text">
+                            <ul>
+                                <li><span class="f14" style="color: var(--text-light);">信任我们的客户 </span></li>
+                                <li>
+                                    <img src="images/icon06.png" alt="">
+                                    <img src="images/icon07.png" alt="">
+                                </li>
+                            </ul>
+                            
+                        </div>
+                                                  
+                    </div>
+                 </div>
+                 <!-- 会议门牌 -->
+                 <div class="hardware-menu">
+                    <!-- 默认选中第一个 -->
+                    <div class="hardware-menu-item active">
+                        <a href="hardware.html" class="hardware-menu-link">
+                            <div class="hardware-img"><img src="images/img11.png" alt="D系列"></div>
+                            <p>超薄D系列</p>
+                        </a>
+                    </div>
+                    <div class="hardware-menu-item">
+                        <a href="#" class="hardware-menu-link">
+                            <div class="hardware-img"><img src="images/img12.png" alt="Pro系列"></div>
+                            <p>超薄 B系列</p>
+                        </a>
+                    </div>
+                    <div class="hardware-menu-item">
+                        <a href="#" class="hardware-menu-link">
+                            <div class="hardware-img"><img src="images/img13.png" alt="X系列"></div>
+                            <p>超薄 C系列</p>
+                        </a>
+                    </div>
+                    <div class="hardware-menu-item">
+                        <a href="#" class="hardware-menu-link">
+                            <div class="hardware-img"><img src="images/img14.png" alt="Mini系列"></div>
+                            <p>超窄框 Z系列</p>
+                        </a>
+                    </div>
+                    <div class="hardware-menu-item">
+                        <a href="#" class="hardware-menu-link">
+                            <div class="hardware-img"><img src="images/img16.png" alt="Mini系列"></div>
+                            <p>常规 F系列</p>
+                        </a>
+                    </div>
+                    <div class="hardware-menu-item">
+                        <a href="#" class="hardware-menu-link">
+                            <div class="hardware-img"><img src="images/img17.png" alt="Mini系列"></div>
+                            <p>数字标牌系列</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="hardware-features floor-two">
+                    <div class="features-left">
+                         <div class="perture-big">
+                             <img src="images/img72.png" alt="">
+                         </div>
+                    </div> 
+                    <div class="features-right">
+                        <h3 class="hardware-name f28">会议门牌</h3>
+                        <p class="f24">根据您的需求量身定制的软硬件组合</p>
+                        <div class="hardware-text-two f18">
+                            KEEYAR会议预约系统提供多种硬件设备，支持最常用的 Android系统和Web应用程序。
+                        </div>
+                        <span class="f14" style="color: var(--text-light);">门牌尺寸：8寸-32寸</span>
+                                                  
+                    </div>
+                 </div>
+            </div>
+        </section>
+        <!-- 第六部分 -->
+        <section class="contact-section one-bg">
+            <div class="container">
+                <div class="case-part04">
+                    <div class="case-part01-title">
+                        <p class="f28">员工将40%的时间花在会议预约流程上。 通常是徒劳的。</p>
+                    </div>
+                    <div class="process">
+                        <ul class="process-list">
+                            <li class="process-item">
+                                <div class="process-content">
+                                    <div class="process-img"><img src="images/icon05.png" alt=""></div>
+                                    <h3 class="process-title f20">某公司领导反馈</h3>
+                                    <p class="process-text f14">‘KEEYAR会议预约解决方案帮助我们
+                                        更有效地使用会议空间，并适合我们的
+                                        办公室设计。事实证明，在会议管理方
+                                        面，它非常高效且省时。它对工作效率
+                                        的积极影响使我们决定将该系统扩展到
+                                        我们的其他分支机构。’</p>
+                                </div> 
+                            </li>
+                            <li class="process-item">
+                                <div class="process-content">
+                                    <div class="process-img"><img src="images/icon05.png" alt=""></div>
+                                    <h3 class="process-title f20">某公司领导反馈</h3>
+                                    <p class="process-text f14">‘KEEYAR会议预约解决方案帮助我们
+                                        更有效地使用会议空间，并适合我们的
+                                        办公室设计。事实证明，在会议管理方
+                                        面，它非常高效且省时。它对工作效率
+                                        的积极影响使我们决定将该系统扩展到
+                                        我们的其他分支机构。’</p>
+                                </div> 
+                            </li>
+                            <li class="process-item">
+                                <div class="process-content">
+                                    <div class="process-img"><img src="images/icon05.png" alt=""></div>
+                                    <h3 class="process-title f20">某公司领导反馈</h3>
+                                    <p class="process-text f14">‘KEEYAR会议预约解决方案帮助我们
+                                        更有效地使用会议空间，并适合我们的
+                                        办公室设计。事实证明，在会议管理方
+                                        面，它非常高效且省时。它对工作效率
+                                        的积极影响使我们决定将该系统扩展到
+                                        我们的其他分支机构。’</p>
+                                </div> 
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 预约表单部分 -->
+        <section class="appointment-section">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <!-- 左侧文字说明 -->
+                    <div class="col-lg-7" style="padding-left: 0;">
+                        <div class="appointment-content">
+                            <h2>如何使用会议预约系统</h2>
+                            <p class="subtitle">我们的销售和支持人员随时准备帮助您解决各种问题</p>
+                        </div>
+                    </div>
+                    <!-- 右侧表单 -->
+                    <div class="col-lg-5" style="padding: 0;">
+                        <div class="appointment-form">
+                            <form id="appointmentForm">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="name" placeholder="请输入姓名">
+                                    <label for="name">请输入姓名</label>
+                                </div>
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" placeholder="请输入邮箱">
+                                    <label for="email">请输入邮箱</label>
+                                </div>
+                                <div class="form-floating">
+                                    <input type="tel" class="form-control" id="phone" placeholder="请输入电话">
+                                    <label for="phone">请输入电话</label>
+                                </div>
+                                <div class="form-floating">
+                                    <textarea class="form-control" id="message" placeholder="请描述您的需求"></textarea>
+                                    <label for="message">请描述您的需求</label>
+                                </div>
+                            </form>
+                            <button type="submit" class="btn btn-primary">申请试用</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row justify-content-between" style="width: 100%;">
+                <!-- 左侧联系方式 -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="footer-info">
+                        <div class="footer-contact">
+                            <div class="contact-info-item">
+                                <img src="images/email.png" alt="Email">
+                                <span>joykey2024@126.com</span>
+                            </div>
+                            <div class="contact-info-item">
+                                <div class="d-flex gap-3 mb-2">
+                                    <img src="images/phone.png" alt="Phone">
+                                    <img src="images/chart.png" alt="WeChat">
+                                </div>
+                                <span>13995508268</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 右侧三列链接 -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="row g-4">
+                        <!-- 获取我们的消息 -->
+                        <div class="col-md-4">
+                            <div class="footer-links">
+                                <h5>获取我们的消息</h5>
+                                <ul>
+                                    <li><a href="#">在线咨询</a></li>
+                                    <li><a href="#">部署预览</a></li>
+                                    <li>
+                                        <a href="#">微信公众号</a>
+                                        <div class="wei-code"><img src="images/wei-code.png" alt=""></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- More链接 -->
+                        <div class="col-md-4">
+                            <div class="footer-links">
+                                <h5>More</h5>
+                                <ul>
+                                    <li><a href="#">会议预约系统</a></li>
+                                    <li><a href="#">解决方案</a></li>
+                                    <li><a href="#">会议门牌</a></li>
+                                    <li><a href="#">客户案例</a></li>
+                                    <li><a href="#">新闻资讯</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Help链接 -->
+                        <div class="col-md-4">
+                            <div class="footer-links">
+                                <h5>Help</h5>
+                                <ul>
+                                    <li><a href="#">帮助 & 技术支持</a></li>
+                                    <li><a href="#">客户服务</a></li>
+                                    <li><a href="#">联系我们</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="lib/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script>
+        // 控制导航栏滚动阴影
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 0) {
+                header.style.boxShadow = '#792dd51a 0px 2px 10px';
+            } else {
+                header.style.boxShadow = 'none';
+            }
+        });
+        // 导航栏滚动背景切换
+        // 修改现有滚动监听逻辑
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.company-header');
+            const showOffset = 100;
+            
+            if (window.scrollY > showOffset) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+            
+            // 新增移动端背景同步逻辑
+            if (window.innerWidth < 992) {
+                const topHeader = document.querySelector('.top-header');
+                topHeader.style.background = window.scrollY > showOffset ? 'white' : 'transparent';
+            }
+            
+        });
+        
+        // 初始化时隐藏移动端导航背景
+        // if (window.innerWidth < 992) {
+        //     document.querySelector('.company-header').style.background = 'white';
+        // }
+        // 修改后的菜单事件监听
+        const mainNav = document.getElementById('mainNav');
+        const topHeader = document.querySelector('.top-header');
+        
+        mainNav.addEventListener('show.bs.collapse', function() {
+            document.querySelector('.main-nav').style.background = 'white';
+            topHeader.style.background = 'white';  // 新增logo背景设置
+        });
+        
+        mainNav.addEventListener('hide.bs.collapse', function() {
+            document.querySelector('.main-nav').style.background = 'transparent';
+            if (window.scrollY < 100) {  // 仅在未滚动时恢复透明
+                topHeader.style.background = 'transparent';
+            }
+        });
+
+        // 新增硬件菜单切换逻辑
+        document.querySelectorAll('.hardware-menu-item').forEach(item => {
+            item.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // 移除所有active状态
+                document.querySelectorAll('.hardware-menu-item').forEach(i => {
+                    i.classList.remove('active');
+                });
+                
+                // 为当前项添加active状态
+                this.classList.add('active');
+                
+                // 更新内容区标题和描述
+                const title = this.querySelector('p').textContent;
+                document.querySelector('.hardware-name').textContent = title;
+            });
+        });
+    </script>
+</body>
+</html>

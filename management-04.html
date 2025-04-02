@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>会议预约系统</title>
+    <!-- Bootstrap CSS -->
+    <link href="lib/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="lib/bootstrap-icons/bootstrap-icons.css">
+    <!-- Navigation CSS -->
+    <link rel="stylesheet" href="css/nav.css">
+    <!-- Appointment CSS -->
+    <link rel="stylesheet" href="css/appointment.css">
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="css/common.css">
+    <!-- Management-04 CSS -->
+    <link rel="stylesheet" href="css/management-04-style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="header company-header">
+        <!-- 顶部导航 -->
+        <div class="top-header">
+            <div class="container d-flex justify-content-between align-items-center">
+                <a class="logo" href="index.html">
+                    <img src="images/logo.png" alt="Logo">
+                </a>
+                <!-- 桌面端登录按钮 -->
+                <div class="d-flex align-items-center">
+                    <a href="company.html" class="other-link mr-4 d-none d-lg-block">公司简介</a>
+                    <a href="buy.html" class="other-link mr-4 d-none d-lg-block"><img src="images/buy.png" alt="">购买须知</a>
+                    <a href="login.html" class="btn btn-primary d-none d-lg-block">登录账号</a>
+                    <!-- 移动端菜单按钮 -->
+                    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- 主导航 -->
+        <nav class="main-nav navbar navbar-expand-lg">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <!-- 移动端登录按钮 -->
+                    <div class="d-lg-none mobile-login mb-3">
+                        <a href="company.html" class="other-link w-100">公司简介</a>
+                    </div>
+                    <div class="d-lg-none mobile-login mb-3">
+                        <a href="buy.html" class="other-link w-100"><img src="images/buy.png" alt="">购买须知</a>
+                    </div>
+                    <div class="d-lg-none mobile-login mb-3">
+                        <a href="login.html" class="btn btn-primary w-100">登录账号</a>
+                    </div>
+                    <!-- 导航菜单 -->
+                    <ul class="nav-list">
+                        <li class="nav-list-item"><a href="management-02.html" class="nav-item active">软件中心</a></li>
+                        <li class="nav-list-item"><a href="hardware.html" class="nav-item">硬件展示</a></li>
+                        <li class="nav-list-item"><a href="solution.html" class="nav-item">解决方案</a></li>
+                        <li class="nav-list-item"><a href="customer-case.html" class="nav-item">客户案例</a></li>
+                        <li class="nav-list-item"><a href="news.html" class="nav-item">新闻资讯</a></li>
+                        <li class="nav-list-item"><a href="tutorial.html" class="nav-item">使用教程</a></li>
+                        <li class="nav-list-item"><a href="recruitment.html" class="nav-item">招商代理</a></li>
+                        <li class="nav-list-item"><a href="contactUs.html" class="nav-item">联系我们</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 主要内容区 -->
+    <main>
+        <!-- 第一部分 -->
+        <section class="company-contact one-bg">
+            <div class="container bg-title">
+                <div class="container-box-left half-box">
+                    <h2 class="section-title-text f50">节能监控管理云平台</h2>
+                    <p class="f22 section-title-other">采用泛在物联、云计算、大数据、智能传感
+                        等技术手段可为用户提供能源数据采集、统
+                        计分析、能效分析、用能预警、设备管理等
+                        服务，平台可以应用于多种领域。</p>
+                    <div class="group-btn">
+                        <button type="submit" class="btn btn-big f26" style="background: var(--primary-color);color: #fff;">在线咨询</button>
+                        <button type="submit" class="btn btn-big f26" style="background: #fff;color: var(--primary-color);">申请试用</button>
+                    </div>
+                </div>
+                <div  class="container-box-right half-box">
+                    <div class="img-part">
+                        <img src="images/img81.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 第二部分 -->
+        <section class="contact-section">
+            <div class="container">
+                <!-- 满足统一管理集中检测控管需求 -->
+                <div class="case-part01">
+                    <div class="case-part01-title">
+                        <h2 class="title-center f40">满足统一管理集中检测控管需求</h2>
+                    </div>
+                    <div class="list-two">
+                        <ul>
+                            <li class="list-card">
+                                <h3 class="list-card-title f30">可靠性、稳定性原则</h3>
+                                <p class="f18">系统设备硬件均采用高可靠性的
+                                    工控级产品，在运行环境温湿度
+                                    范围、抗电磁干扰、噪声震动、
+                                    空气含尘量等方面具有高于被监
+                                    控环境的良好适应性.</p>
+                                <button type="button" class="f18 callme">点我咨询</button>
+                            </li>
+                            <li class="list-card">
+                                <h3 class="list-card-title f30">先进性、实用性原则</h3>
+                                <p class="f18">系统不仅可实时、准确、可靠地的监
+                                    测各个设备的能耗、能效数据，为管
+                                    理者提供实时监测数据，并可按用户
+                                    设定的对能耗过大、能效过低的状况
+                                    进行通告及提醒用户进行维护、保养。</p>
+                                <button type="button" class="f18 callme">点我咨询</button>
+                            </li>
+                            <li class="list-card">
+                                <h3 class="list-card-title f30">门禁管理</h3>
+                                <p class="f18">可使用密码、人脸、刷卡
+                                    等方式进行开门,并可授权
+                                    用户开门权限。</p>
+                                <button type="button" class="f18 callme">点我咨询</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 第三部分 -->
+        <section class="contact-section other-bg">
+            <div class="container">
+                <div class="case-part02">
+                    <div class="case-part01-title">
+                        <h2 class="f50">一站式的企业级监控解决方案</h2>
+                    </div>
+                    <div class="template-list">
+                        <ul>
+                            <li class="template-item">
+                                <div class="template-img"><img src="images/icon14.png" alt=""></div>
+                                <h3 class="template-title f28">数据库管理</h3>
+                                <p class="template-text f16">系统采用SQ SEVER数据库，
+                                    支持并发访问，满足数据规
+                                    模的扩充及应用程序的修改</p>
+                            </li>
+                            <li class="template-item">
+                                <div class="template-img"><img src="images/icon15.png" alt=""></div>
+                                <h3 class="template-title f28">系统日志、数据查询</h3>
+                                <p class="template-text f16">系统自动保存监测事件记录
+                                    与系统操作事件记录，全面
+                                    了解系统安全相关的历史过
+                                    程和当前状况</p>
+                            </li>
+                            <li class="template-item">
+                                <div class="template-img"><img src="images/icon16.png" alt=""></div>
+                                <h3 class="template-title f28">故障管理、性能管理</h3>
+                                <p class="template-text f16">系统支持对各种智能设备协
+                                    议开放提供的软、硬件故障
+                                    信息运行状态、参数信息的
+                                    采集和处理</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 第四部分 -->
+        <section class="contact-section">
+            <div class="container">
+                <div class="case-part04">
+                    <ul>
+                        <li>
+                            <div class="itemImg"><img src="images/item3Card1.png" alt=""></div>
+                            <h3 class="f30">空调运行能耗监测</h3>
+                            <p class="f18">实时监控其各项运行参数、联动控制
+                                其运行设置参数及运行状态</p>
+                            <button type="button" class="f18 callme">免费试用</button>
+                        </li>
+                        <li>
+                            <div class="itemImg"><img src="images/item3Card2.png" alt=""></div>
+                            <h3 class="f30">照明联动控制</h3>
+                            <p class="f18">实时监测被控电路的电压、电流、
+                                频率、累计耗电量等数据</p>
+                            <button type="button" class="f18 callme">免费试用</button>
+                        </li>
+                        <li>
+                            <div class="itemImg"><img src="images/item3Card3.png" alt=""></div>
+                            <h3 class="f30">非智能型设备联动控制</h3>
+                            <p class="f18">提供干接点、继电器等非智能接口的
+                                设备，I/O接口实现基本状态监测。
+                                </p>
+                            <button type="button" class="f18 callme">免费试用</button>
+                        </li>
+                    </ul>
+                    
+                </div>
+                <div class="case-part05">
+                    <div class="case-part01-title">
+                        <h2 class="f38">数据监控大屏可视化系统解决方案</h2>
+                        <p class="f24">高清晰、适合长时间观看、支持多电脑同时输入、稳定运行、网络化、手机控制</p>
+                    </div>
+                    <div class="flex-box">
+                        <ul>
+                            <li>
+                                <div class="imgsize"><img src="images/img82.png" alt=""></div>
+                            </li>
+                            <li>
+                                <div class="trait">
+                                    <div class="trait-list">
+                                        <ul>
+                                            <li class="trait-item">
+                                                <h3 class="f24">节能环保</h3>
+                                                <p class="f18">绿色环保<br>
+                                                    低耗能更省电</p>
+                                            </li>
+                                            <li class="trait-item">
+                                                <h3 class="f24">5ms急速响应</h3>
+                                                <p class="f18">绿色环保<br>
+                                                    低耗能更省电</p>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li class="trait-item">
+                                                <h3 class="f24">滤蓝光不闪屏</h3>
+                                                <p class="f18">内置滤蓝光膜<br>
+                                                    减少屏幕闪烁</p>
+                                            </li>
+                                            <li class="trait-item">
+                                                <h3 class="f24">节能环保</h3>
+                                                <p class="f18">无论哪个角度<br>
+                                                    都有高清视野享受</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <!-- 第五部分 -->
+        <section class="contact-section no-bg">
+            <div class="container">
+                <div class="case-part06">
+                    <div class="case-part01-title">
+                        <h2 class="f44">专业研发团队可对接其他系统和二次开发</h2>
+                    </div>  
+                    <div class="flex-box">
+                        <ul>
+                            <li class="white-bg">
+                                <div class="white-bg-img"><img src="images/img83.png" alt=""></div>
+                                <h3 class="f26">安防监控系统</h3>
+                                <p class="f18">摄像头、存储硬盘、硬盘录像机、监视器等</p>
+                            </li>
+                            <li  class="white-bg">
+                                <div class="white-bg-img"><img src="images/img84.png" alt=""></div>
+                                <h3 class="f26">安防监控系统</h3>
+                                <p class="f18">摄像头、存储硬盘、硬盘录像机、监视器等</p>
+                            </li>
+                            <li  class="white-bg">
+                                <div class="white-bg-img"><img src="images/img85.png" alt=""></div>
+                                <h3 class="f26">安防监控系统</h3>
+                                <p class="f18">摄像头、存储硬盘、硬盘录像机、监视器等</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>     
+        <!-- 第六部分 -->
+        <section class="contact-section no-have">
+            <div class="container">
+                <div class="case-part07">
+                    <div class="case-part01-title">
+                        <h2 class="f40">KEEYAR最新动态</h2>
+                    </div>  
+                    <div class="flex-box">
+                        <ul>
+                            <li class="dynamic">
+                                <div class="dynamic-title">
+                                    <p class="f14">COMPANY ARTICLE</p>
+                                    <div class="f26">公司文章<span>|</span>智慧商业服务商</div>
+                                </div>
+                                <div class="dynamic-content">
+                                    <ul>
+                                        <li class="f16">
+                                            <label for="">09-12</label>
+                                            <p>谷一科技端午放假通知</p>
+                                        </li>
+                                        <li class="f16">
+                                            <label for="">09-12</label>
+                                            <p>谷一科技端午放假通知</p>
+                                        </li>
+                                        <li class="f16">
+                                            <label for="">09-12</label>
+                                            <p>谷一科技端午放假通知</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="dynamic">
+                                <div class="dynamic-title">
+                                    <p class="f14">COMPANY ARTICLE</p>
+                                    <div class="f26">技术文章<span>|</span>产品升级教程</div>
+                                </div>
+                                <div class="dynamic-content">
+                                    <ul>
+                                        <li class="f16">
+                                            <label for="">09-12</label>
+                                            <p>谷一科技端午放假通知</p>
+                                        </li>
+                                        <li class="f16">
+                                            <label for="">09-12</label>
+                                            <p>谷一科技端午放假通知</p>
+                                        </li>
+                                        <li class="f16">
+                                            <label for="">09-12</label>
+                                            <p>谷一科技端午放假通知</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="dynamic">
+                                <div class="dynamic-title">
+                                    <p class="f14">COMPANY ARTICLE</p>
+                                    <div class="f26">行业咨询<span>|</span>专注&nbsp;口碑&nbsp;极致</div>
+                                </div>
+                                <div class="dynamic-content">
+                                    <ul>
+                                        <li class="f16">
+                                            <label for="">09-12</label>
+                                            <p>谷一科技端午放假通知</p>
+                                        </li>
+                                        <li class="f16">
+                                            <label for="">09-12</label>
+                                            <p>谷一科技端午放假通知</p>
+                                        </li>
+                                        <li class="f16">
+                                            <label for="">09-12</label>
+                                            <p>谷一科技端午放假通知</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>     
+        <!-- 预约表单部分 -->
+        <section class="appointment-section">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <!-- 左侧文字说明 -->
+                    <div class="col-lg-7" style="padding-left: 0;">
+                        <div class="appointment-content">
+                            <h2>如何使用会议预约系统</h2>
+                            <p class="subtitle">我们的销售和支持人员随时准备帮助您解决各种问题</p>
+                        </div>
+                    </div>
+                    <!-- 右侧表单 -->
+                    <div class="col-lg-5" style="padding: 0;">
+                        <div class="appointment-form">
+                            <form id="appointmentForm">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="name" placeholder="请输入姓名">
+                                    <label for="name">请输入姓名</label>
+                                </div>
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" placeholder="请输入邮箱">
+                                    <label for="email">请输入邮箱</label>
+                                </div>
+                                <div class="form-floating">
+                                    <input type="tel" class="form-control" id="phone" placeholder="请输入电话">
+                                    <label for="phone">请输入电话</label>
+                                </div>
+                                <div class="form-floating">
+                                    <textarea class="form-control" id="message" placeholder="请描述您的需求"></textarea>
+                                    <label for="message">请描述您的需求</label>
+                                </div>
+                            </form>
+                            <button type="submit" class="btn btn-primary">申请试用</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row justify-content-between" style="width: 100%;">
+                <!-- 左侧联系方式 -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="footer-info">
+                        <div class="footer-contact">
+                            <div class="contact-info-item">
+                                <img src="images/email.png" alt="Email">
+                                <span>joykey2024@126.com</span>
+                            </div>
+                            <div class="contact-info-item">
+                                <div class="d-flex gap-3 mb-2">
+                                    <img src="images/phone.png" alt="Phone">
+                                    <img src="images/chart.png" alt="WeChat">
+                                </div>
+                                <span>13995508268</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 右侧三列链接 -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="row g-4">
+                        <!-- 获取我们的消息 -->
+                        <div class="col-md-4">
+                            <div class="footer-links">
+                                <h5>获取我们的消息</h5>
+                                <ul>
+                                    <li><a href="#">在线咨询</a></li>
+                                    <li><a href="#">部署预览</a></li>
+                                    <li>
+                                        <a href="#">微信公众号</a>
+                                        <div class="wei-code"><img src="images/wei-code.png" alt=""></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- More链接 -->
+                        <div class="col-md-4">
+                            <div class="footer-links">
+                                <h5>More</h5>
+                                <ul>
+                                    <li><a href="#">会议预约系统</a></li>
+                                    <li><a href="#">解决方案</a></li>
+                                    <li><a href="#">会议门牌</a></li>
+                                    <li><a href="#">客户案例</a></li>
+                                    <li><a href="#">新闻资讯</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Help链接 -->
+                        <div class="col-md-4">
+                            <div class="footer-links">
+                                <h5>Help</h5>
+                                <ul>
+                                    <li><a href="#">帮助 & 技术支持</a></li>
+                                    <li><a href="#">客户服务</a></li>
+                                    <li><a href="#">联系我们</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="lib/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script>
+        // 控制导航栏滚动阴影
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 0) {
+                header.style.boxShadow = '#792dd51a 0px 2px 10px';
+            } else {
+                header.style.boxShadow = 'none';
+            }
+        });
+        // 导航栏滚动背景切换
+        // 修改现有滚动监听逻辑
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.company-header');
+            const showOffset = 100;
+            
+            if (window.scrollY > showOffset) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+            
+            // 新增移动端背景同步逻辑
+            if (window.innerWidth < 992) {
+                const topHeader = document.querySelector('.top-header');
+                topHeader.style.background = window.scrollY > showOffset ? 'white' : 'transparent';
+            }
+            
+        });
+        
+        // 初始化时隐藏移动端导航背景
+        // if (window.innerWidth < 992) {
+        //     document.querySelector('.company-header').style.background = 'white';
+        // }
+        // 修改后的菜单事件监听
+        const mainNav = document.getElementById('mainNav');
+        const topHeader = document.querySelector('.top-header');
+        
+        mainNav.addEventListener('show.bs.collapse', function() {
+            document.querySelector('.main-nav').style.background = 'white';
+            topHeader.style.background = 'white';  // 新增logo背景设置
+        });
+        
+        mainNav.addEventListener('hide.bs.collapse', function() {
+            document.querySelector('.main-nav').style.background = 'transparent';
+            if (window.scrollY < 100) {  // 仅在未滚动时恢复透明
+                topHeader.style.background = 'transparent';
+            }
+        });
+
+        // 新增硬件菜单切换逻辑
+        document.querySelectorAll('.hardware-menu-item').forEach(item => {
+            item.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // 移除所有active状态
+                document.querySelectorAll('.hardware-menu-item').forEach(i => {
+                    i.classList.remove('active');
+                });
+                
+                // 为当前项添加active状态
+                this.classList.add('active');
+                
+                // 更新内容区标题和描述
+                const title = this.querySelector('p').textContent;
+                document.querySelector('.hardware-name').textContent = title;
+            });
+        });
+    </script>
+</body>
+</html>

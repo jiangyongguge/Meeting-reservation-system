@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>会议预约系统</title>
+    <!-- Bootstrap CSS -->
+    <link href="lib/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="lib/bootstrap-icons/bootstrap-icons.css">
+    <!-- Navigation CSS -->
+    <link rel="stylesheet" href="css/nav.css">
+    <!-- Appointment CSS -->
+    <link rel="stylesheet" href="css/appointment.css">
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="css/common.css">
+    <!-- Management-03 CSS -->
+    <link rel="stylesheet" href="css/management-03-style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="header company-header">
+        <!-- 顶部导航 -->
+        <div class="top-header">
+            <div class="container d-flex justify-content-between align-items-center">
+                <a class="logo" href="index.html">
+                    <img src="images/logo.png" alt="Logo">
+                </a>
+                <!-- 桌面端登录按钮 -->
+                <div class="d-flex align-items-center">
+                    <a href="company.html" class="other-link mr-4 d-none d-lg-block">公司简介</a>
+                    <a href="buy.html" class="other-link mr-4 d-none d-lg-block"><img src="images/buy.png" alt="">购买须知</a>
+                    <a href="login.html" class="btn btn-primary d-none d-lg-block">登录账号</a>
+                    <!-- 移动端菜单按钮 -->
+                    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- 主导航 -->
+        <nav class="main-nav navbar navbar-expand-lg">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <!-- 移动端登录按钮 -->
+                    <div class="d-lg-none mobile-login mb-3">
+                        <a href="company.html" class="other-link w-100">公司简介</a>
+                    </div>
+                    <div class="d-lg-none mobile-login mb-3">
+                        <a href="buy.html" class="other-link w-100"><img src="images/buy.png" alt="">购买须知</a>
+                    </div>
+                    <div class="d-lg-none mobile-login mb-3">
+                        <a href="login.html" class="btn btn-primary w-100">登录账号</a>
+                    </div>
+                    <!-- 导航菜单 -->
+                    <ul class="nav-list">
+                        <li class="nav-list-item"><a href="management-02.html" class="nav-item active">软件中心</a></li>
+                        <li class="nav-list-item"><a href="hardware.html" class="nav-item">硬件展示</a></li>
+                        <li class="nav-list-item"><a href="solution.html" class="nav-item">解决方案</a></li>
+                        <li class="nav-list-item"><a href="customer-case.html" class="nav-item">客户案例</a></li>
+                        <li class="nav-list-item"><a href="news.html" class="nav-item">新闻资讯</a></li>
+                        <li class="nav-list-item"><a href="tutorial.html" class="nav-item">使用教程</a></li>
+                        <li class="nav-list-item"><a href="recruitment.html" class="nav-item">招商代理</a></li>
+                        <li class="nav-list-item"><a href="contactUs.html" class="nav-item">联系我们</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 主要内容区 -->
+    <main>
+        <!-- 第一部分 -->
+        <section class="company-contact">
+            <div class="container bg-title">
+                <div class="container-box-left half-box">
+                    <h2 class="section-title-text f50">智慧电子班牌管理系统</h2>
+                    <p class="f28 section-title-other">智慧校园信息管理平台采用云计算、智能交
+                        互技术、多媒体技术为核心，依托现有网络，
+                        远程集中管理控制，在学校大门、教学楼、
+                        行政楼、教室、实验室等位置设立各种显示
+                        设备。</p>
+                    <div class="group-btn">
+                        <button type="submit" class="btn btn-big f26" style="background: var(--primary-color);color: #fff;">免费试用</button>
+                        <button type="submit" class="btn btn-big f26" style="background: #fff;color: var(--primary-color);">预约演示</button>
+                    </div>
+                </div>
+                <div  class="container-box-right half-box">
+                    <div class="video-part">
+                        <video width="100%" height="100%" style="margin: auto;position: absolute;top: 50%;left: 50%;min-width: 100%;min-height: 100%;object-fit: fill;
+                                -ms-transform: translateX(-50%) translateY(-50%);-webkit-transform: translateX(-50%) translateY(-50%);
+                                transform: translateX(-50%) translateY(-50%);"  controls autoplay loop muted>
+                            <source src="images/video.mp4" type="video/mp4">
+                            <source src="movie.ogg" type="video/ogg">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 第二部分 -->
+        <section class="contact-section">
+            <div class="container">
+                <!-- 智能硬件 创新方案 -->
+                <div class="case-part01">
+                    <div class="case-part01-title">
+                        <h2 class="title-center f50">智能硬件&nbsp;创新方案</h2>
+                        <p class="f28">智能管理&nbsp;不至于班牌</p>
+                    </div>
+                    <div class="trait">
+                        <div class="trait-list">
+                            <ul>
+                                <li class="trait-item">
+                                    <div class="trait-item-img"><img src="images/icon25.png" alt=""></div>
+                                    <h3 class="f20">智能考勤</h3>
+                                </li>
+                                <li class="trait-item">
+                                    <div class="trait-item-img"><img src="images/icon26.png" alt=""></div>
+                                    <h3 class="f20">人脸识别</h3>
+                                </li>
+                                <li class="trait-item">
+                                    <div class="trait-item-img"><img src="images/icon27.png" alt=""></div>
+                                    <h3 class="f20">走班管理</h3>
+                                </li>
+                                <li class="trait-item">
+                                    <div class="trait-item-img"><img src="images/icon28.png" alt=""></div>
+                                    <h3 class="f20">课表查询</h3>
+                                </li>
+                                <li class="trait-item">
+                                    <div class="trait-item-img"><img src="images/icon29.png" alt=""></div>
+                                    <h3 class="f20">校园文化</h3>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li class="trait-item">
+                                    <div class="trait-item-img"><img src="images/icon30.png" alt=""></div>
+                                    <h3 class="f20">通知公告</h3>
+                                </li>
+                                <li class="trait-item">
+                                    <div class="trait-item-img"><img src="images/icon32.png" alt=""></div>
+                                    <h3 class="f20">班级动态</h3>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li class="trait-item">
+                                    <div class="trait-item-img"><img src="images/icon31.png" alt=""></div>
+                                    <h3 class="f20">校园防疫</h3>
+                                </li>
+                                <li class="trait-item">
+                                    <div class="trait-item-img"><img src="images/icon33.png" alt=""></div>
+                                    <h3 class="f20">教师风采</h3>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li class="trait-item">
+                                    <div class="trait-item-img"><img src="images/icon34.png" alt=""></div>
+                                    <h3 class="f20">班级作亚</h3>
+                                </li>
+                                <li class="trait-item">
+                                    <div class="trait-item-img"><img src="images/icon35.png" alt=""></div>
+                                    <h3 class="f20">生涯教育</h3>
+                                </li>
+                                <li class="trait-item">
+                                    <div class="trait-item-img"><img src="images/icon36.png" alt=""></div>
+                                    <h3 class="f20">升学探索</h3>
+                                </li>
+                                <li class="trait-item">
+                                    <div class="trait-item-img"><img src="images/icon37.png" alt=""></div>
+                                    <h3 class="f20">德育教育</h3>
+                                </li>
+                                <li class="trait-item">
+                                    <div class="trait-item-img"><img src="images/icon38.png" alt=""></div>
+                                    <h3 class="f20">考场信息</h3>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="center-img">
+                            <img src="images/icon39.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- 系统亮点 -->
+                <div class="case-part01-1">
+                    <div class="case-part01-title">
+                        <h2 class="title-center f50">系统亮点</h2>
+                    </div>
+                    <div class="list-two">
+                        <ul>
+                            <li class="list-card">
+                                <div class="list-card-img"><img src="images/img88.png" alt=""></div>
+                                <h3 class="list-card-title f36">智能考勤</h3>
+                                <ul class="card-content">
+                                    <li class="f16">支持人脸识别、刷卡签到等方式,高效签到,节省课堂时间</li>
+                                    <li class="f16">活体检测,精准人脸识别,避免照片虚假考勤,保障校园安全</li>
+                                </ul>
+                                
+                            </li>
+                            <li class="list-card">
+                                <div class="list-card-img"><img src="images/img89.png" alt=""></div>
+                                <h3 class="list-card-title f36">课表同步</h3>
+                                <ul class="card-content">
+                                    <li class="f16">一生一课表、 一师一课表、 一室一课表实时同步更新数据</li>
+                                    <li class="f16">学生签到时可查看个人课表和班级课表，刷卡查看选修课结果</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="list-card">
+                                <div class="list-card-img"><img src="images/img90.png" alt=""></div>
+                                <h3 class="list-card-title f36">统计管理</h3>
+                                <ul class="card-content">
+                                    <li class="f16">同时支持常规考勤管理+走班考勤管理</li>
+                                    <li class="f16">跟踪统计考勤数据,教师手机端实时反馈</li>
+                                    <li class="f16">学生/家长发起请假、老师审批，自动记录考勤信息</li>
+                                </ul>
+                                
+                            </li>
+                            <li class="list-card">
+                                <div class="list-card-img"><img src="images/img91.png" alt=""></div>
+                                <h3 class="list-card-title f36">场景多样</h3>
+                                <ul class="card-content">
+                                    <li class="f16">考勤、上课、课间、考试、发布公告......不同场景可设置自动
+                                        切换对应模式，智慧电子班牌时刻都能派上用场</li>
+                                    <li class="f16">快捷导入全校考试计划，对接“好专业”考务系统，方便高
+                                        效展示考场信息，一站式解决走班/非走班考试难题</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="list-card">
+                                <div class="list-card-img"><img src="images/img92.png" alt=""></div>
+                                <h3 class="list-card-title f36">校园文化</h3>
+                                <ul class="card-content">
+                                    <li class="f16">展示校园最新动态，打造优质校园文化</li>
+                                    <li class="f16">将学校德育、文化建设深度融合</li>
+                                </ul>
+                                
+                            </li>
+                            <li class="list-card">
+                                <div class="list-card-img"><img src="images/img93.png" alt=""></div>
+                                <h3 class="list-card-title f36">通知发布</h3>
+                                <ul class="card-content">
+                                    <li class="f16">发布校园重要通知，突发事件第一时间紧急通知</li>
+                                    <li class="f16">发布各科目作业内容，作业管理信息化</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="list-card">
+                                <div class="list-card-img"><img src="images/img94.png" alt=""></div>
+                                <h3 class="list-card-title f36">班级建设 </h3>
+                                <ul class="card-content">
+                                    <li class="f16">多媒体动态呈现班级文化，展示班级荣誉，增强班级凝聚力，
+                                        调动学生积极性</li>
+                                    <li class="f16">展示教师风采，增进教师与学生的沟通了解</li>
+                                </ul>
+                                
+                            </li>
+                            <li class="list-card">
+                                <div class="list-card-img"><img src="images/img95.png" alt=""></div>
+                                <h3 class="list-card-title f36">家校沟通</h3>
+                                <ul class="card-content">
+                                    <li class="f16">家长可在手机端查看孩子考勤、作业、成绩等在校情况，
+                                        实现家校共育</li>
+                                    <li class="f16">通过手机端第一时间同步班情，让家长掌握校园动态，
+                                        家校沟通更顺畅</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 解决方案 -->
+                <div class="case-part01-2">
+                    <div class="case-part01-title">
+                        <h2 class="title-center f50">解决方案</h2>
+                    </div>
+                    <div class="Programme-list">
+                        <ul>
+                            <li class="Programme-item Programme-top">
+                                <div class="Programme-item-box box-text">
+                                    <ul>
+                                        <li class="f30">校园文化缺少宣传平台?</li>
+                                        <li class="f30">重要通知如何第一时间触达学生?</li>
+                                        <li class="f30">班级凝聚力如何提升?</li>
+                                        <li class="f30">家校沟通不畅,如何同步校园动态?</li>
+                                    </ul>
+                                </div>
+                                <div class="Programme-item-box"><img class="top-box-img" src="images/img96.png" alt=""></div>
+                            </li>
+                            <li class="Programme-item Programme-center">
+                                <div class="Programme-item-box  box-text">
+                                    <ul>
+                                        <li class="f30">
+                                            <img src="images/icon41.png" alt="">
+                                            <p>校园文化缺少宣传平台?</p>
+                                        </li>
+                                        <li class="f30">
+                                            <img src="images/icon41.png" alt="">
+                                            <p>重要通知如何第一时间触达学生?</p>
+                                        </li>
+                                        <li class="f30">
+                                            <img src="images/icon41.png" alt="">
+                                            <p>班级凝聚力如何提升?</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="Programme-item-box"><img class="center-box-img" src="images/img97.png" alt=""></div>
+                            </li>
+                            <li class="Programme-item Programme-bottom">
+                                <div class="Programme-item-box  box-text">
+                                    <ul>
+                                        <li class="f30">校园文化缺少宣传平台?</li>
+                                        <li class="f30">重要通知如何第一时间触达学生?</li>
+                                        <li class="f30">班级凝聚力如何提升?</li>
+                                        <li class="f30">家校沟通不畅,如何同步校园动态?</li>
+                                    </ul>
+                                </div>
+                                <div class="Programme-item-box"><img class="bottom-box-img" src="images/img98.png" alt=""></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="Programme-other flex-box">
+                        <ul>
+                            <li>
+                                <div class="f30 Programme-other-box">
+                                    <img src="images/icon41.png" alt="">
+                                    <p>精准人脸识别  有力保障校园安全</p>
+                                </div>
+                                <div class="f30 Programme-other-box">
+                                    <img src="images/icon41.png" alt="">
+                                    <p>智能管理  常规/走班教学更轻松</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="f30 Programme-other-box">
+                                    <img src="images/icon41.png" alt="">
+                                    <p>秒级考勤 大大提升课堂效率</p>
+                                </div>
+                                <div class="f30 Programme-other-box line-height48">
+                                    <img src="images/icon41.png" alt="">
+                                    <p>对接“好专业”考务系统解决常规/走
+                                    班考务难题</p>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 第三部分 -->
+        <section class="contact-section other-bg">
+            <div class="container">
+                <div class="case-part02">
+                    <div class="case-part01-title">
+                        <h2 class="f50">电子班牌自定义编辑模板</h2>
+                    </div>
+                    <div class="formwork-list">
+                        <ul>
+                            <li class="formwork-left">
+                                <h3 class="f32"><img src="images/icon40.png" alt="">自定义组件</h3>
+                                <p class="f16">以图文形式发布校园内外的新闻、学校
+                                    通知及活动事件，学生更可参与其中，
+                                    有益于学生的身心健康发展，灵活设
+                                    置展示时间，全屏轮播的方式展示视
+                                    频、图片，文字滚动通知等校园宣传
+                                    资讯，实现学校多种类型的信息化展
+                                    示需求。</p>
+                            </li>
+                            <li class="formwork-right"><img src="images/custom.png" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 第四部分 -->
+        <section class="contact-section no-have">
+            <div class="container">
+                <div class="case-part07">
+                    <div class="case-part01-title">
+                        <h2 class="f40">KEEYAR最新动态</h2>
+                    </div>  
+                    <div class="flex-box">
+                        <ul>
+                            <li class="dynamic">
+                                <div class="dynamic-title">
+                                    <p class="f14">COMPANY ARTICLE</p>
+                                    <div class="f26">公司文章<span>|</span>智慧商业服务商</div>
+                                </div>
+                                <div class="dynamic-content">
+                                    <ul>
+                                        <li class="f16">
+                                            <label for="">09-12</label>
+                                            <p>谷一科技端午放假通知</p>
+                                        </li>
+                                        <li class="f16">
+                                            <label for="">09-12</label>
+                                            <p>谷一科技端午放假通知</p>
+                                        </li>
+                                        <li class="f16">
+                                            <label for="">09-12</label>
+                                            <p>谷一科技端午放假通知</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="dynamic">
+                                <div class="dynamic-title">
+                                    <p class="f14">COMPANY ARTICLE</p>
+                                    <div class="f26">技术文章<span>|</span>产品升级教程</div>
+                                </div>
+                                <div class="dynamic-content">
+                                    <ul>
+                                        <li class="f16">
+                                            <label for="">09-12</label>
+                                            <p>谷一科技端午放假通知</p>
+                                        </li>
+                                        <li class="f16">
+                                            <label for="">09-12</label>
+                                            <p>谷一科技端午放假通知</p>
+                                        </li>
+                                        <li class="f16">
+                                            <label for="">09-12</label>
+                                            <p>谷一科技端午放假通知</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="dynamic">
+                                <div class="dynamic-title">
+                                    <p class="f14">COMPANY ARTICLE</p>
+                                    <div class="f26">行业咨询<span>|</span>专注&nbsp;口碑&nbsp;极致</div>
+                                </div>
+                                <div class="dynamic-content">
+                                    <ul>
+                                        <li class="f16">
+                                            <label for="">09-12</label>
+                                            <p>谷一科技端午放假通知</p>
+                                        </li>
+                                        <li class="f16">
+                                            <label for="">09-12</label>
+                                            <p>谷一科技端午放假通知</p>
+                                        </li>
+                                        <li class="f16">
+                                            <label for="">09-12</label>
+                                            <p>谷一科技端午放假通知</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>     
+        <!-- 预约表单部分 -->
+        <section class="appointment-section">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <!-- 左侧文字说明 -->
+                    <div class="col-lg-7" style="padding-left: 0;">
+                        <div class="appointment-content">
+                            <h2>如何使用会议预约系统</h2>
+                            <p class="subtitle">我们的销售和支持人员随时准备帮助您解决各种问题</p>
+                        </div>
+                    </div>
+                    <!-- 右侧表单 -->
+                    <div class="col-lg-5" style="padding: 0;">
+                        <div class="appointment-form">
+                            <form id="appointmentForm">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="name" placeholder="请输入姓名">
+                                    <label for="name">请输入姓名</label>
+                                </div>
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" placeholder="请输入邮箱">
+                                    <label for="email">请输入邮箱</label>
+                                </div>
+                                <div class="form-floating">
+                                    <input type="tel" class="form-control" id="phone" placeholder="请输入电话">
+                                    <label for="phone">请输入电话</label>
+                                </div>
+                                <div class="form-floating">
+                                    <textarea class="form-control" id="message" placeholder="请描述您的需求"></textarea>
+                                    <label for="message">请描述您的需求</label>
+                                </div>
+                            </form>
+                            <button type="submit" class="btn btn-primary">申请试用</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row justify-content-between" style="width: 100%;">
+                <!-- 左侧联系方式 -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="footer-info">
+                        <div class="footer-contact">
+                            <div class="contact-info-item">
+                                <img src="images/email.png" alt="Email">
+                                <span>joykey2024@126.com</span>
+                            </div>
+                            <div class="contact-info-item">
+                                <div class="d-flex gap-3 mb-2">
+                                    <img src="images/phone.png" alt="Phone">
+                                    <img src="images/chart.png" alt="WeChat">
+                                </div>
+                                <span>13995508268</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 右侧三列链接 -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="row g-4">
+                        <!-- 获取我们的消息 -->
+                        <div class="col-md-4">
+                            <div class="footer-links">
+                                <h5>获取我们的消息</h5>
+                                <ul>
+                                    <li><a href="#">在线咨询</a></li>
+                                    <li><a href="#">部署预览</a></li>
+                                    <li>
+                                        <a href="#">微信公众号</a>
+                                        <div class="wei-code"><img src="images/wei-code.png" alt=""></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- More链接 -->
+                        <div class="col-md-4">
+                            <div class="footer-links">
+                                <h5>More</h5>
+                                <ul>
+                                    <li><a href="#">会议预约系统</a></li>
+                                    <li><a href="#">解决方案</a></li>
+                                    <li><a href="#">会议门牌</a></li>
+                                    <li><a href="#">客户案例</a></li>
+                                    <li><a href="#">新闻资讯</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Help链接 -->
+                        <div class="col-md-4">
+                            <div class="footer-links">
+                                <h5>Help</h5>
+                                <ul>
+                                    <li><a href="#">帮助 & 技术支持</a></li>
+                                    <li><a href="#">客户服务</a></li>
+                                    <li><a href="#">联系我们</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="lib/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script>
+        // 控制导航栏滚动阴影
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 0) {
+                header.style.boxShadow = '#792dd51a 0px 2px 10px';
+            } else {
+                header.style.boxShadow = 'none';
+            }
+        });
+        // 导航栏滚动背景切换
+        // 修改现有滚动监听逻辑
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.company-header');
+            const showOffset = 100;
+            
+            if (window.scrollY > showOffset) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+            
+            // 新增移动端背景同步逻辑
+            if (window.innerWidth < 992) {
+                const topHeader = document.querySelector('.top-header');
+                topHeader.style.background = window.scrollY > showOffset ? 'white' : 'transparent';
+            }
+            
+        });
+        
+        // 初始化时隐藏移动端导航背景
+        // if (window.innerWidth < 992) {
+        //     document.querySelector('.company-header').style.background = 'white';
+        // }
+        // 修改后的菜单事件监听
+        const mainNav = document.getElementById('mainNav');
+        const topHeader = document.querySelector('.top-header');
+        
+        mainNav.addEventListener('show.bs.collapse', function() {
+            document.querySelector('.main-nav').style.background = 'white';
+            topHeader.style.background = 'white';  // 新增logo背景设置
+        });
+        
+        mainNav.addEventListener('hide.bs.collapse', function() {
+            document.querySelector('.main-nav').style.background = 'transparent';
+            if (window.scrollY < 100) {  // 仅在未滚动时恢复透明
+                topHeader.style.background = 'transparent';
+            }
+        });
+
+        // 新增硬件菜单切换逻辑
+        document.querySelectorAll('.hardware-menu-item').forEach(item => {
+            item.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // 移除所有active状态
+                document.querySelectorAll('.hardware-menu-item').forEach(i => {
+                    i.classList.remove('active');
+                });
+                
+                // 为当前项添加active状态
+                this.classList.add('active');
+                
+                // 更新内容区标题和描述
+                const title = this.querySelector('p').textContent;
+                document.querySelector('.hardware-name').textContent = title;
+            });
+        });
+    </script>
+</body>
+</html>
