@@ -1,0 +1,311 @@
+/* 预约部分样式 */
+main .appointment-section {
+    padding: 80px 0;
+    background: url('../images/bg-desktop.png') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    min-height: 500px;
+    color: #fff;
+}
+
+main .appointment-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+main .appointment-content {
+    text-align: left;
+}
+
+main .appointment-content h2 {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+.appointment-content .subtitle {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+    width: 70%;
+}
+
+/* 表单样式 */
+.appointment-form {
+    background: #F2E7FE;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+.appointment-form form {
+    padding: 0 2rem;
+}
+
+.form-floating {
+    position: relative;
+    padding: 0 1rem;
+}
+
+.form-floating:last-child {
+    margin-bottom: 0;
+}
+
+.form-floating:not(:last-child) {
+    border-bottom: 1px dashed rgba(0,0,0,0.2);
+}
+
+.form-floating > .form-control {
+    height: 56px;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+.form-floating > label {
+    color: #999;
+    transform-origin: 0 0;
+}
+
+.form-floating > textarea.form-control {
+    height: 120px;
+    min-height: 120px;
+    resize: none;
+}
+
+.form-floating > .form-control:focus {
+    box-shadow: none;
+    border-color: var(--primary-color);
+}
+
+.form-floating > .form-control:focus ~ label {
+    color: var(--primary-color);
+}
+
+.appointment-form .btn-primary {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 0 0 10px 10px;
+    margin-top: 0;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* 页脚样式 */
+.footer {
+    background-color: #2D1155;
+    color: white;
+    padding: 60px 0;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-info {
+    flex: 0 0 300px;
+}
+
+.footer-info h5,
+.footer-links h5 {
+    color: white;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.footer-links h5::after{
+    content: '';
+    display: block;
+    width: 2rem;
+    height: 2px;
+    background-color: rgb(255 255 255);
+    margin-top: 1.5rem;
+}
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footer-contact .contact-info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.footer-contact .contact-info-item img {
+    width: 32px;
+    height: 32px;
+    filter: brightness(0) invert(1);
+}
+
+.footer-contact .contact-info-item span {
+    color: rgba(255,255,255,0.8);
+    font-size: 1rem;
+}
+
+.footer-links-container {
+    display: flex;
+    gap: 100px;
+    flex: 1;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.footer-links {
+    flex: 0 0 auto;
+    min-width: 120px;
+    text-align: left;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.75rem;
+}
+
+.footer-links a {
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 1rem;
+}
+.footer .wei-code{
+    width: 100px;
+    height: 100px;
+    margin-top: 1rem;
+}
+.footer .wei-code img{
+    width: 100%;
+    height: 100%;
+}
+.footer-links a:hover {
+    color: white;
+}
+
+/* 移动端适配 */
+@media (max-width: 1200px) {
+    main .appointment-content h2 {
+        color: #fff;
+        font-size: 2.5rem;
+        font-weight: 600;
+        margin-bottom: 2rem;
+    }
+    .appointment-content .subtitle {
+        font-size: 1.5rem;
+    }
+    .footer-links{
+        text-align: left;
+    }
+}
+@media (max-width: 991px) {
+    main .appointment-section {
+        padding: 40px 0;
+        background: url('../images/bg-mobile.jpg') no-repeat center center;
+        background-size: cover;
+        min-height: auto;
+    }
+
+    main .appointment-content {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    main .appointment-content h2 {
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
+    }
+    .appointment-content .subtitle {
+        width: 90%;
+        font-size: 1rem;
+        margin: auto;
+    }
+    main .appointment-form form {
+        padding: 0 1.5rem;
+    }
+
+    .appointment-form {
+        max-width: 100%;
+        margin: 0 1rem;
+    }
+
+    .footer {
+        padding: 40px 0;
+    }
+    
+    .footer .container {
+        flex-direction: column;
+    }
+    
+    .footer-info {
+        flex: none;
+        margin-bottom: 2rem;
+    }
+    
+    .footer-links-container {
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: flex-start;
+        margin-left: 0;
+    }
+    
+    .footer-contact {
+        gap: 1rem;
+    }
+    
+    .footer-contact .contact-info-item img {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media (max-width: 767px) {
+    .appointment-content {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .footer-info,
+    .footer-links {
+        text-align: center;
+    }
+    .footer .wei-code {
+        margin: 1rem auto 0;
+    }
+    .footer-links h5::after {
+        margin: 0.75rem auto 0;
+    }
+    .footer-links h5 {
+        font-size: 0.75rem;
+        margin-bottom: 0.75rem;
+    }
+    .footer-links a {
+        font-size: 0.75rem;
+    }
+    .footer-contact {
+        align-items: center;
+    }
+    
+    .footer-contact .contact-info-item {
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .footer .col-lg-8 .row {
+        row-gap: 1.5rem;
+    }
+} 

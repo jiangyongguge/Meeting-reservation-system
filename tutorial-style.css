@@ -1,0 +1,663 @@
+:root {
+    --primary-color: #8257E6;
+    --secondary-color: #6F48C9;
+    --background-color: #F8F9FA;
+    --text-color: #333;
+    --text-secondary: #666666;     /* 次要文字颜色 */
+    --text-light: #999999;         /* 浅色文字 */
+}
+
+/* 全局样式 */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.5;
+    padding-top: 108px; /* 桌面端导航栏高度 */
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+/* 通用标题样式 */
+.section-title {
+    color: #20184E;
+    font-size: 2.75rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    position: relative;
+    text-align: center;
+}
+
+/* 通用图标样式 */
+.contact-icon {
+    width: 32px;
+    height: 32px;
+}
+
+/* 通用文本样式 */
+.contact-text {
+    color: #20184E;
+    font-size: 1.5rem;
+}
+
+.contact-section {
+    padding: 125px 0;
+    background: white;
+    position: relative;
+}
+.contact-section::before {
+    content: '';
+    position: absolute;
+    top: 310px;
+    background: url(../images/bg-img2.png) no-repeat bottom;
+    width: 136px;
+    height: 531px;
+    z-index: 0;
+}
+.contact-section::after {
+    content: '';
+    position: absolute;
+    bottom: -180px;
+    background: url(../images/bg-img3.png) no-repeat bottom right;
+    width: 346px;
+    height: 531px;
+    z-index: 0;
+    right: 0px;
+    background-size: 80%;
+}
+.tutorial-content{
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.tutorial-title{
+    color: #20184E;
+    font-size: 26px;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 32px;
+}
+.tutorial-left{
+    width: 25%;
+    border-right: solid 1px #F7F7FA ;
+    padding-right: 36px; 
+}
+.tutorial-right{
+    width: 75%;
+    padding-left: 56px;
+}
+/* 目录样式 */
+.tutorial-menu .menu-list {
+    list-style: none;
+    padding-left: 0;
+    text-align: left;
+}
+.tutorial-menu .menu-item {
+    display: block;
+    line-height: 36px;
+    color: #666;
+    text-decoration: none;
+    transition: all 0.3s;
+    font-size: 16px;
+}
+.tutorial-menu .menu-item.primary-text{
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 18px;  
+}
+.tutorial-menu .menu-list li:first-child {
+    margin-top: 0;
+}
+.tutorial-menu .menu-item.primary-text.active {
+    color: var(--primary-color);
+}
+.tutorial-menu .menu-item.active {
+    color: var(--text-color);
+    font-weight: 600;
+}
+.tutorial-menu .menu-item:hover {
+    color: var(--primary-color);
+    font-weight: normal;
+}
+.tutorial-menu .menu-item.primary-text:hover {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+.menu-list li{
+    margin-top: 16px;
+}
+.menu-list .sub-menu li {
+    margin-top: 0;
+}
+.menu-name{
+    font-size: 18px;
+    color: #20184E;
+    font-weight: 600;
+    line-height: 36px;
+}
+.sub-menu{
+    padding-left: 24px;
+}
+/* 右侧内容切换 */
+.tutorial-right .content-item {
+    display: none;
+    padding: 0 20px 20px;
+    min-height: 400px;
+}
+.tutorial-right .content-item.active {
+    display: block;
+}
+/* 入门样式 */
+.right-text{
+    text-align: left;
+    font-size: 30px;
+    color: #333;
+}
+.video-title{
+    font-size: 36px;
+    color: var(--text-color);
+    font-weight: 600;
+    text-align: left;
+    margin: 18px 0 26px;
+    font-weight: 600;
+}
+.video-text{
+    font-size: 18px;
+    color: var(--text-secondary);
+    margin-top: 16px;
+    text-align: left;
+    padding-right: 80px;
+}
+.video-box{
+    margin-top: 48px;
+}
+.video-box ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: 32px;
+}
+.video-item{
+    width: 30.33%;
+    text-align: center;
+}
+.video-item img{
+    width: 100%;
+}
+.video-item-img{
+    width: 100%;
+    height: 150px;
+    background: #F7F7FA;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.video-item-img img{
+    width: 100%;
+    height: 100%;
+}
+.video-item p{
+    font-size: 16px;
+    color: var(--text-secondary);
+    margin-top: 16px;
+    margin-bottom: 0;
+}
+.ask-box{
+    width: 100%;
+    height: auto;
+    background: #F8F8FB;
+    margin: 60px 0;
+    padding: 44px;
+}
+.ask-box h2{
+    font-size: 36px;
+    color: #333;
+    text-align: left;
+    position: relative;
+}
+.ask-box h2::after{
+    content: '';
+    position: absolute;
+    width: 72px;
+    height: 2px;
+    background: #8828FF;
+    left: 0;
+    bottom: -28px;
+}
+.ask-content{
+    margin-top: 58px;
+    text-align: left;
+}
+.ask-item{
+    background: #fff;
+    padding: 22px 40px;
+    border-radius: 10px;
+    margin-bottom: 14px;
+}
+.ask-item:last-child{
+    margin-bottom: 0;
+}
+.ask-item-name{
+    font-size: 18px;
+    color: var(--text-secondary);
+    line-height: 24px;
+    transition: color 0.3s ease;
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+}
+.ask-item-name.active {
+    color: #260055 ; /* 激活状态文字颜色 */
+}
+.ask-item-name img{
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    transition: transform 0.3s ease;
+}
+.ask-item-name img.active {
+    transform: rotate(180deg);
+}
+.ask-item-text{
+    display: none;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: #260055;
+    margin: 16px 0 12px;
+    line-height: 24px;
+    padding-left: 32px;
+}
+.ask-item-text.active {
+    display: block;
+}
+.backBtn{
+    background: var(--primary-color);
+    border-radius: 60px;
+    padding: 12px 40px;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    box-shadow: none;
+    text-align: center;
+}
+/* 第二部分 */
+.news-title{
+    text-align: left;
+    margin-bottom: 66px;
+}
+.news-title h3{
+    font-size: 36px;
+    color: #20184E;
+    margin-bottom: 40px;
+}
+.news-title span{
+    font-size: 16px;
+    color: var(--text-secondary);
+}
+.news-content-container{
+    width: 100%;
+    height: auto;
+}
+.news-content-container li{
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+.news-content-container li:last-child{
+    margin-bottom: 0;
+}
+.news-content-container li img{
+    width: 100%;
+    height: 100%;
+}
+/* 第三部分 */
+.news-content-container{
+    text-align: left;
+}
+.news-content-container p{
+    font-size: 18px;
+    color: var(--text-secondary);
+    line-height: 32px;
+    text-align: justify;
+    margin-bottom: 12px;
+}
+.tupian{
+    width: 100%;
+    height: 400px;
+}
+.tupian img{
+    width: 100%;
+    height: 100%;
+}
+/* 第三部分 */
+.news-content-container h3{
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 30px;
+    color: var(--text-color);
+}
+.margin-btm{
+    margin: 48px 0;
+}
+/* 移动端适配 */
+@media (max-width: 991px) {
+    body {
+        padding-top: 48px; /* 移动端导航栏高度 */
+    }
+
+    /* 联系部分适配 */
+    .contact-section {
+        padding: 40px 0 48px;
+    }
+    .contact-section .container:first-child{
+        margin-bottom: 3rem;
+    }
+    .section-title {
+        font-size: 1.75rem;
+        margin-bottom: 2rem;
+    }
+    .backBtn{
+        padding: 12px 32px;
+        font-size: 0.85rem;
+    }
+    .tutorial-left {
+        width: 25%;
+        padding-right: 36px;
+        padding-bottom: 12px;
+    }
+    .menu-list li {
+        margin-top: 8px;
+    }
+    .menu-name {
+        font-size: 16px;
+        line-height: 36px;
+    }
+    .tutorial-menu .menu-item {
+        line-height: 30px;
+        font-size: 14px;
+    }
+    .sub-menu {
+        padding-left: 16px;
+    }
+    .tutorial-title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .tutorial-menu .menu-item.primary-text {
+        font-size: 16px;
+    }
+    .tutorial-right {
+        width: 75%;
+        padding-left: 44px;
+        padding-top: 16px;
+    }
+    .tutorial-right .content-item {
+        padding: 0 0 20px;
+    }
+    .right-text {
+        font-size: 22px;
+    }
+    .video-title {
+        font-size: 26px;
+        margin: 16px 0 20px;
+    }
+    .video-text {
+        font-size: 16px;
+        padding-right: 56px;
+        text-align: justify;
+    }
+    .video-box {
+        margin-top: 32px;
+    }
+    .video-item {
+        width: 45%;
+    }
+    .video-item-img {
+        height: 120px;
+    }
+    .video-item p {
+        font-size: 14px;
+        margin-top: 14px;
+    }
+    .video-box ul {
+        gap: 24px;
+    }
+    .ask-box {
+        margin: 32px 0;
+        padding: 20px;
+    }
+    .ask-box h2 {
+        font-size: 28px;
+    }
+    .ask-box h2::after {
+        width: 56px;
+        bottom: -20px;
+    }
+    .ask-content {
+        margin-top: 48px;
+    }
+    .ask-item {
+        padding: 16px 16px;
+    }
+    .ask-item-name img {
+        width: 16px;
+        height: 16px;
+        margin-right: 6px;
+        margin-top: 4px;
+    }
+    .ask-item-name {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .ask-item-text {
+        font-size: 14px;
+        margin: 12px 0 12px;
+        line-height: 22px;
+        padding-left: 22px;
+    }
+    .news-title h3 {
+        font-size: 26px;
+        margin-bottom: 16px;
+    }
+    .news-title span{
+        font-size: 14px;
+    }
+    .news-title {
+        margin-bottom: 36px;
+    }
+    .news-content-container p {
+        font-size: 16px;
+        line-height: 30px;
+        margin-bottom: 6px;
+    }
+    .tupian {
+        width: 100%;
+        height: 320px;
+    }
+    .margin-btm {
+        margin: 36px 0;
+    }
+    .news-content-container h3 {
+        font-size: 22px;
+        line-height: 28px;
+        margin-bottom: 20px;
+    }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 100%;
+        padding: 0 30px;
+    }
+    .contact-section::before,.contact-section::after {
+        content: none;
+    }
+    .backBtn{
+        padding: 12px 32px;
+        font-size: 1rem;
+    }
+    .tutorial-right {
+        width: 75%;
+        padding-left: 40px;
+    }
+    .video-box ul {
+        gap: 28px;
+    }
+    
+}
+
+@media (max-width: 767px) {
+    .container {
+        padding: 0 30px;
+    }
+    .contact-section {
+        padding: 40px 0 4px;
+    }
+    .contact-content {
+        position: relative;
+        padding: 3rem 1rem;
+    }  
+    .tutorial-content {
+        flex-flow: column;
+    }
+    .tutorial-left {
+        width: 100%;
+        border-bottom: solid 1px #F7F7FA;
+        border-right: none;
+        padding-right: 36px;
+        padding-bottom: 12px;
+    }
+    .menu-name {
+        font-size: 14px;
+        line-height: 36px;
+        margin-top: 0px;
+    }
+    .tutorial-menu .menu-item {
+        line-height: 28px;
+        font-size: 12px;
+    }
+    .tutorial-title {
+        font-size: 18px;
+        margin-bottom: 18px;
+    }
+    .tutorial-menu .menu-item.primary-text {
+        font-size: 14px;
+    }
+    .tutorial-right {
+        width: 100%;
+        padding-left: 0;
+        padding-top: 16px;
+    }
+    .tutorial-right .content-item {
+        padding: 0 0 20px;
+    }
+    .right-text {
+        font-size: 20px;
+    }
+    .video-title {
+        font-size: 24px;
+        margin: 12px 0 16px;
+    }
+    .video-text {
+        font-size: 14px;
+        padding-right: 0;
+        text-align: justify;
+    }
+    .video-item {
+        width: 45%;
+    }
+    .video-item-img {
+        height: 120px;
+    }
+    .video-item p {
+        font-size: 14px;
+        margin-top: 12px;
+    }
+    .video-box ul {
+        gap: 24px;
+    }
+    .ask-box {
+        margin: 32px 0;
+        padding: 24px;
+    }
+    .ask-box h2 {
+        font-size: 20px;
+    }
+    .ask-box h2::after {
+        width: 56px;
+        bottom: -16px;
+    }
+    .ask-content {
+        margin-top: 36px;
+    }
+    .ask-item {
+        padding: 16px 16px;
+    }
+    .ask-item-name img {
+        width: 16px;
+        height: 16px;
+        margin-right: 4px;
+        margin-top: 3px;
+    }
+    .ask-item-name {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .ask-item-text {
+        font-size: 12px;
+        margin: 12px 0 12px;
+        line-height: 20px;
+        padding-left: 20px;
+    }
+    .backBtn{
+        padding: 4px 24px;
+        font-size: 0.85rem;
+    }
+    .news-title h3 {
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+    .news-title span{
+        font-size: 12px;
+    }
+    .news-title {
+        margin-bottom: 36px;
+    }
+    .news-content-container p {
+        font-size: 14px;
+        line-height: 26px;
+        margin-bottom: 4px;
+    }
+    .tupian {
+        width: 100%;
+        height: 260px;
+    }
+    .margin-btm {
+        margin: 24px 0;
+    }
+    .news-content-container h3 {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 16px;
+    }
+}
+
+

@@ -1,0 +1,1037 @@
+:root {
+    --primary-color: #8828FF ;
+    --secondary-color: #6F48C9;
+    --background-color: #ffffff;
+    --text-color: #333;
+}
+/* 全局样式 */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.5;
+    padding-top: 165px; /* 桌面端导航栏高度 */
+}
+ul{
+    padding-left: 0;
+    margin-bottom: 0;
+}
+li {
+    list-style: none;
+ }
+/* 通用标题样式 */
+.section-title {
+    color: #20184E;
+    font-weight: 600;
+    margin-bottom: 48px;
+    position: relative;
+    text-align: center;
+}
+/* 通用图标样式 */
+.contact-icon {
+    width: 32px;
+    height: 32px;
+}
+/* 通用文本样式 */
+.contact-text {
+    color: #20184E;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+/* 公司介绍 */
+.company-contact{
+    /* 修改定位方式 */
+    margin-top: -165px;
+    /* 移除top属性 */
+    padding: 310px 0 220px;
+    background: url(../images/bg2.png) no-repeat top;
+    background-size: auto;
+    background-position: top;
+}
+/* 内容部分 */
+.contact-section {
+    position: relative;
+    background: #fff;
+    padding: 0 0 90px;
+}
+.contact-section::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    background: url(../images/bg-img2.png) no-repeat bottom;
+    width: 136px;
+    height: 531px;
+    z-index: 0;
+}
+.contact-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    background: url(../images/bg-img1.png) no-repeat top;
+    width: 168px;
+    height: 531px;
+    z-index: 0;
+    right: 0px;
+    background-size: 80%;
+}
+.bg-title{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    color: #fff;
+}
+.half-box{
+    width: 50%;
+}
+.container-box-left{
+    padding-right: 64px;
+}
+.section-title-text{
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+.section-title-text-en{
+    font-size: 72px;
+    line-height: 72px;
+    font-weight: 600;
+}
+.section-title-other{
+    margin-bottom: 100px;
+    margin-top: 80px;
+    text-align: justify;
+}
+.video-part{
+    width: 640px;
+    aspect-ratio: 16 / 9;
+    position: relative;
+}
+.btn-big{
+    padding: 16px 64px;
+    border-radius: 50px;
+    margin-right: 46px;
+}
+.btn-big:last-child{
+    margin-right: 0;
+}
+
+/* 第二部分 */
+.contact-section.one-bg::after{
+    content: none;
+}
+/* 智能硬件 创新方案 */
+.case-part01{
+    margin-top: 110px;
+    margin-bottom: 30px;
+}
+.case-part01-title{
+    color: #20184E;
+    text-align: center;
+    margin-top: 112px;
+}
+.case-part01-title h2{
+    margin-bottom: 24px;
+    font-weight: 600;
+}
+.trait{
+    background: url(../images/card-bg.png) no-repeat center;
+    background-size: 100% 150%;
+    text-align: center;
+    color: #20184E;
+    margin: 58px 0;
+    position: relative;
+}
+.trait-list {
+    background: url(../images/bg-img7.png) no-repeat center;
+    background-size: auto;
+}
+
+.trait-list ul{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 84px;
+    flex-flow: row;
+    height: auto;
+    margin-bottom: 44px;
+}
+.trait-item{
+    background: #fff;
+    border-radius: 20px;
+    min-height: 0;
+    padding: 18px;
+    box-shadow: 0 0 3px 3px #8828ff05;
+    width: 160px;
+    height: 138px;
+}
+.trait-item-img{
+    margin: 0px auto;
+    width: 56px;
+    height: 56px;
+}
+.trait-item-img img{
+    width: 100%;
+    height: 100%;
+}
+.trait-item h3{
+    margin: 18px auto 0;
+    font-weight: 600;
+}
+.center-img{
+    width: 259px;
+    aspect-ratio: 259 / 261;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.center-img img{
+    width: 100%;
+    height: 100%;
+}
+/* 系统亮点 */
+.list-two{
+    margin-top: 218px;
+    background: url(../images/card-bg.png) no-repeat center;
+    background-size: 100% 100%;
+    text-align: center;
+}
+.list-two ul{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;;
+    gap: 100px;
+    flex-flow: row;
+    height: auto;
+    margin-bottom: 44px;
+    
+}
+.list-two .list-card{
+    /* height: 316px; */
+    flex: 1 1 0;
+    min-height: 0;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 12px 4px rgb(136 40 255 / 6%);
+    color: #20184e;
+    text-align: center;
+    line-height: 30px;
+    position: relative;
+    padding: 0 50px 34px;
+    margin-bottom: 180px;
+    display: flex;
+    flex-direction: column;
+}
+.list-card-img{
+    width: 371px;
+    aspect-ratio: 371 / 204;
+    margin: 0 auto;
+    position: absolute;
+    top: -40%;
+    left: 0;
+    right: 0;
+}
+.list-card-img img{
+    width: 100%;
+    height: 100%;
+}
+.list-card-title{
+    color: #20184E;
+    font-weight: 600;
+    margin-bottom: 32px;
+    padding: 11px 24px;
+    text-align: center;
+    line-height: 24px;
+    margin-top: 100px
+}
+.list-two .list-card .card-content{
+    flex-flow: column;
+    gap: 16px;
+    margin-bottom: 0;
+}
+.list-two .list-card .card-content li{
+    margin-left: 28px;
+    text-align: left;
+    line-height: 22px;
+    position: relative;
+}
+.list-two .list-card .card-content li::before{
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #400E7F;
+    margin-right: 16px;
+    vertical-align: middle;
+    position: absolute;
+    left: -28px;
+    top: 6px;
+}
+/* 解决方案 */
+.case-part01-2 .case-part01-title {
+    color: #20184E;
+    text-align: center;
+    margin-top: -88px;
+}
+.Programme-list{
+    position: relative;
+}
+.Programme-list::before{
+    content: '';
+    position: absolute;
+    background: url(../images/bg-img8.png) no-repeat center;
+    background-size: 30% 17%;
+    top: -380px;
+    left: 1px;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+.Programme-list::after{
+    content: '';
+    position: absolute;
+    background: url(../images/bg-img9.png) no-repeat center;
+    background-size: 22% 33%;
+    top: 470px;
+    left: -210px;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+.Programme-item{
+    display: flex;
+    flex-flow: row;
+    gap: 60px;
+    justify-content: space-between;
+    align-items: center;
+    color: #20184E;
+    line-height: 60px;
+    margin-bottom: 60px;
+    z-index: 4;
+    position: relative;
+}
+.Programme-center{
+    flex-flow: row-reverse;
+}
+.Programme-item-box{
+    flex: 1 1 0;
+}
+.box-text img,.Programme-other img{
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+}
+.top-box-img{
+    width: 450px;
+    aspect-ratio: 450 / 397;
+}
+.Programme-center .box-text li{
+    margin-bottom: 8px;
+}
+.Programme-center .box-text li:last-child{
+    margin-bottom: 0;
+}
+.center-box-img{
+    width: 567px;
+    aspect-ratio: 21 / 11;
+}
+.bottom-box-img{
+    width: 385px;
+    aspect-ratio: 55 / 57;
+}
+.Programme-center li{
+    display: flex;
+    flex-flow: row;
+    gap: 0;
+}
+.Programme-center li img{
+    margin-top: 13px;
+}
+.Programme-other{
+    margin-top: 20px;
+    color: #20184E;
+    line-height: 30px;
+}
+.Programme-other.flex-box ul{
+    align-items: flex-start;
+}
+.Programme-other.flex-box ul div{
+    margin-bottom: 30px;
+}
+.Programme-other .line-height48{
+    line-height: 48px;
+}
+.Programme-other .line-height48 img{
+    margin-top: 8px;
+}
+.Programme-other-box{
+    display: flex;
+    flex-flow: row;
+    gap: 24px;
+    align-items: flex-start;
+}
+.Programme-other-box p{
+    margin-bottom: 0;
+}
+/*第三部分 */
+/* 电子班牌自定义编辑模板 */
+.other-bg{
+    background: url(../images/other-bg.png) no-repeat center;
+    background-size: 100% 100%;
+    padding: 320px 0 150px;
+    background-position: top;
+    margin-top: -240px;
+}
+.other-bg::before,.other-bg::after{
+    content: none;
+}
+.case-part02{
+    padding: 60px 0 110px;
+    text-align: center;
+}
+.case-part02 .case-part01-title {
+    color: #20184E;
+    text-align: center;
+    margin-top: -90px;
+}
+.formwork-list{
+    margin-top: 80px;
+}
+.formwork-list ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+.formwork-left{
+    flex: 1 1 0%;
+    text-align: left;
+}
+.formwork-left h3{
+    font-weight: 600;
+    margin-bottom: 44px;
+    color: #20184E;
+}
+.formwork-left p{
+    color: var(--text-secondary);
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 0;
+}
+.formwork-left img{
+    width: 32px;
+    height: auto;
+    margin-right: 12px;
+}
+.formwork-right{
+    flex: 2 1 0%;
+    width: 100%;
+    aspect-ratio: 807 / 497;
+}
+.formwork-right img{
+    width: 100%;
+    height: 100%;
+}
+
+/* 第四部分 */
+.no-have::before,.no-have::after{
+    content: none;
+    
+}
+.case-part07 .case-part01-title {
+    margin-top: 0;
+}
+.case-part07 .flex-box ul {
+    gap: 40px;
+    align-items: flex-start;
+}
+.flex-box{
+    margin-top: 80px;
+}
+.flex-box ul{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 74px;
+    flex-flow: row;
+    height: auto;
+    margin-bottom: 36px;
+}
+.flex-box ul li{
+    width: 100%;
+    height: 100%;
+    flex: 1 1 0%;
+    min-height: 0;
+}
+.dynamic {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 12px 4px rgb(136 40 255 / 6%);
+    color: #20184e;
+}
+.dynamic-title{
+    padding: 12px 24px;
+    color: #fff;
+    background: linear-gradient(to top right, #BAE3F5, #FEC0C8, #E18EB7, #762AD6);
+    border-radius: 20px 20px 0 0;
+    text-align: left;
+}
+.dynamic-title p{
+    margin-bottom: 0;
+}
+.dynamic-title span{
+    padding: 0 8px;
+}
+.dynamic-content{
+    padding: 24px;
+    line-height: 24px;
+}
+.case-part07 .flex-box ul .dynamic-content ul{
+    flex-flow: column;
+    gap: 16px;
+    margin-bottom: 0;
+}
+.dynamic-content label{
+    color: var(--text-light);
+}
+.dynamic-content p{
+    display: inline-block;
+    margin-bottom: 0;
+    margin-left: 12px;
+}
+
+/* 移动端适配 */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 100%;
+        padding: 0 30px;
+    }
+    /* 第一部分 */
+    .contact-section::before,.contact-section::after {
+        content: none;
+    }
+    .contact-section {
+        padding: 10px 0;
+    }
+    .video-part {
+        width: 100%;
+        position: relative;
+    }
+    .company-contact {
+        padding: 210px 0 120px;
+        background-size: 200% 100%;
+    }
+    .section-title-text {
+        margin-top: 0;
+        margin-bottom: 24px;
+    }
+    .section-title-other {
+        margin-bottom: 32px;
+        margin-top: 40px;
+    }
+    .btn-big {
+        padding: 8px 32px;
+    }
+    .container-box-right{
+        margin-top: 6px;
+    }
+    /* 第二部分 */
+    /* 满足统一管理集中检测控管需求 */
+    .one-bg {
+        padding: 40px 0 0;
+        margin-bottom: -200px;
+    }
+    .case-part01 {
+        margin-top: 20px;
+        margin-bottom: 85px;
+    }
+    .trait-list {
+        background-size: 90% 83%;
+    }
+    .trait-list ul {
+        gap: 64px;
+    }
+    .trait-item {
+        width: 130px;
+    }
+    /* 系统亮点 */
+    .list-two {
+        margin-top: 140px;
+    }
+    .list-two .list-card{
+        padding: 0 32px 38px;
+        margin-bottom: 100px;
+    }
+    .list-card-img {
+        width: 70%;
+        aspect-ratio: 371 / 204;
+        margin: 0 auto;
+        position: absolute;
+        top: -23%;
+        left: 0;
+        right: 0;
+    }
+    .list-card-title {
+        margin-top: 120px;
+    }
+    .list-card p {
+        min-height: 220px;
+    }
+    /* 解决方案 */
+    .case-part01-2{
+        margin-top: 90px;
+    }
+    .Programme-list::before {
+        background-size: 38% 18%;
+        top: -389px;
+        left: 1px;
+    }
+    .Programme-list::after {
+        background-size: 32% 33%;
+        top: 344px;
+        left: -120px;
+    }
+    .Programme-other-box{
+        gap: 0;
+    }
+    .Programme-other,.Programme-other .line-height48 {
+        line-height: 40px;
+    }
+    .top-box-img,.center-box-img,.bottom-box-img  {
+        width: 80%;
+        margin: 0 10%;
+    }
+    /*第三部分 */
+    .other-bg {
+        padding: 0px 0 220px;
+        margin-top: -128px;
+        background-size: cover;
+    }
+    .case-part02{
+        padding: 60px 0 30px;
+    }
+    .other-bg .case-part01-title {
+        margin-top: 210px;
+    }
+    
+    /* 第四部分 */
+    .case-part07{
+        margin-top: -10px;
+    }
+    .case-part07 .flex-box {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 991px) {
+    body {
+        padding-top: 48px; /* 移动端导航栏高度 */
+    }
+
+    /* 联系部分适配 */
+    .contact-section {
+        padding: 40px 0;
+    }
+    /* 第一部分 */
+    .video-part {
+        width: 100%;
+        position: relative;
+    }
+    .company-contact {
+        margin-top: -48px;
+        padding: 90px 0 60px;
+        background-size: 200% 100%;
+        margin-bottom: 80px;
+    }
+    .container-box-left {
+        padding-right: 34px;
+    }
+    .section-title-text {
+        margin-top: 0;
+        margin-bottom: 24px;
+    }
+    .section-title-text-en {
+        font-size: 56px;
+        font-weight: 600;
+        line-height: 56px;
+    }
+    .section-title-other {
+        margin-bottom: 32px;
+        margin-top: 32px;
+    }
+    .btn-big {
+        padding: 8px 32px;
+        margin-right: 16px;
+    }
+    .container-box-right{
+        margin-top: 6px;
+    }
+    /* 第二部分 */
+    /* 满足统一管理集中检测控管需求 */
+    .one-bg {
+        padding: 80px 0 70px;
+        margin-bottom: 90px;
+        z-index: 3;
+    }
+    .case-part01 {
+        margin-top: 20px;
+    }
+    .case-part01 .case-part01-title {
+        margin-top: -110px;
+    }
+    .case-part01-title h2 {
+        margin-bottom: 16px;
+    }
+    .trait-list ul {
+        gap: 34px;
+    }
+    .trait-item {
+        width: 110px;
+    }
+    
+    /* 系统亮点 */
+    .list-two {
+        margin-top: 110px;
+    }
+    .list-two ul {
+        gap: 44px;
+    }
+    .list-card-title {
+        padding: 11px 16px;
+        height: 80px;
+        margin-bottom: -18px;
+        margin-top: 80px;
+    }
+    .list-two .list-card {
+        padding: 0 24px 32px;
+        margin-bottom: 60px;
+    }
+    .list-card-img {
+        width: 60%;
+        top: -20%;
+    }
+    .list-card p {
+        line-height: 20px;
+        margin: 16px 16px;
+        min-height: 130px;
+        padding: 0;
+    }
+    /* 解决方案 */
+    .case-part01-2{
+        margin-top: 60px;
+    }
+    .Programme-list::before {
+        background-size: 39% 18%;
+        top: -270px;
+        left: -29px;
+    }
+    .Programme-list::after {
+        background-size: 32% 33%;
+        top: 240px;
+        left: -120px;
+    }
+    .Programme-item {
+        gap: 28px;
+        line-height: 32px;
+        margin-bottom: 40px;
+    }
+    .top-box-img,.center-box-img,.bottom-box-img  {
+        width: 80%;
+        margin: 0 10%;
+    }
+    .Programme-other {
+        line-height: 32px;
+        z-index: 4;
+        position: relative;
+    }
+    .box-text img, .Programme-other img {
+        width: 24px;
+        height: 24px;
+        margin-right: 12px;
+    }
+    .Programme-center li img {
+        margin-top: 4px;
+    }
+    .Programme-other.flex-box ul {
+        gap: 20px;
+    }
+    .Programme-other-box {
+        gap: 0px;
+    }
+    .Programme-other.flex-box ul div {
+        margin-bottom: 16px;
+    }
+    .Programme-other .line-height48 {
+        line-height: 32px;
+    }
+    .Programme-other-box img,.Programme-other .line-height48 img {
+        margin-top: 6px;
+    }
+    /*第三部分 */
+    .other-bg {
+        padding: 0 0 180px;
+        margin-top: -130px;
+        z-index: 1;
+        background-size: cover;
+    }
+    .other-bg .case-part01-title {
+        margin-top: 120px;
+    }
+    .case-part02{
+        padding: 60px 0 0;
+    }
+    .formwork-list {
+        margin-top: 30px;
+    }
+    .formwork-list ul {
+        gap: 50px;
+        align-items: center;
+    }
+    .formwork-left {
+        margin-top: 0;
+    }
+    .formwork-left img {
+        width: 24px;
+    }
+    .formwork-left h3 {
+        margin-bottom: 16px;
+    }
+    .formwork-left p {
+        line-height: 24px;
+    }
+    /* 第四部分 */
+    .case-part07 {
+        margin-top: -60px;
+    }
+    .case-part07 .flex-box {
+        margin-top: 40px;
+    }
+    .case-part07 .flex-box ul {
+        gap: 22px;
+    }
+    .dynamic-title {
+        padding: 12px 14px;
+    }
+    .dynamic-content {
+        padding: 12px 14px 20px;
+        line-height: 24px;
+    }
+    .case-part07 .flex-box ul .dynamic-content ul {
+        gap: 12px;
+    }
+    .dynamic-content p {
+        margin-left: 8px;
+    }
+}
+
+
+
+@media (max-width: 767px) {
+    .container {
+        padding: 0 30px;
+    }
+    /* 第一部分 */
+    .half-box{
+        width: 100%;
+        padding-right: 0;
+    }
+    .video-part {
+        width: 100%;
+        position: relative;
+    }
+    .company-contact {
+        margin-top: -48px;
+        padding: 80px 0 20px;
+        background-size: 200% 100%;
+    }
+    .section-title-text {
+        margin-top: 0;
+        margin-bottom: 24px;
+    }
+    .section-title-text-en{
+        font-size: 42px;
+        font-weight: 600;
+        line-height: 42px;
+    }
+    .section-title-other {
+        margin-bottom: 32px;
+        margin-top: 0px;
+    }
+    .btn-big {
+        padding: 8px 32px;
+    }
+    .container-box-right{
+        margin-top: 36px;
+    }
+    /* 第二部分 */
+    /* 满足统一管理集中检测控管需求 */
+    .one-bg {
+        padding: 80px 0 20px;
+        margin-bottom: 90px;
+    }
+    .case-part01 {
+        margin-top: 20px;
+    }
+    .case-part01-title h2 {
+        margin-bottom: 16px;
+    }
+    .trait {
+        margin: 28px 0;
+    }
+    .trait-list ul {
+        gap: 24px;
+        flex-flow: column;
+        margin-bottom: 24px;
+    }
+    .trait-item {
+        width: 100%;
+        height: auto;
+    }
+    .trait-list {
+        background: none;
+    }
+    .center-img {
+        position: relative;
+        width: 50%;
+    }
+    /* 系统亮点 */
+    .list-two {
+        margin-top: 78px;
+    }
+    .list-two ul {
+        gap: 24px;
+        flex-flow: column;
+        margin-bottom: 24px;
+    }
+    .list-two .list-card {
+        height: auto;
+        padding: 0 24px 24px;
+        margin-bottom: 74px;
+        flex: 1 1 0%;
+    }
+    .list-card-img {
+        width: 76%;
+        top: -23%;
+    }
+    
+    .list-card-title {
+        padding: 11px 24px;
+        height: auto;
+        margin-top: 90px;
+        margin-bottom: 8px;
+    }
+    .list-card p {
+        line-height: 20px;
+        margin: 16px 24px 32px;
+        min-height: auto;
+        height: auto;
+    }
+    /* 解决方案 */
+    .case-part01-2{
+        margin-top: 60px;
+    }
+    .Programme-list::before,.Programme-list::after{
+        content: none;
+    }
+    .Programme-item {
+        flex-flow: column;
+        gap: 28px;
+        line-height: 32px;
+        margin-bottom: 40px;
+        align-items: flex-start;
+    }
+    .top-box-img,.center-box-img,.bottom-box-img  {
+        width: 80%;
+        margin: 0 10%;
+    }
+    .Programme-other {
+        line-height: 32px;
+        z-index: 4;
+        position: relative;
+    }
+    .box-text img, .Programme-other img {
+        width: 24px;
+        height: 24px;
+        margin-right: 12px;
+    }
+    .Programme-center li img {
+        margin-top: 6px;
+    }
+    .Programme-other.flex-box ul {
+        align-items: flex-start;
+        flex-flow: column;
+        gap: 0;
+    }
+    .Programme-other-box {
+        gap: 0px;
+    }
+    .Programme-other.flex-box ul div {
+        margin-bottom: 16px;
+    }
+    .Programme-other .line-height48 {
+        line-height: 32px;
+    }
+    .Programme-other-box img,.Programme-other .line-height48 img {
+        margin-top: 6px;
+    }
+    /*第三部分 */
+    .other-bg {
+        padding: 0px 0 110px;
+        margin-top: -190px;
+        background-size: auto 105%;
+    }
+    .other-bg .case-part01-title {
+        margin-top: 150px;
+    }
+    .case-part02{
+        padding: 60px 0 30px;
+    }
+    .formwork-list {
+        margin-top: 30px;
+    }
+    .formwork-list ul {
+        gap: 36px;
+        flex-flow: column;
+    }
+    .formwork-left {
+        margin-top: 0;
+    }
+    .formwork-left img {
+        width: 22px;
+    }
+    .formwork-left h3 {
+        margin-bottom: 12px;
+    }
+    .formwork-left h3 p{
+        line-height: 22px;
+    }
+    /* 第四部分 */
+    .case-part07 {
+        margin-top: -40px;
+    }
+    .case-part07 .flex-box ul {
+        gap: 28px;
+        flex-flow: column;
+    }
+    .flex-box {
+        margin-top: 30px;
+    }
+    .dynamic-title {
+        padding: 12px 20px;
+    }
+    .dynamic-content {
+        padding: 12px 20px;
+    }
+    .case-part07 .flex-box ul .dynamic-content ul {
+        gap: 8px;
+    }
+}

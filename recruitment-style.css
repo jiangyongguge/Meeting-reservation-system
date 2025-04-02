@@ -1,0 +1,860 @@
+:root {
+    --primary-color: #8828FF ;
+    --secondary-color: #6F48C9;
+    --background-color: #ffffff;
+    --text-color: #333;
+}
+/* 全局样式 */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.5;
+    padding-top: 165px; /* 桌面端导航栏高度 */
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+ }
+/* 通用标题样式 */
+.section-title {
+    color: #20184E;
+    font-weight: 600;
+    margin-bottom: 48px;
+    position: relative;
+    text-align: center;
+}
+/* 通用图标样式 */
+.contact-icon {
+    width: 32px;
+    height: 32px;
+}
+/* 通用文本样式 */
+.contact-text {
+    color: #20184E;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+/* 公司介绍 */
+.company-contact{
+    /* 修改定位方式 */
+    margin-top: -165px;
+    /* 移除top属性 */
+    padding: 310px 0 250px;
+    background: url(../images/bg2.png) no-repeat top;
+    background-size: auto;
+    background-position: top;
+}
+/* 内容部分 */
+.contact-section {
+    position: relative;
+    background: #fff;
+    padding: 0 0 90px;
+}
+.contact-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    background: url(../images/bg-img2.png) no-repeat bottom;
+    width: 136px;
+    height: 531px;
+    z-index: 0;
+}
+.contact-section::after {
+    content: '';
+    position: absolute;
+    bottom: -180px;
+    background: url(../images/bg-img1.png) no-repeat top;
+    width: 168px;
+    height: 531px;
+    z-index: 0;
+    right: 0px;
+    background-size: 80%;
+}
+.bg-title{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    color: #fff;
+}
+.container-box-left{
+    color: #fff;
+}
+.section-title-text{
+    margin-top: 30px;
+    margin-bottom: 88px;
+}
+.section-title-other{
+    margin-bottom: 80px;
+}
+.section-title-secondary{
+    margin-bottom: 120px;
+}
+.btn-big{
+    padding: 16px 64px;
+    border-radius: 50px;
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+}
+
+/* 第二部分 */
+.contact-section.one-bg::after{
+    content: none;
+}
+.case-part01{
+    margin-top: 110px;
+}
+.case-part01-title{
+    color: #20184E;
+    text-align: center;
+}
+.case-part01-title h2{
+    margin-bottom: 40px;
+}
+.list-two{
+    margin-top: 88px;
+    background: url(../images/card-bg.png) no-repeat center;
+    background-size: contain;
+}
+.list-two .list-card img{
+    width: 100%;
+    height: 100%;
+}
+.list-two ul{
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 56px;
+}
+.list-two .list-card{
+    width: 30%;
+    height: 425px;
+    background: #fff;
+    padding: 32px;
+    border-radius: 20px;
+    box-shadow: 0 0 16px 1px rgb(193 115 255 / 12%);
+}
+.list-card-img{
+    width: 153px;
+    height: 131px;
+    margin: 0px auto;
+}
+.list-card h3 {
+    text-align: center;
+    margin: 40px 0 32px;
+    color: #20184E;
+}
+.list-card p{
+    line-height: 30px;
+    color: var(--text-secondary);
+    text-align: justify;
+    margin-bottom: 0;
+}
+/*第三部分 */
+.other-bg{
+    background: url(../images/other-bg.png) no-repeat center;
+    background-size: cover;
+    padding: 250px 0;
+    background-position: top;
+    margin-top: -120px;
+}
+.other-bg::before,.other-bg::after{
+    content: none;
+}
+.case-part02{
+    padding: 60px 0 30px;
+}
+.partner-list{
+    margin-top: 82px;
+}
+.partner-list-item{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap; 
+    margin-bottom: 42px;
+}
+.partner-item-box{
+    background: #fff;
+    padding: 20px 24px 20px 48px;
+    border-radius: 20px;
+    box-shadow: 0 0 16px 1px rgb(193 115 255 / 12%);
+    text-align: left;
+    width: 45%;
+    height: max-content;
+    position: relative;
+}
+.partner-item-box::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 7px;
+    height: 44px;
+    background: var(--primary-color);
+    left: 20px;
+    bottom: 0;
+    margin: auto;
+    border-radius: 10px;
+}
+.partner-item-box h3{
+    color: #20184E;
+}
+.partner-item-box p{
+    margin-bottom: 0;
+    line-height: 30px;
+    color: var(--text-secondary);
+    text-align: justify;
+}
+/* 第一块的li样式 */
+.partner-size-start{
+    gap: 80px;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+/* 第二块的li样式 */
+.partner-size-end{
+    gap: 60px;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.partner-size-end div:first-child{
+    margin-top: 26px;
+}
+/* 第三块的li样式 */
+.partner-size-center{
+    gap: 60px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/*第四部分 */
+.floor::before {
+    top: 740px;
+}
+.floor::after {
+    bottom: 82%;
+}
+.case-part03{
+    margin-bottom: 100px;
+}
+.company-image-group{
+    margin-top: -104px;
+    background: url(../images/card-bg.png) no-repeat top;
+    background-size: contain;
+    padding-top: 160px;
+}
+.company-image-group ul{
+    background: #fff;
+    padding: 40px;
+    display: flex;
+    flex-flow: row;
+    gap: 12px;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 800px;
+}
+.company-image-group img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.company-image-group ul li{
+    height: 100%;
+    flex: 1 1 0%; 
+    min-height: 0;
+}
+.group-left,.group-center,.group-right{
+    display: flex;
+    flex-flow: column;
+    gap: 12px;
+}
+/* 左边的盒子 */
+.group-left div{
+    flex: 1 1 0%; 
+    min-height: 0;
+}
+/* 中间的盒子 */
+.group-center div:first-child{
+    flex: 2 1 0%; 
+    min-height: 0;
+}
+.group-center div:last-child{
+    flex: 1 1 0%; 
+    min-height: 0;
+}
+/* 右边的盒子 */
+.group-right div:first-child{
+    flex: 1 1 0%; 
+    min-height: 0;
+}
+.group-right div:last-child{
+    flex: 2 1 0%; 
+    min-height: 0;
+}
+/* 资质证书 */
+.zizhi-bg{
+    margin-top: -104px;
+    background: url(../images/card-bg.png) no-repeat top;
+    background-size: contain;
+    padding-top: 160px;
+}
+.zizhi-list{
+    background: #fff;
+    padding: 40px;
+}
+.list-one ul{
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+.list-one li{
+    width: 26%;
+    height: inherit;
+}
+.list-one li:last-child{
+    width: 44%;
+    height: inherit;
+}
+.list-one li img,.zizhi-group li img{
+    width: 100%;
+    height: 100%;
+}
+.zizhi-group ul{
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.zizhi-group li{
+    width: 24%;
+    height: inherit;
+    
+}
+.zizhi-group li p{
+    text-align: center;
+    color: #20184E;
+    margin-top: 16px;
+}
+/* 第五部分 */
+.floor-one::before {
+    content: none;
+}
+.floor-one::after {
+    bottom: 82%;
+}
+.videos-box{
+    margin-bottom: 100px;
+}
+.videos-box p{
+    color: #20184E;
+    text-align: center;
+    margin: 24px auto;
+}
+.videos-box ul{
+    display: flex;
+    flex-flow: row;
+    gap: 80px;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.video-list-item{
+    width: 100%;
+    height: 100%;
+    flex: 1 1 0%;
+    min-height: 0;
+}
+.video-list-item ul{
+    display: flex;
+    flex-flow: column;
+    gap: 64px;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.video-list-item ul li{
+    width: 100%;
+    height: 100%;
+    flex: 1 1 0%;
+    min-height: 0;
+    background: #fff;
+    box-shadow: 0 0 16px 1px rgb(193 115 255 / 12%);
+}
+.video-part{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    position: relative;
+}
+/* 客户案例 */
+.case-tab{
+    margin-bottom: 60px;
+}
+.tab-content {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    aspect-ratio: 2 / 1;
+}
+.tab-pane {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s ease;
+    pointer-events: none;
+}
+.tab-pane.active {
+    opacity: 1;
+    pointer-events: all;
+}
+.case-tab .tab-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.arrow-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+}
+.arrow-btn img {
+    width: 100%;
+    height: 100%;
+}
+
+.image-grid {
+    display: flex;
+    gap: 20px;
+    flex-flow: column;
+    height: 100%;
+}
+
+.row-top, .row-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    flex: 1 1 0%;
+    min-height: 0;
+}
+
+.image-grid img {
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    aspect-ratio: 1 / 2;
+    flex: 1 1 0%;
+    min-height: 0;
+}
+
+/* 移动端适配 */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 100%;
+        padding: 0 30px;
+    }
+    .contact-section::before,.contact-section::after {
+        content: none;
+    }
+    .contact-section {
+        padding: 10px 0;
+    }
+    /* 第一部分 */
+    .company-contact {
+        padding: 210px 0 120px;
+        background-size: 200% 100%;
+    }
+    .section-title-text {
+        margin-top: 0;
+        margin-bottom: 24px;
+    }
+    .section-title-other {
+        margin-bottom: 32px;
+    }
+    .section-title-secondary {
+        margin-bottom: 60px;
+    }
+    .btn-big {
+        padding: 8px 32px;
+    }
+    /* 第二部分 */
+    .case-part01 {
+        margin-top: 70px;
+    }
+    .case-part01-title h2 {
+        margin-bottom: 20px;
+    }
+    .list-two ul {
+        gap: 40px;
+    }
+    .list-card h3 {
+        margin: 36px 0 24px;
+    }
+    /* 第三部分 */
+    .other-bg {
+        padding: 330px 0 230px;
+        margin-top: -120px;
+    }
+    .case-part02 {
+        padding: 0;
+    }
+    .partner-list {
+        margin-top: 72px;
+    }
+    .partner-item-box p {
+        line-height: 20px;
+    }
+    /*第四部分 */
+    .floor{
+        padding: 0;
+        margin-top: -40px;
+    }
+    .case-part03{
+        margin-bottom: 70px;
+    }
+    .company-image-group,.zizhi-bg{
+        margin-top: -80px;
+        padding-top: 100px;
+    }
+    .company-image-group ul{
+        padding: 24px;
+        height: 580px;
+    }
+    /* 企业资质 */
+    .zizhi-list{
+        padding: 24px;
+    }
+    /* 视频盒子 */
+    .videos-box ul {
+        gap: 48px;
+    }
+    .videos-box p {
+        margin: 20px auto;
+    }
+    /* 客户案例 */
+    
+    
+    .arrow-btn {
+        width: 32px;
+        height: 32px;
+    }
+    .row-top, .row-bottom {
+        flex-flow: row;
+    }
+    .image-grid {
+        flex-flow: column;
+    }
+    .image-grid img {
+        width: 21%;
+        aspect-ratio: 1 / 2;
+    }
+}
+
+@media (max-width: 991px) {
+    body {
+        padding-top: 48px; /* 移动端导航栏高度 */
+    }
+
+    /* 联系部分适配 */
+    .contact-section {
+        padding: 40px 0;
+    }
+    /* 第一部分 */
+    .company-contact {
+        margin-top: -48px;
+        padding: 120px 0 50px;
+        background-size: 200% 100%;
+    }
+    .section-title-text {
+        margin-top: 0;
+        margin-bottom: 24px;
+    }
+    .section-title-other {
+        margin-bottom: 32px;
+    }
+    .section-title-secondary {
+        margin-bottom: 48px;
+    }
+    .btn-big {
+        padding: 8px 32px;
+    }
+    /* 第二部分 */
+    .case-part01 {
+        margin-top: 20px;
+    }
+    .case-part01-title h2 {
+        margin-bottom: 20px;
+    }
+    .list-two {
+        margin-top: 48px;
+    }
+    .list-two ul {
+        gap: 16px;
+        align-items: flex-start;
+    }
+    .list-two .list-card {
+        width: 31.33%;
+        height: 410px;
+    }
+    .list-card-img {
+        width: 114px;
+        height: 98px;
+    }
+    .list-card h3 {
+        margin: 32px 0 16px;
+    }
+    .list-card p {
+        line-height: 28px;
+    }
+    /* 第三部分 */
+    .other-bg {
+        padding: 250px 0;
+        margin-top: -120px;
+    }
+    .case-part02 {
+        padding: 0;
+    }
+    .partner-list {
+        margin-top: 32px;
+    }
+    .partner-list-item {
+        margin-bottom: 26px;
+    }
+    .partner-item-box::before {
+        width: 4px;
+        height: 32px;
+        left: 16px;
+    }
+    .partner-item-box p {
+        line-height: 20px;
+    }
+    /* 第二块的li样式 */
+    .partner-size-start,.partner-size-end,.partner-size-center {
+        gap: 40px;
+    }
+    .partner-list-item:last-child {
+        margin-top: 26px;
+    }
+    /*第四部分 */
+    .floor{
+        padding: 0;
+        margin-top: -40px;
+    }
+    .case-part03{
+        margin-bottom: 60px;
+    }
+    .case-part03{
+        margin-bottom: 40px;
+    }
+    .company-image-group,.zizhi-bg{
+        margin-top: -80px;
+        padding-top: 100px;
+    }
+    .company-image-group ul{
+        padding: 16px;
+        height: 500px;
+    }
+    /* 企业资质 */
+    .zizhi-list{
+        padding: 16px;
+    }
+    /* 视频盒子 */
+    .videos-box {
+        margin-bottom: 70px;
+    }
+    .videos-box ul {
+        gap: 32px;
+    }
+    .videos-box p {
+        margin: 16px auto;
+    }
+    /* 客户案例 */
+    .case-tab {
+        margin-bottom: 30px;
+    }
+    .tab-content {
+        aspect-ratio: 1 / 2;
+    }
+    .arrow-btn {
+        width: 32px;
+        height: 32px;
+    }
+    .row-top, .row-bottom {
+        flex-flow: column;
+    }
+    .image-grid {
+        flex-flow: row;
+    }
+    .image-grid img {
+        width: 100%;
+        aspect-ratio: 1 / 2;
+    }
+}
+
+
+
+@media (max-width: 767px) {
+    .container {
+        padding: 0 30px;
+    }
+    /* 第一部分 */
+    .company-contact {
+        margin-top: -48px;
+        padding: 80px 0 50px;
+        background-size: 200% 100%;
+    }
+    .section-title-text {
+        margin-top: 0;
+        margin-bottom: 24px;
+    }
+    .section-title-other {
+        margin-bottom: 32px;
+    }
+    .section-title-secondary {
+        margin-bottom: 48px;
+    }
+    .btn-big {
+        padding: 8px 32px;
+    }
+    /* 第二部分 */
+    .contact-section {
+        padding: 40px 0;
+        margin-bottom: -200px;
+        z-index: 30;
+    }
+    .case-part01 {
+        margin-top: 10px;
+    }
+    .case-part01-title h2 {
+        margin-bottom: 20px;
+    }
+    .list-two {
+        margin-top: 28px;
+    }
+    .list-two ul {
+        gap: 16px;
+        align-items: flex-start;
+    }
+    .list-two .list-card {
+        width: 100%;
+        height: auto;
+        background: #fff;
+        padding: 24px;
+    }
+    .list-card-img {
+        width: 102px;
+        height: 87px;
+    }
+    .list-card h3 {
+        margin: 32px 0 16px;
+    }
+    .list-card p {
+        line-height: 24px;
+    }
+    /* 第三部分 */
+    .other-bg {
+        padding: 200px 0 180px;
+        margin-top: -160px;
+        z-index: 2;
+        background-size: auto 100%;
+    }
+    .case-part02 {
+        padding: 60px 0 30px;
+    }
+    .partner-list {
+        margin-top: 32px;
+    }
+    .partner-item-box {
+        width: 100%;
+        padding: 12px 12px 12px 36px;
+    }
+    .partner-list-item {
+        margin-bottom: 16px;
+    }
+    .partner-item-box::before {
+        width: 4px;
+        height: 32px;
+        left: 16px;
+    }
+    .partner-item-box p {
+        line-height: 20px;
+    }
+    /* 第二块的li样式 */
+    .partner-size-start,.partner-size-end,.partner-size-center {
+        gap: 16px;
+    }
+    .partner-size-end div:first-child {
+        margin-top: 0;
+    }
+    /*第四部分 */
+    .floor{
+        padding: 0;
+        margin-top: 100px;
+    }
+    .company-image-group,.zizhi-bg{
+        margin-top: -48px;
+        padding-top: 60px;
+    }
+    .company-image-group ul{
+        padding: 8px;
+        height: 340px;
+    }
+    /* 企业资质 */
+    /* 企业资质 */
+    .zizhi-list{
+        padding: 8px;
+    }
+    .list-one li,.list-two li{
+        width: 45%;
+    }
+    .list-one li:last-child {
+        width: 80%;
+        margin-top: 16px;
+    }
+    .zizhi-group li p{
+        margin-top: 8px;
+        margin-bottom: 16px;
+    }
+    /* 视频盒子 */
+    .videos-box {
+        margin-bottom: 60px;
+    }
+    .videos-box ul {
+        flex-flow: column;
+        gap: 24px;
+    }
+    .videos-box p {
+        margin: 16px auto;
+    }
+    /* 客户案例 */
+    .case-tab {
+        margin-bottom: 20px;
+    }
+    .arrow-btn {
+        width: 28px;
+        height: 28px;
+    }
+    .row-top, .row-bottom {
+        flex-flow: column;
+    }
+    .image-grid {
+        flex-flow: row;
+    }
+}
+
+

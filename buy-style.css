@@ -1,0 +1,356 @@
+:root {
+    --primary-color: #8257E6;
+    --secondary-color: #6F48C9;
+    --background-color: #F8F9FA;
+    --text-color: #333;
+    --text-secondary: #666666;     /* 次要文字颜色 */
+    --text-light: #999999;         /* 浅色文字 */
+}
+
+/* 全局样式 */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.5;
+    padding-top: 108px; /* 桌面端导航栏高度 */
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+
+
+
+/* 通用标题样式 */
+.section-title {
+    color: #20184E;
+    font-size: 2.75rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    position: relative;
+    text-align: center;
+}
+
+/* 通用图标样式 */
+.contact-icon {
+    width: 32px;
+    height: 32px;
+}
+
+/* 通用文本样式 */
+.contact-text {
+    color: #20184E;
+    font-size: 1.5rem;
+}
+
+.contact-section {
+    padding: 125px 0;
+    background: white;
+    position: relative;
+}
+.contact-section::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    background: url(../images/bg-img2.png) no-repeat bottom;
+    width: 136px;
+    height: 531px;
+    z-index: 0;
+}
+.contact-section::after {
+    content: '';
+    position: absolute;
+    top: 50px;
+    background: url(../images/bg-img1.png) no-repeat top;
+    width: 168px;
+    height: 531px;
+    z-index: 0;
+    right: 0;
+}
+.box1-left{
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap:0.5rem
+}
+.logo-box{
+    width: 48px;
+    height: 48px;
+}
+.logo-box img{
+    width: 100%;
+    height: 100%;
+}
+.buy-title{
+    text-align: center;
+    margin-left: 0.5rem;
+    font-size: 1.35rem;
+    color: #20184E;
+}
+.box1-right {
+    display: flex;
+    flex-flow: column;
+    gap: 0.5rem;
+}
+.box1-right p{
+    color: #EBB702;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+.buy-icon{
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    margin-right: 1.5rem;
+    line-height: normal;
+}
+.buy-icon img{
+    width: 100%;
+    height: 100%;
+}
+.buy-content{
+    padding: 50px;
+    width: 100%;
+    font-size: 0.85rem;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 6px 6px rgb(238 238 238 / 24%);
+    margin-top: 3rem;
+    position: relative;
+    text-align: justify;
+    display: flex;
+    flex-flow: column;
+    gap: 2rem;
+}
+.buy-content::before {
+    content: '';
+    position: absolute;
+    top: -40px;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background: linear-gradient(0deg, rgba(130, 87, 230, 0.05) 0%, rgba(130, 87, 230, 0) 100%);
+    pointer-events: none;
+}
+.buy-box1{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+}
+.buy-box2 {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 2rem;
+}
+.buy-box2 li{
+    position: relative;
+    margin-left: 2rem;
+}
+.buy-box2 li::before{
+    content: '';
+    display: block;
+    width: 16px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: var(--primary-color);
+    margin-right: 0.5rem;
+    position: absolute;
+    top: 1rem;
+    left: -2rem;
+}
+.buy-box3 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.number div{
+    width: 72px;
+    height: 48px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    border: solid 1px var(--primary-color);
+    border-radius: 10px;
+    line-height: 46px;
+    display: inline-block;
+    margin-right: 0.75rem;
+}
+.number p {
+    margin: 0;
+    font-size: 1.25rem;
+    color: #20184E;
+    display: inline-block;
+}
+.backBtn{
+    background: var(--primary-color);
+    border-radius: 60px;
+    padding: 12px 40px;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    box-shadow: none;
+    text-align: center;
+}
+/* 移动端适配 */
+@media (max-width: 991px) {
+    body {
+        padding-top: 48px; /* 移动端导航栏高度 */
+    }
+
+    /* 联系部分适配 */
+    .contact-section {
+        padding: 40px 0 48px;
+    }
+    .contact-section .container:first-child{
+        margin-bottom: 3rem;
+    }
+    .section-title {
+        font-size: 1.75rem;
+        margin-bottom: 2rem;
+    }
+    .buy-content{
+        padding: 32px;
+        margin-top: 2.25rem;
+    }
+    .buy-title{
+        font-size: 1.15rem;
+    }
+    .logo-box {
+        width: 36px;
+        height: 36px;
+    }
+    .box1-right p {
+        font-size: 1.25rem;
+        margin-bottom: 0;
+    }
+    .buy-icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 1rem;
+    }
+    .backBtn{
+        padding: 12px 32px;
+        font-size: 0.85rem;
+    }
+    
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center;
+}
+.contact-section .container:first-child{
+    margin-bottom: 6rem;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 100%;
+        padding: 0 30px;
+    }
+    .contact-section .container:first-child{
+        margin-bottom: 4rem;
+    }
+    .contact-section::before,.contact-section::after {
+        content: none;
+    }
+    .buy-content{
+        padding: 32px;
+        margin-top: 2.25rem;
+    }
+    
+    .logo-box {
+        width: 36px;
+        height: 36px;
+    }
+    .box1-right p {
+        font-size: 1.25rem;
+        margin-bottom: 0;
+    }
+    .buy-icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 1rem;
+    }
+    .number div{
+        width: 48px;
+        height: 40px;
+        font-size: 1rem;
+        line-height: 38px;
+        margin-right: 0.75rem;
+    }
+    .number p {
+        font-size: 1rem;
+    }
+    .backBtn{
+        padding: 12px 32px;
+        font-size: 1rem;
+    }
+    
+}
+
+@media (max-width: 767px) {
+    .container {
+        padding: 0 30px;
+    }
+    .contact-content {
+        position: relative;
+        padding: 3rem 1rem;
+    }  
+    .contact-section .container:first-child{
+        margin-bottom: 3rem;
+    }
+     
+    .buy-title{
+        font-size: 1rem;
+    }
+    .logo-box {
+        width: 36px;
+        height: 36px;
+    }
+    .box1-right {
+        gap: 0.5rem;
+    }
+    .box1-right p {
+        font-size: 1.25rem;
+        margin-bottom: 0;
+    }
+    .buy-icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 1rem;
+    }
+    .buy-content{
+        padding: 24px;
+        margin-top: 2rem;
+        gap: 1rem;
+    }
+    .number div{
+        width: 40px;
+        height: 32px;
+        font-size: 0.85rem;
+        line-height: 30px;
+        margin-right: 0.5rem
+    }
+    .number p {
+        font-size: 0.85rem;
+    }
+    .buy-box3{
+        gap: 1rem;
+    }
+    .backBtn{
+        padding: 4px 24px;
+        font-size: 0.85rem;
+    }
+}
