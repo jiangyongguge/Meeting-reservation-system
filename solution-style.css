@@ -1,0 +1,774 @@
+:root {
+    --primary-color: #8257E6;
+    --secondary-color: #6F48C9;
+    --background-color: #F8F9FA;
+    --text-color: #333;
+    --text-secondary: #666666;     /* 次要文字颜色 */
+    --text-light: #999999;         /* 浅色文字 */
+}
+
+/* 全局样式 */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.5;
+    padding-top: 108px; /* 桌面端导航栏高度 */
+}
+a {
+    text-decoration: none;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center;
+}
+
+
+/* 通用标题样式 */
+.section-title {
+    color: #20184E;
+    font-weight: 600;
+    margin-bottom: 40px;
+    position: relative;
+    text-align: center;
+}
+
+/* 通用图标样式 */
+.contact-icon {
+    width: 32px;
+    height: 32px;
+}
+
+/* 通用文本样式 */
+.contact-text {
+    color: #20184E;
+    font-size: 1.5rem;
+}
+
+.contact-section {
+    padding: 125px 0 80px;
+    background: white;
+    position: relative;
+}
+.contact-section::before {
+    content: '';
+    position: absolute;
+    top: 40%;
+    background: url(../images/bg-img2.png) no-repeat bottom;
+    width: 136px;
+    height: 531px;
+    z-index: 0;
+}
+.contact-section::after {
+    content: '';
+    position: absolute;
+    top: -20%;;
+    background: url(../images/bg-img3.png) no-repeat bottom right;
+    width: 346px;
+    height: 531px;
+    z-index: 0;
+    right: 0px;
+    background-size: 80%;
+}
+/* 解决方案 */
+.ong-bg::after{
+    content: none;
+}
+.list-two{
+    margin-top: 68px;
+    background: url(../images/case-bg.png) no-repeat center;
+    background-size: contain;
+}
+.border-size{
+    border-bottom: solid 1px #F0F0F4;
+    padding-bottom: 40px;
+}
+.list-two li img{
+    width: 100%;
+    height: 100%;
+}
+.list-two ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+}
+.list-two .logo-list {
+    width: 23.4%;
+    aspect-ratio: 4 / 3;
+    box-shadow: 0 0 3px 3px #8828ff05;
+    border-radius: 10px;
+}
+.pk-item{
+    width: 45%;
+    color: #20184E;
+}
+.pk-box{
+    width: 100%;
+    background: #ffffff;
+    padding: 40px 0 0;
+    border-radius: 20px;
+    box-shadow: 0 0 16px 1px rgb(193 115 255 / 12%);
+    color: #20184E;
+}
+.pk-item.active .pk-box{
+    border: solid 1px var(--primary-color);
+}
+.title-one{
+    margin-top: 40px;
+}
+.title-two{
+    margin: 40px auto 20px;
+}
+.pk-box p{
+    line-height: 24px;
+    margin-bottom: 45px;
+}
+.other-btn{
+    margin: 30px auto 40px;
+    color: var(--text-secondary);
+}
+.other-btn a{
+    color: var(--primary-color);
+    margin-left: 8px;
+}
+.pk-logo{
+    width: 30px;
+    height: 27px;
+    margin: 0 auto 28px;
+}
+.pk-logo img{
+    width: 100%;
+    height: 100%;
+}
+.white-bg{
+    background: #fff;
+}
+.fd-bg{
+    background: #FDFDFD;
+    border: solid 1px #F0F0F4;
+    border-left: 0;
+    border-right: 0;
+}
+.pk-list .column-list{
+    padding: 30px 120px;
+    flex-flow: column;
+}
+.pk-list .column-list:last-child {
+   border-radius: 0 0 20px 20px;
+}
+.list-two .pk-list img{
+    aspect-ratio: 6 / 5;
+    width: 14px;
+    margin-top: 5px;
+}
+.list-two .pk-list li {
+    display: flex;
+    flex-flow: row;
+    gap: 8px;
+    align-items: flex-start;
+    text-align: left;
+    color: var(--text-light);
+}
+.title-three{
+    margin: 60px 0 0;
+    font-weight: bold;
+    text-align: center;
+}
+.title-three span{
+    color: var(--text-light);
+    font-weight: normal;
+    display: block;
+    margin-top: 20px;
+}
+/* 尚未了解清楚? */
+.no-bg {
+    background: #F9F9FB;
+    padding: 68px 0 350px;
+}
+.no-bg::before,.no-bg::after {
+    content: none;
+}
+.no-bg .title-other {
+    margin-bottom: 60px;
+}
+.computer-box{
+    margin-top: 80px;
+    position: relative;
+}
+.computer{
+    aspect-ratio: 832 / 505;
+    width: 60%;
+    
+}
+.computer-text{
+    color: var(--text-secondary);
+    line-height: 30px;
+    margin: 68px 0 20px;
+    text-align: justify;
+}
+.computer img{
+    width: 100%;
+    height: 100%;
+}
+.computer-box-content{
+    width: 60%;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: #792dd51a 0px 2px 10px;
+    padding: 40px;
+    text-align: left;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 40%;
+}
+.computer-list{
+    color: #20184E;
+    text-align: left;
+    line-height: 32px;
+    margin-bottom: 40px;
+}
+.computer-list li{
+    display: flex;
+    flex-flow: row;
+    gap: 8px;
+    align-items: flex-start;
+}
+.computer-list li img{
+    aspect-ratio: 6 / 5;
+    width: 24px;
+    margin-top: 7px;
+}
+/* 会议门牌及配件 */
+/* 硬件菜单横向滚动 */
+.hardware-menu {
+    position: relative;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    gap: 20px;
+    -webkit-overflow-scrolling: touch;
+    border-bottom: 1px solid #ddd;
+    justify-content: space-between;
+    border-bottom: 1px solid #E1E1EB; /* 灰色分割线 */
+    margin-top: 56px;
+}
+
+/* 新增选中效果 */
+.hardware-menu-item.active .hardware-menu-link {
+    color: #6909E1;
+}
+.hardware-menu-item.active {
+    border-bottom: 2px solid #400E7F; /* 选中状态线条 */
+}
+.hardware-menu-link {
+    color: #333;
+    transition: color 0.3s ease;
+}
+.floor-padding{
+    padding: 116px 0 140px;
+}
+.hardware-menu-item {
+    flex-shrink: 0;
+    width: 160px;
+    transition: transform 0.3s ease;
+}
+.hardware-img{
+    width: 160px;
+    height: 100px;
+    margin-bottom: 1.5rem;
+}
+.hardware-menu-link img {
+    width: 100%;
+    height: 100%;
+}
+
+.hardware-menu-link p {
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+.hardware-menu-item:hover p{
+    color: #400E7F;
+}
+.hardware-menu-item.active p{
+    color: #400E7F;
+}
+.hardware-features{
+    margin-top: 5rem;
+}
+.title-other{
+    margin-bottom: 110px;
+    color: #20184E;
+    text-align: center;
+    padding: 0 12%;
+    line-height: 2.5rem;
+}
+.hardware-features{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 128px;
+}
+.features-left{
+    width: 40%;
+}
+.features-right {
+    width: 49%;
+    text-align: left;
+    padding-top: 24px;
+}
+.perture-big{
+    width: 100%;
+    aspect-ratio: 1.5 / 1;
+    padding: 24px;
+}
+.perture-big img{
+    width: 100%;
+    height: 100%;
+    box-shadow: #792dd51a 0px 2px 10px;
+}
+
+.hardware-name{
+    font-weight: 600;
+    color: #20184E;
+    position: relative;
+}
+.hardware-name::after{
+    content: '';
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #000;
+    left: 0;
+    position: absolute;
+    margin-top: 34px;
+}
+/* 组合按钮 */
+.down-btn{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 24px;
+}
+/* 下拉框样式 */
+.btn-change{
+    padding: 11px 38px;
+    border: solid 1px var(--text-light);
+    border-radius: 10px;
+    color: var(--primary-color);
+    font-weight: 600;
+    width: 260px;
+    text-align: left;
+}
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.dropdown-item.active, .dropdown-item:active {
+    color: var(--primary-color);
+    text-decoration: none;
+    background-color: var(--background-color);
+}
+.btn-change::after {
+    display: inline-block;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+    right: 38px;
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    bottom: 50%;
+    color: var(--text-light);
+}
+.dropdown-menu{
+    width: 100%;
+    border-color: var(--text-light);
+}
+/* 按钮样式 */
+.backBtn{
+    background: var(--primary-color);
+    border-radius: 60px;
+    padding: 12px 40px;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    box-shadow: none;
+    text-align: center;
+}
+
+.hardware-text-two{
+    color: var(--text-secondary);
+    line-height: 30px;
+    margin: 68px 0 64px;
+    text-align: justify;
+}
+/* 移动端适配 */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 100%;
+        padding: 0 30px;
+    }
+    .contact-section::before,.contact-section::after {
+        content: none;
+    }
+    .backBtn{
+        padding: 12px 32px;
+    }
+    /* 解决方案 */
+    .ong-bg{
+        padding: 95px 0 80px;
+    }
+    .pk-box {
+        padding: 32px 0 0;
+    }
+    .border-size {
+        padding-bottom: 32px;
+    }
+    .title-one {
+        margin-top: 32px;
+    }
+    .title-two {
+        margin: 32px auto 20px;
+    }
+    .pk-box p {
+        margin-bottom: 40px;
+    }
+    .other-btn {
+        margin: 16px auto 32px;
+    }
+    .pk-list .column-list {
+        padding: 30px 90px;
+        gap: 20px;
+    }
+    .title-three {
+        margin: 32px 0 0;
+    }
+    .title-three span {
+        margin-top: 8px;
+    }
+    /* 尚未了解清楚? */
+    .no-bg {
+        padding: 40px 0 330px;
+    }
+    .computer-box {
+        margin-top: 62px;
+    }
+    .computer-box-content {
+        width: 70%;
+        padding: 32px;
+        margin-top: 28px;
+        top: 30%;
+    }
+    .computer-text {
+        margin: 64px 0 32px;
+        line-height: 32px;
+    }
+    .computer-list {
+        line-height: 32px;
+        margin-bottom: 32px;
+    }
+    .computer-list li img {
+        width: 20px;
+    }
+    .no-bg .title-other{
+        margin-bottom: 28px;
+        line-height: 28px;
+    }
+    /* 会议门牌及配件 */
+    .floor-padding {
+        padding: 88px 0 90px;
+    }
+    .hardware-features {
+        gap: 90px;
+    }
+    .section-title {
+        margin-bottom: 32px;
+    }
+    .hardware-features{
+        margin-top: 24px;
+    }
+    .hardware-features {
+        gap: 70px;
+    }
+    .title-other,.no-bg .title-other{
+        margin-bottom: 36px;
+        line-height: 28px;
+    }
+    .btn-change {
+        padding: 11px 32px;
+        width: 170px;
+    }
+    .backBtn{
+        padding: 12px 32px;
+    }
+    .hardware-name::after {
+        margin-top: 32px;
+    }
+    .perture-big {
+        aspect-ratio: 1 / 1;
+    }
+    .hardware-text-two {
+        margin: 56px 0 84px;
+    }
+    
+}
+
+@media (max-width: 991px) {
+    body {
+        padding-top: 48px; /* 移动端导航栏高度 */
+    }
+
+    /* 联系部分适配 */
+    .contact-section {
+        padding: 40px 0 8px;
+    }
+    .section-title {
+        margin-bottom: 20px;
+    }
+    /* 解决方案 */
+    .ong-bg{
+        padding: 65px 0 60px;
+    }
+    .pk-box {
+        padding: 28px 0 0;
+    }
+    .border-size {
+        padding-bottom: 28px;
+    }
+    .title-one {
+        margin-top: 28px;
+    }
+    .title-two {
+        margin: 28px auto 12px;
+    }
+    .pk-box p {
+        margin-bottom: 32px;
+    }
+    .other-btn {
+        margin: 16px auto 28px;
+    }
+    .pk-list .column-list {
+        padding: 24px 52px;
+        gap: 16px;
+    }
+    .title-three {
+        margin: 28px 0 0;
+    }
+    .title-three span {
+        margin-top: 6px;
+    }
+    /* 尚未了解清楚? */
+    .no-bg {
+        padding: 40px 0 290px;
+    }
+    .computer-box {
+        margin-top: 42px;
+    }
+    .computer-box-content {
+        width: 70%;
+        padding: 24px;
+        margin-top: 28px;
+        top: 20%;
+    }
+    .computer-text {
+        margin: 48px 0 30px;
+        line-height: 28px;
+    }
+    .computer-list {
+        line-height: 28px;
+        margin-bottom: 24px;
+    }
+    .computer-list li img {
+        width: 20px;
+    }
+    .no-bg .title-other{
+        margin-bottom: 28px;
+        line-height: 28px;
+    }
+    /* 会议门牌及配件 */
+    .hardware-features{
+        margin-top: 24px;
+    }
+    .hardware-features {
+        gap: 70px;
+    }
+    .title-other{
+        margin-bottom: 16px;
+        line-height: 28px;
+    }
+    .btn-change {
+        padding: 11px 32px;
+        width: 170px;
+    }
+    .backBtn{
+        padding: 12px 32px;
+        font-size: 0.85rem;
+    }
+    .hardware-name::after {
+        width: 80px;
+        margin-top: 24px;
+    }
+    .perture-big {
+        aspect-ratio: 1 / 1;
+        padding: 16px;
+    }
+    .hardware-text-two {
+        margin: 48px 0;
+    }
+    .hardware-menu {
+        margin-top: 16px;
+        margin-bottom: 60px;
+    }
+    
+}
+
+@media (max-width: 767px) {
+    .container {
+        padding: 0 30px;
+    }
+    .contact-content {
+        position: relative;
+        padding: 3rem 1rem;
+    } 
+    /* 解决方案 */
+    .ong-bg {
+        padding: 25px 0 40px;
+    } 
+    .list-two {
+        margin-top: 32px;
+        background: none;
+    }
+    .list-two ul {
+        flex-flow: column;
+        gap: 40px;
+    }
+    .pk-item {
+        width: 100%;
+    }
+    .pk-box {
+        padding: 24px 0 0;
+    }
+    .pk-logo {
+        margin: 0 auto 16px;
+    }
+    .border-size {
+        padding-bottom: 16px;
+    }
+    .title-one {
+        margin-top: 24px;
+    }
+    .title-two {
+        margin: 24px auto 8px;
+    }
+    .pk-box p {
+        margin-bottom: 24px;
+    }
+    .other-btn {
+        margin: 8px auto 24px;
+    }
+    .pk-list .column-list {
+        padding: 20px 58px;
+        gap: 16px;
+    }
+    .title-three {
+        margin: 14px 0 0;
+    }
+    .title-three span {
+        margin-top: 2px;
+    }
+    /* 尚未了解清楚? */
+    .no-bg {
+        padding: 40px 0 60px;
+    }
+    .computer-box {
+        margin-top: 30px;
+    }
+    .computer {
+        width: 100%;
+    }
+    .computer-box-content {
+        width: 100%;
+        padding: 24px;
+        margin-top: 28px;
+        position: relative;
+    }
+    .computer-text {
+        margin: 32px 0 20px;
+        line-height: 24px;
+    }
+    .computer-list {
+        line-height: 28px;
+        margin-bottom: 24px;
+    }
+    .computer-list li img {
+        width: 20px;
+    }
+    /* 会议门牌及配件 */
+    .hardware-menu {
+        gap: 16px;
+        margin-top: 32px;
+        margin-bottom: 40px;
+    }
+    .hardware-img {
+        margin-bottom: 0.75rem;
+    }
+    .hardware-menu-link p {
+        margin-bottom: 0.75rem;
+    }
+    .hardware-features{
+        margin-top: 0;
+        gap: 20px;
+    }
+    .title-other,.no-bg .title-other{
+        margin-bottom: 16px;
+        line-height: 28px;
+    }
+    .btn-change {
+        padding: 4px 24px;
+        width: 160px;
+    }
+    .backBtn{
+        padding: 4px 24px;
+        font-size: 0.85rem;
+    }
+    .features-left{
+        width: 100%;
+    }
+    .features-right {
+        width: 100%;
+        padding-top: 0;
+    }
+    .perture-big {
+        width: 100%;
+        padding: 16px;
+    }
+    
+    .hardware-name::after {
+        width: 80px;
+        margin-top: 1rem;
+    }
+
+    .hardware-text-two {
+        line-height: 28px;
+        margin: 24px 0 40px;
+    }
+}
+
+
+
+

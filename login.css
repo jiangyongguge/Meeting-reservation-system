@@ -1,0 +1,305 @@
+:root {
+    --primary-color: #8828FF;
+    --primary-hover: #7529e6;
+    --accent-color: #6f42c1;
+    --text-color-primary: #333;
+    --text-color-secondary: #666;
+    --text-color-tertiary: #999;
+    --light-bg: #f8f9fa;
+    --border-color: #e0e0e0;
+    --input-height: 44px;
+    --input-height-mobile: 38px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url('../images/bg-desktop.png') no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    padding: 15px 0;
+    color: var(--text-color-primary);
+}
+
+.container {
+    max-width: 100%;
+    width: 100%;
+    padding: 0 80px;
+}
+
+.card {
+    width: 100%;
+    max-width: 1300px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 65px 0 42px 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-control {
+    border-radius: 6px;
+    padding: 20px 20px 20px 83px;
+    border: 1px solid var(--primary-color);
+    font-size: 18px;
+    margin-bottom: 0;
+    width: 420px;
+    max-width: 100%;
+    color: var(--text-color-primary);
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.25rem rgba(138, 59, 248, 0.25);
+    border-color: var(--primary-color);
+}
+
+.form-check-label {
+    color: var(--text-color-secondary);
+    font-size: 16px;
+}
+
+.form-check-input:checked {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.25rem rgba(138, 59, 248, 0.25);
+    border-color: var(--primary-color);
+}
+.d-flex.justify-content-between {
+    width: 420px; 
+    max-width: 100%;
+}
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    border-radius: 50px;
+    padding: 15px 0;
+    font-weight: 500;
+    width: 450px;
+    max-width: 100%;
+    transition: all 0.3s ease;
+    margin: 0 auto;
+    display: block;
+    color: #fff;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary:focus-visible {
+    background-color: var(--primary-hover)!important;
+    border-color: var(--primary-hover)!important;
+    transform: translateY(-2px);
+}
+
+.icon-container {
+    position: relative;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 420px;
+    max-width: 100%;
+}
+
+.input-icon {
+    position: absolute;
+    left: 42px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+}
+.login-title{
+    margin-bottom: 55px;
+}
+
+h1 {
+    color: #8828FF;
+    font-weight: bold;
+    margin-bottom: 32px;
+}
+
+p.subtitle {
+    color: var(--text-color-primary);
+    margin-bottom: 0;
+}
+
+.form-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.form-link:hover {
+    text-decoration: underline;
+    color: var(--primary-hover);
+}
+
+.invalid-feedback {
+    display: none;
+    margin-top: 12px;
+    position: relative;
+    width: 100%;
+    pointer-events: none;
+    line-height: 1.2;
+    padding-left: 24px;
+    color: #dc3545;
+    text-align: left;
+}
+
+input.is-invalid {
+    border-color: #dc3545;
+    background-image: none !important;
+}
+
+input.is-invalid ~ .invalid-feedback,
+input.is-invalid + .invalid-feedback,
+.was-validated input:invalid ~ .invalid-feedback,
+.was-validated input:invalid + .invalid-feedback,
+.icon-container:has(input.is-invalid) > .invalid-feedback {
+    display: block;
+}
+
+.form-check {
+    padding-left: 1.8rem;
+    margin-bottom: 1.2rem;
+    position: relative;
+}
+
+.form-check-input {
+    position: absolute;
+    margin-top: 0.25rem;
+    margin-left: -1.8rem;
+}
+
+.form-check .invalid-feedback {
+    position: relative;
+    margin-top: 0.25rem;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.form-control::placeholder {
+    color: var(--text-color-tertiary);
+}
+
+/* Responsive Styles */
+@media (max-width: 576px) {
+    body {
+        background: url('../images/bg-mobile.jpg') no-repeat center center;
+        background-size: cover;
+        padding: 0;
+    }
+    
+    .container {
+        padding: 0 30px;
+    }
+    
+    .card {
+        padding: 1.5rem;
+        max-width: 100%;
+    }
+    .login-title{
+        margin-bottom: 24px;
+    }
+    h1 {
+        margin-bottom: 1rem;
+    }
+    
+    p.subtitle {
+        font-size: 0.8rem;
+        margin-bottom: 0;
+        color: var(--text-color-secondary);
+    }
+    
+    .icon-container {
+        position: relative;
+        margin-bottom: 1.2rem;
+        width: calc(100% - 30px);
+        max-width: 280px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    
+    .form-control {
+        padding: 0.5rem 1rem 0.5rem 2.5rem;
+        font-size: 14px;
+        height: var(--input-height-mobile);
+        width: 100%;
+        max-width: 280px;
+    }
+    
+    .input-icon {
+        width: 16px;
+        height: 16px;
+        left: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    
+    .form-check-label,.form-link {
+        font-size: 0.75rem;
+    }
+    
+    .btn-primary {
+        padding: 0.6rem;
+        font-size: 16px;
+        margin-bottom: 0.5rem;
+        width: calc(100% - 30px);
+        max-width: 280px;
+    }
+    
+    .d-flex.justify-content-between {
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 1rem;
+        width: calc(100% - 30px);
+        max-width: 280px;
+    }
+    
+    .d-flex.justify-content-between .form-check {
+        margin-bottom: 0;
+    }
+    
+    .invalid-feedback {
+        font-size: 0.7rem;
+        margin-top: 0.25rem;
+        padding-left: 1rem;
+        width: 100%;
+        text-align: left;
+    }
+    
+    form.d-flex.flex-column.align-items-center {
+        width: 100%;
+    }
+}
+
+.form-check .form-check-input:checked ~ .form-check-label {
+    color: var(--text-color-primary);
+}
+
+/* 确保错误信息的颜色保持一致 */
+.icon-container .invalid-feedback,
+.form-check .invalid-feedback {
+    color: #dc3545;
+} 

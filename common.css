@@ -1,0 +1,251 @@
+/* 主题色变量 */
+:root {
+    --primary-color: #8828FF ;      /* 主题紫色 */
+    --secondary-color: #7529e6;    /* 浅紫色 */
+    --text-primary: #333333;       /* 主要文字颜色 */
+    --text-secondary: #666666;     /* 次要文字颜色 */
+    --text-light: #999999;         /* 浅色文字 */
+    --bg-primary: #FFFFFF;         /* 主背景色 */
+    --bg-secondary: #F8F9FA;       /* 次要背景色 */
+    --border-color: #E5E5E5;       /* 边框颜色 */
+}
+
+/* 通用样式 */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: var(--text-primary);
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+/* 链接样式 */
+a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* 字体样式 */
+.f54{
+    font-size: 54px;
+}
+.f50{
+    font-size: 50px;
+}
+.f48{
+    font-size: 48px;
+}
+.f44{
+    font-size: 44px;
+}
+.f40{
+    font-size: 40px;
+}
+.f36{
+    font-size: 36px;
+}
+.f34{
+    font-size: 34px;
+}
+.f32{
+    font-size: 32px;
+}
+.f30{
+    font-size: 30px;
+}
+.f28{
+    font-size: 28px;
+}
+.f26{
+    font-size: 26px;
+}
+.f24{
+    font-size: 24px;
+}
+.f22{
+    font-size: 22px;
+}
+.f20{
+    font-size: 20px;
+}
+.f18{
+    font-size: 18px;
+}
+.f16{
+    font-size: 16px;
+}
+.f14{
+    font-size: 14px;
+}
+.f12{
+    font-size: 12px;
+}
+/* 移动端适配 */
+@media (max-width: 1200px) {
+    .f54{
+        font-size: 54px;
+    }
+    .f50{
+        font-size: 50px;
+    }
+    .f48{
+        font-size: 48px;
+    }
+    .f44{
+        font-size: 44px;
+    }
+    .f40{
+        font-size: 40px;
+    }
+    .f36{
+        font-size: 36px;
+    }
+    .f34{
+        font-size: 34px;
+    }
+    .f32{
+        font-size: 32px;
+    }
+    .f30{
+        font-size: 30px;
+    }
+    .f28{
+        font-size: 28px;
+    }
+    .f26{
+        font-size: 26px;
+    }
+    .f24{
+        font-size: 24px;
+    }
+    .f22{
+        font-size: 22px;
+    }
+    .f20{
+        font-size: 20px;
+    }
+    .f18{
+        font-size: 18px;
+    }
+    .f16{
+        font-size: 16px;
+    }
+    .f14{
+        font-size: 14px;
+    }
+    .f12{
+        font-size: 12px;
+    }
+}
+@media (max-width: 991px) {
+    .f54{
+        font-size: 32px;
+    }
+    .f50{
+        font-size: 30px;
+    }
+    .f48{
+        font-size: 28px;
+    }
+    .f44{
+        font-size: 26px;
+    }
+    .f40{
+        font-size: 24px;
+    }
+    .f36{
+        font-size: 24px;
+    }
+    .f34{
+        font-size: 24px;
+    }
+    .f32{
+        font-size: 22px;
+    }
+    .f30{
+        font-size: 22px;
+    }
+    .f28{
+        font-size: 20px;
+    }
+    .f26{
+        font-size: 20px;
+    }
+    .f24{
+        font-size: 20px;
+    }
+    .f22{
+        font-size: 20px;
+    }
+    .f20{
+        font-size: 18px;
+    }
+    .f18{
+        font-size: 16px;
+    }
+    .f16{
+        font-size: 14px;
+    }
+    .f14{
+        font-size: 14px;
+    }
+    .f12{
+        font-size: 12px;
+    }
+}
+@media (max-width: 767px) {
+    .f54{
+        font-size: 30px;
+    }
+    .f50{
+        font-size: 28px;
+    }
+    .f48{
+        font-size: 26px;
+    }
+    .f44{
+        font-size: 24px;
+    }
+    .f40{
+        font-size: 22px;
+    }
+    .f36{
+        font-size: 22px;
+    }
+    .f34{
+        font-size: 22px;
+    }
+    .f32{
+        font-size: 20px;
+    }
+    .f30{
+        font-size: 18px;
+    }
+    .f28{
+        font-size: 18px;
+    }
+    .f26{
+        font-size: 18px;
+    }
+    .f24{
+        font-size: 16px;
+    }
+    .f22{
+        font-size: 16px;
+    }
+    .f20{
+        font-size: 14px;
+    }
+    .f18{
+        font-size: 14px;
+    }
+    .f16{
+        font-size: 12px;
+    }
+    .f14{
+        font-size: 12px;
+    }
+    .f12{
+        font-size: 10px;
+    }
+} 

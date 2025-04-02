@@ -1,0 +1,1165 @@
+:root {
+    --primary-color: #8828FF ;
+    --secondary-color: #6F48C9;
+    --background-color: #ffffff;
+    --text-color: #333;
+}
+/* 全局样式 */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.5;
+    padding-top: 165px; /* 桌面端导航栏高度 */
+}
+ul{
+    padding-left: 0;
+    margin-bottom: 0;
+}
+li {
+    list-style: none;
+ }
+/* 通用标题样式 */
+.section-title {
+    color: #20184E;
+    font-weight: 600;
+    margin-bottom: 48px;
+    position: relative;
+    text-align: center;
+}
+/* 通用图标样式 */
+.contact-icon {
+    width: 32px;
+    height: 32px;
+}
+/* 通用文本样式 */
+.contact-text {
+    color: #20184E;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+/* 公司介绍 */
+.company-contact{
+    /* 修改定位方式 */
+    margin-top: -165px;
+    /* 移除top属性 */
+    padding: 310px 0 220px;
+    background: url(../images/bg2.png) no-repeat top;
+    background-size: auto;
+    background-position: top;
+}
+/* 内容部分 */
+.contact-section {
+    position: relative;
+    background: #fff;
+    padding: 0 0 90px;
+}
+.contact-section::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    background: url(../images/bg-img2.png) no-repeat bottom;
+    width: 136px;
+    height: 531px;
+    z-index: 0;
+}
+.contact-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    background: url(../images/bg-img1.png) no-repeat top;
+    width: 168px;
+    height: 531px;
+    z-index: 0;
+    right: 0px;
+    background-size: 80%;
+}
+.bg-title{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    color: #fff;
+}
+.half-box{
+    width: 50%;
+}
+.container-box-left{
+    padding-right: 64px;
+}
+.section-title-text{
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+.section-title-text-en{
+    font-size: 72px;
+    line-height: 72px;
+    font-weight: 600;
+}
+.section-title-other{
+    margin-bottom: 100px;
+    margin-top: 80px;
+    text-align: justify;
+}
+.video-part{
+    width: 640px;
+    aspect-ratio: 16 / 9;
+    position: relative;
+}
+.btn-big{
+    padding: 16px 64px;
+    border-radius: 50px;
+    margin-right: 46px;
+}
+.btn-big:last-child{
+    margin-right: 0;
+}
+
+/* 第二部分 */
+.contact-section.one-bg::after{
+    content: none;
+}
+/* 多媒体信发应用价值定位 */
+.case-part01{
+    margin-top: 110px;
+    margin-bottom: 30px;
+}
+.case-part01-title{
+    color: #20184E;
+    text-align: center;
+    margin-top: 112px;
+}
+.case-part01-title h2{
+    margin-bottom: 24px;
+    font-weight: 600;
+}
+.list-two{
+    margin-top: 88px;
+    background: url(../images/card-bg.png) no-repeat center;
+    background-size: 100% 100%;
+    text-align: center;
+}
+.list-two ul{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    flex-flow: row;
+    height: auto;
+}
+.list-two .list-card{
+    border-radius: 20px;
+    height: 100%;
+    flex: 1 1 0%;
+    min-height: 0;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 12px 4px rgb(136 40 255 / 6%);
+    color: #20184e;
+    text-align: center;
+    line-height: 30px;
+    position: relative;
+    height: 306px;
+}
+.list-card-title{
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 16px;
+    background: #C173FF;
+    padding: 11px 24px;
+    border-radius: 20px 20px 0 0;
+    height: 70px;
+    text-align: center;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.list-card p{
+    margin: 24px 24px 32px;
+    text-align: justify;
+}
+
+
+/*第三部分 */
+/* 一站式的企业级监控解决方案 */
+.other-bg{
+    background: url(../images/other-bg.png) no-repeat center;
+    background-size: 100% 100%;
+    padding: 320px 0 150px;
+    background-position: top;
+    margin-top: 20px;
+}
+.other-bg::before,.other-bg::after{
+    content: none;
+}
+.case-part02{
+    padding: 60px 0 110px;
+    text-align: center;
+}
+.case-part02 .case-part01-title {
+    color: #20184E;
+    text-align: center;
+    margin-top: -350px;
+}
+.template-list{
+    margin-top: 160px;
+    padding-top: 170px;
+    padding-bottom: 48px;
+}
+.template-list ul{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 48px;
+    flex-flow: row;
+    height: auto;
+    margin-bottom: 110px;
+}
+.template-list ul li{
+    height: 100%;
+    flex: 1 1 0%;
+    min-height: 0;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 12px 4px rgb(136 40 255 / 6%);
+    padding: 24px;
+    position: relative;
+    height: 300px
+}
+.template-title{
+    color: #20184E;
+    line-height: 32px;
+    font-weight: 600;
+    margin-top: 64px;
+}
+.template-img{
+    margin: 0px auto 48px;
+    width: 130px;
+    aspect-ratio: 1 / 1;
+    height: 130px;
+    position: absolute;
+    top: -65px;
+    left: 0;
+    right: 0;
+}
+.template-img img{
+    width: 100%;
+    height: 100%;
+}
+.template-text{
+    line-height: 32px;
+    text-align: center;
+    color: #20184E;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+/* 第四部分 */
+.case-part04{
+    margin-bottom: 520px;
+    margin-top: -100px;
+}
+.computer-box{
+    margin-top: 80px;
+    position: relative;
+    background: url(../images/case-bg.png) no-repeat center;
+    background-size: 100% 120%;
+    background-position: 80%;
+    background-position-y: -120%;
+}
+.computer{
+    aspect-ratio: 34 / 21;
+    width: 60%;
+    
+}
+.computer img{
+    width: 100%;
+    height: 100%;
+}
+.computer-box-content{
+    width: 60%;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: #792dd51a 0px 2px 10px;
+    padding: 40px;
+    text-align: left;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 60%;
+}
+.computer-list{
+    color: #20184E;
+    text-align: left;
+    line-height: 32px;
+}
+.computer-list li{
+    margin-bottom: 36px;
+}
+.computer-list li:last-child{
+    margin-bottom: 0;
+}
+.computer-list li h3{
+    font-weight: 600;
+    margin-bottom: 16px;
+    line-height: 30px;
+    position: relative;
+    margin-left: 20px;
+}
+.computer-list li h3::before{
+    content: '';
+    width: 3px;
+    height: 28px;
+    border-radius: 3px;
+    background: #8828FF;
+    position: absolute;
+    top: 2px;
+    left: -20px;
+}
+.computer-list li p{
+    margin-bottom: 0;
+    color: var(--text-light);
+}
+/* 数据监控大屏可视化系统解决方案 */
+.case-part05{
+    margin-bottom: 110px;
+    margin-top: 680px;
+}
+.bg-img{
+    background: url(../images/case-bg.png) no-repeat top;
+    background-size: 80% 120%;
+    background-position-y: 60%;
+    padding-top: 90px;
+}
+.part5-img{
+    width: 80%;
+    margin: auto;
+    aspect-ratio: 397 / 187;
+}
+.part5-img img{
+    width: 100%;
+    height: 100%;
+}
+.flow-box{
+    margin-top: 60px;
+}
+.flow-box ul{
+    gap: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row;
+    height: auto;
+    margin-bottom: 36px;
+}
+.flow-list{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    flex: 1 1 0%;
+    min-height: 0;
+}
+.flow-list:nth-child(2n) .primary-content{
+    background: #8828ff;
+}
+.primary-content{
+    font-weight: 600;
+    background: #ece1fa;
+    padding: 19px 46px;
+    height: 70px;
+    position: relative;
+    /* 添加 clip-path 属性，创建不规则形状 */
+    clip-path: polygon(0 0, calc(100% - 35px) 0, 100% 50%, calc(100% - 35px) 100%, 0 100%);
+    margin-left: -35px;
+}
+.flow-list:first-child .primary-content{
+    margin-left: 0;
+    z-index: 4;
+}
+.flow-list:nth-child(2) .primary-content{
+    z-index: 3;
+}
+.flow-list:nth-child(3) .primary-content{
+    z-index: 2;
+}
+.flow-list:last-child .primary-content{
+    z-index: 1;
+    clip-path: none;
+}
+.primary-content::before{
+    content: '';
+    position: absolute;
+    top: -5px;
+    right: -34px;
+    width: 78px;
+    height: 80px;
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
+    background: #ffffff;
+    border-top: 40px solid #ffffff;
+    border-bottom: 40px solid #ffffff;
+    border-left: 40px solid #fff;
+    z-index: 2;
+}
+.primary-content::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -25px;
+    width: 70px;
+    height: 70px;
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
+    background: transparent;
+    border-top: 35px solid transparent;
+    border-bottom: 35px solid transparent;
+    border-left: 35px solid #ece1fa;
+    z-index: 2;
+}
+.flow-list:nth-child(2n) .primary-content::after{
+    border-left: 35px solid #8828ff;
+}
+.flow-list:last-child .primary-content::after,.flow-list:last-child .primary-content::before{
+    content: none;
+}
+.flow-nmb{
+    color: var(--primary-color);
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    background: #fff;
+    margin-bottom: 0;
+    display: inline-block;
+    margin-right: 18px;
+}
+.primary-content h3{
+    display: inline-block;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+.flow-list:nth-child(2n) .primary-content h3{
+    color: #fff;
+}
+.light-text{
+    color: var(--text-light);
+    margin-bottom: 0;
+    margin-top: 20px;
+    margin-left: -35px;
+}
+.flow-list:first-child .light-text {
+    margin-left: 0;
+}
+/* 第五部分 */
+.flex-box{
+    margin-top: 80px;
+}
+.flex-box ul{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 74px;
+    flex-flow: row;
+    height: auto;
+    margin-bottom: 36px;
+}
+.flex-box ul li{
+    width: 100%;
+    height: 100%;
+    flex: 1 1 0%;
+    min-height: 0;
+}
+.no-bg {
+    background: #F9F9FB;
+    padding: 10px 0 70px;
+}
+.no-bg::after,.no-bg::before{
+    content: none;
+}
+.no-bg .flex-box ul{
+    gap: 40px;
+    margin-bottom: 40px;
+}
+.no-bg .flex-box ul li{
+    height: 290px;
+}
+.white-bg {
+    background: #fff;
+    padding: 24px 24px 32px;
+    text-align: center;
+    color: #20184E;
+}
+.white-bg-img{
+    width: 56px;
+    aspect-ratio: 1 / 1;
+    margin: 0 auto;
+}
+.white-bg-img img{
+    width: 100%;
+    height: 100%;
+}
+.white-bg h3{
+    margin: 42px auto 28px;
+    font-weight: 600;
+}
+.white-bg p{
+    margin-bottom: 0;
+}
+/* 第六部分 */
+.no-have::before,.no-have::after{
+    content: none;
+    
+}
+.case-part07 .flex-box ul {
+    gap: 40px;
+    align-items: flex-start;
+}
+.dynamic {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 12px 4px rgb(136 40 255 / 6%);
+    color: #20184e;
+}
+.dynamic-title{
+    padding: 12px 24px;
+    color: #fff;
+    background: linear-gradient(to top right, #BAE3F5, #FEC0C8, #E18EB7, #762AD6);
+    border-radius: 20px 20px 0 0;
+    text-align: left;
+}
+.dynamic-title p{
+    margin-bottom: 0;
+}
+.dynamic-title span{
+    padding: 0 8px;
+}
+.dynamic-content{
+    padding: 24px;
+    line-height: 24px;
+}
+.case-part07 .flex-box ul .dynamic-content ul{
+    flex-flow: column;
+    gap: 16px;
+    margin-bottom: 0;
+}
+.dynamic-content label{
+    color: var(--text-light);
+}
+.dynamic-content p{
+    display: inline-block;
+    margin-bottom: 0;
+    margin-left: 12px;
+}
+
+/* 移动端适配 */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 100%;
+        padding: 0 30px;
+    }
+    /* 第一部分 */
+    .contact-section::before,.contact-section::after {
+        content: none;
+    }
+    .contact-section {
+        padding: 10px 0;
+    }
+    .video-part {
+        width: 100%;
+        position: relative;
+    }
+    .company-contact {
+        padding: 210px 0 120px;
+        background-size: 200% 100%;
+    }
+    .section-title-text {
+        margin-top: 0;
+        margin-bottom: 24px;
+    }
+    .section-title-other {
+        margin-bottom: 32px;
+        margin-top: 40px;
+    }
+    .btn-big {
+        padding: 8px 32px;
+    }
+    .container-box-right{
+        margin-top: 6px;
+    }
+    /* 第二部分 */
+    /* 满足统一管理集中检测控管需求 */
+    .one-bg {
+        padding: 40px 0 0;
+        margin-bottom: -200px;
+    }
+    .case-part01 {
+        margin-top: 20px;
+        margin-bottom: 85px;
+    }
+    .list-two .list-card{
+        height: 366px;
+    }
+    .list-card p {
+        min-height: 220px;
+    }
+    /*第三部分 */
+    .other-bg {
+        padding: 0px 0 220px;
+        margin-top: -58px;
+        background-size: cover;
+    }
+    .case-part02{
+        padding: 60px 0 30px;
+    }
+    .other-bg .case-part01-title {
+        margin-top: 10px;
+    }
+    .flow-box ul {
+        align-items: flex-start;
+    }
+    .template-list {
+        margin-top: 72px;
+        padding-bottom: 20px;
+    }
+    .template-list ul {
+        gap: 32px;
+        margin-bottom: 82px;
+    }
+    .template-img {
+        width: 100px;
+        height: 100px;
+        top: -50px;
+    }
+    .template-text {
+        line-height: 28px;
+    }
+    .light-text {
+        width: 70%;
+        margin-left: -6%;
+    }
+    /* 第四部分 */
+    /* 第一个ul */
+    .case-part04 {
+        margin-top: -20px;
+    }
+    .computer-box {
+        margin-top: 62px;
+    }
+    .computer-box-content {
+        width: 70%;
+        padding: 32px;
+        margin-top: 28px;
+        top: 40%;
+    }
+    .computer-text {
+        margin: 64px 0 32px;
+        line-height: 32px;
+    }
+    .computer-list {
+        line-height: 32px;
+    }
+    .computer-list li img {
+        width: 20px;
+    }
+   
+    /* 数据监控大屏可视化系统解决方案 */
+    .case-part05 {
+        margin-top: 620px;
+    }
+    .case-part01-title {
+        margin-top: 0px;
+        z-index: 99;
+        position: relative;
+    }
+    
+    /* 第五部分 */
+    .case-part06  {
+        margin-top: 40px;
+    }
+    .case-part06 .flex-box {
+        margin-top: 40px;
+    }
+    .no-bg .flex-box ul li {
+        height: 275px;
+    }
+    .white-bg-img {
+        width: 44px;
+    }
+    .white-bg h3 {
+        margin: 24px auto 18px;
+    }
+    .primary-content {
+        padding: 19px 42px;
+    }
+    /* 第六部分 */
+    .case-part07{
+        margin-top: 40px;
+    }
+    .case-part07 .flex-box {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 991px) {
+    body {
+        padding-top: 48px; /* 移动端导航栏高度 */
+    }
+
+    /* 联系部分适配 */
+    .contact-section {
+        padding: 40px 0;
+    }
+    /* 第一部分 */
+    .video-part {
+        width: 100%;
+        position: relative;
+    }
+    .company-contact {
+        margin-top: -48px;
+        padding: 90px 0 60px;
+        background-size: 200% 100%;
+        margin-bottom: 80px;
+    }
+    .container-box-left {
+        padding-right: 34px;
+    }
+    .section-title-text {
+        margin-top: 0;
+        margin-bottom: 24px;
+    }
+    .section-title-text-en {
+        font-size: 56px;
+        font-weight: 600;
+        line-height: 56px;
+    }
+    .section-title-other {
+        margin-bottom: 32px;
+        margin-top: 32px;
+    }
+    .btn-big {
+        padding: 8px 32px;
+        margin-right: 16px;
+    }
+    .container-box-right{
+        margin-top: 6px;
+    }
+    /* 第二部分 */
+    /* 满足统一管理集中检测控管需求 */
+    .one-bg {
+        padding: 80px 0 70px;
+        margin-bottom: 90px;
+        z-index: 3;
+    }
+    .case-part01 {
+        margin-top: 20px;
+    }
+    .case-part01 .case-part01-title {
+        margin-top: -110px;
+    }
+    .case-part01-title h2 {
+        margin-bottom: 16px;
+    }
+    .list-two {
+        margin-top: 40px;
+    }
+    .list-two ul {
+        gap: 24px;
+    }
+    .list-card-title {
+        padding: 11px 16px;
+        height: 80px;
+    }
+    .list-two .list-card {
+        height: 296px;
+    }
+    .list-card p {
+        line-height: 20px;
+        margin: 16px 16px;
+        min-height: 130px;
+        padding: 0;
+    }
+    
+    /*第三部分 */
+    .other-bg {
+        padding: 0 0 190px;
+        margin-top: -140px;
+        z-index: 1;
+        background-size: cover;
+    }
+    .other-bg .case-part01-title {
+        margin-top: 30px;
+    }
+    .case-part02{
+        padding: 60px 0 0;
+    }
+    .flow-box ul {
+        align-items: flex-start;
+    }
+    .template-list {
+        margin-top: 86px;
+        padding-top: 70px;
+    }
+    .template-list ul {
+        gap: 24px;
+        margin-bottom: 56px;
+    }
+    .template-list ul li {
+        padding: 24px 16px;
+        height: 280px;
+    }
+    .template-img {
+        margin: 0 auto 20px;
+        width: 64px;
+        height: 64px;
+        top: -32px;
+    }
+    .template-text {
+        line-height: 22px;
+    }
+    .light-text {
+        width: 70%;
+        margin-left: -6%;
+    }
+    /* 第四部分 */
+    /* 第一个ul */
+    .case-part04 {
+        margin-top: -90px;
+    }
+    .computer-box {
+        margin-top: 42px;
+    }
+    .computer-box-content {
+        width: 70%;
+        padding: 24px;
+        margin-top: 28px;
+        top: 40%;
+    }
+    .computer-list {
+        line-height: 28px;
+        margin-bottom: 0;
+    }
+    .computer-list li {
+        margin-bottom: 24px;
+    }
+    .computer-list li h3 {
+        margin-bottom: 12px;
+        line-height: 22px;
+        margin-left: 16px;
+    }
+    .computer-list li h3::before {
+        height: 22px;
+        top: 2px;
+        left: -16px;
+    }
+    .computer-list li p {
+        line-height: 20px;
+    }
+   
+    /* 数据监控大屏可视化系统解决方案 */
+    
+    .case-part05 {
+        margin-bottom: 30px;
+        margin-top: -70px;
+    }
+    .case-part05 .case-part01-title {
+        margin-top: 0px;
+        z-index: 99;
+        position: relative;
+    }
+    .bg-img {
+        padding-top: 50px;
+    }
+    .part5-img {
+        width: 100%;
+    }
+    
+    /* 第五部分 */
+    .case-part06 .flex-box {
+        margin-top: 40px;
+    }
+    .flex-box {
+        margin-top: 0px;
+    }
+    .flex-box ul {
+        gap: 34px;
+    }
+    .no-bg .flex-box ul {
+        gap: 24px;
+        margin-bottom: 24px;
+    }
+    .no-bg .flex-box ul li {
+        height: 240px;
+    }
+    .white-bg {
+        padding: 24px 16px 24px;
+    }
+    .white-bg-img {
+        width: 36px;
+    }
+    .white-bg h3 {
+        margin: 24px auto 16px;
+    }
+    .flow-list:first-child .primary-content {
+        text-align: left;
+    }
+    .primary-content {
+        padding: 0 20px;
+        line-height: 70px;
+    }
+    .flow-nmb {
+        width: 24px;
+        height: 24px;
+        line-height: 24px;
+        margin-right: 4px;
+    }
+    /* 第六部分 */
+    .case-part07 .flex-box {
+        margin-top: 40px;
+    }
+    .case-part07 .flex-box ul {
+        gap: 24px;
+    }
+    .dynamic-title {
+        padding: 12px 16px;
+    }
+    .dynamic-content {
+        padding: 12px 16px 20px;
+        line-height: 24px;
+    }
+    .case-part07 .flex-box ul .dynamic-content ul {
+        gap: 12px;
+    }
+    .dynamic-content p {
+        margin-left: 8px;
+    }
+}
+
+
+
+@media (max-width: 767px) {
+    .container {
+        padding: 0 30px;
+    }
+    /* 第一部分 */
+    .half-box{
+        width: 100%;
+        padding-right: 0;
+    }
+    .video-part {
+        width: 100%;
+        position: relative;
+    }
+    .company-contact {
+        margin-top: -48px;
+        padding: 80px 0 20px;
+        background-size: 200% 100%;
+    }
+    .section-title-text {
+        margin-top: 0;
+        margin-bottom: 24px;
+    }
+    .section-title-text-en{
+        font-size: 42px;
+        font-weight: 600;
+        line-height: 42px;
+    }
+    .section-title-other {
+        margin-bottom: 32px;
+        margin-top: 0px;
+    }
+    .btn-big {
+        padding: 8px 32px;
+    }
+    .container-box-right{
+        margin-top: 36px;
+    }
+    /* 第二部分 */
+    /* 满足统一管理集中检测控管需求 */
+    .one-bg {
+        padding: 80px 0 20px;
+        margin-bottom: 90px;
+    }
+    .case-part01 {
+        margin-top: 20px;
+    }
+    .case-part01-title h2 {
+        margin-bottom: 16px;
+    }
+    .list-two {
+        margin-top: 8px;
+    }
+    .list-two ul {
+        gap: 24px;
+        flex-flow: column;
+    }
+    .list-two .list-card {
+        height: auto;
+    }
+    .list-card-title {
+        padding: 11px 24px;
+        height: auto;
+    }
+    .list-card p {
+        line-height: 20px;
+        margin: 16px 24px 32px;
+        min-height: auto;
+        height: auto;
+    }
+    
+    /*第三部分 */
+    .other-bg {
+        padding: 0px 0 190px;
+        margin-top: -390px;
+        background-size: auto 105%;
+    }
+    .other-bg .case-part01-title {
+        margin-top: 300px;
+    }
+    .case-part02{
+        padding: 60px 0 30px;
+    }
+    .template-list {
+        margin-top: -54px;
+    }
+    .template-list ul {
+        gap: 52px;
+        flex-flow: column;
+        margin-bottom: 52px;
+    }
+    .template-img {
+        margin: 0 auto 20px;
+        width: 64px;
+        height: 64px;
+        top: -32px;
+    }
+    .template-title {
+        margin-top: 20px;
+    }
+    .template-text {
+        line-height: 24px;
+        margin-top: 0;
+    }
+    /* 第四部分 */
+    /* 第一个ul */
+    .case-part04 {
+        margin-bottom: 60px;
+        margin-top: -150px;
+        position: relative;
+        z-index: 3;
+    }
+    .computer-box {
+        margin-top: 30px;
+    }
+    .computer {
+        width: 100%;
+    }
+    .computer-box-content {
+        width: 100%;
+        padding: 24px;
+        margin-top: 40px;
+        position: relative;
+    }
+    .computer-list {
+        line-height: 28px;
+    }
+    .computer-list li {
+        margin-bottom: 24px;
+    }
+    .computer-list li h3 {
+        margin-bottom: 12px;
+        line-height: 18px;
+        margin-left: 16px;
+    }
+    .computer-list li h3::before {
+        width: 3px;
+        height: 18px;
+        top: 1px;
+        left: -16px;
+    }
+    .computer-list li p {
+        line-height: 20px;
+    }
+    /* 数据监控大屏可视化系统解决方案 */
+    .case-part05 {
+        margin-bottom: 30px;
+        margin-top: 80px;
+    }
+    .case-part01-title {
+        margin-top: 0px;
+        z-index: 99;
+        position: relative;
+    }
+    .bg-img {
+        background-size: 100% 120%;
+        padding-top: 30px;
+    }
+    .part5-img {
+        width: 100%;
+        margin: auto;
+        aspect-ratio: 397 / 187;
+    }
+    .flow-box {
+        margin-top: 32px;
+    }
+    .flow-box ul {
+        flex-flow: column;
+        gap: 24px;
+    }
+    .primary-content {
+        padding: 0 42px;
+        margin-left: 0;
+    }
+    .flow-list:first-child .primary-content {
+        text-align: center;
+    }
+    .flow-list:last-child .primary-content {
+        clip-path: polygon(0 0, calc(100% - 35px) 0, 100% 50%, calc(100% - 35px) 100%, 0 100%);
+    }
+    .light-text {
+        margin-top: 8px;
+        margin-left: 0;
+        width: auto;
+    }
+    
+    /* 第五部分 */
+    .case-part06 {
+        margin-top: 0px;
+    }
+    .no-bg .flex-box ul li {
+        height: auto;
+    }
+    .flex-box {
+        margin-top: 30px;
+    }
+    .flex-box ul {
+        gap: 0px;
+        flex-flow: column;
+    }
+    .white-bg {
+        padding: 24px 16px 24px;
+    }
+    .white-bg-img {
+        width: 32px;
+    }
+    .white-bg h3 {
+        margin: 16px auto 20px;
+    }
+    /* 第六部分 */
+    .case-part07 .flex-box ul {
+        gap: 28px;;
+    }
+    .dynamic-title {
+        padding: 12px 20px;
+    }
+    .dynamic-content {
+        padding: 12px 20px;
+    }
+    .case-part07 .flex-box ul .dynamic-content ul {
+        gap: 8px;
+    }
+}

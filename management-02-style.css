@@ -1,0 +1,877 @@
+:root {
+    --primary-color: #8828FF ;
+    --secondary-color: #6F48C9;
+    --background-color: #ffffff;
+    --text-color: #333;
+}
+/* 全局样式 */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.5;
+    padding-top: 165px; /* 桌面端导航栏高度 */
+}
+ul{
+    padding-left: 0;
+    margin-bottom: 0;
+}
+li {
+    list-style: none;
+ }
+/* 通用标题样式 */
+.section-title {
+    color: #20184E;
+    font-weight: 600;
+    margin-bottom: 48px;
+    position: relative;
+    text-align: center;
+}
+/* 通用图标样式 */
+.contact-icon {
+    width: 32px;
+    height: 32px;
+}
+/* 通用文本样式 */
+.contact-text {
+    color: #20184E;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+/* 公司介绍 */
+.company-contact{
+    /* 修改定位方式 */
+    margin-top: -165px;
+    /* 移除top属性 */
+    padding: 310px 0 250px;
+    background: url(../images/bg2.png) no-repeat top;
+    background-size: auto;
+    background-position: top;
+}
+/* 内容部分 */
+.contact-section {
+    position: relative;
+    background: #fff;
+    padding: 0 0 90px;
+}
+.contact-section::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    background: url(../images/bg-img2.png) no-repeat bottom;
+    width: 136px;
+    height: 531px;
+    z-index: 0;
+}
+.contact-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    background: url(../images/bg-img1.png) no-repeat top;
+    width: 168px;
+    height: 531px;
+    z-index: 0;
+    right: 0px;
+    background-size: 80%;
+}
+.bg-title{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    color: #fff;
+}
+.img-part{
+    width: 100%;
+    aspect-ratio: 612 / 497;
+    position: relative;
+}
+.img-part img{
+    width: 100%;
+    height: 100%;
+}
+.half-box{
+    width: 50%;
+}
+.container-box-right {
+    padding-left: 84px;
+}
+.section-title-text{
+    margin-top: 36px;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+.section-title-other{
+    margin-bottom: 100px;
+    margin-top: 80px;
+    text-align: justify;
+}
+.btn-big{
+    padding: 16px 64px;
+    border-radius: 50px;
+    margin-right: 46px;
+}
+.btn-big:last-child{
+    margin-right: 0;
+}
+
+/* 第二部分 */
+.contact-section.one-bg::after{
+    content: none;
+}
+.case-part01{
+    margin-top: 110px;
+}
+.case-part01-title{
+    color: #20184E;
+    text-align: center;
+    margin-top: 72px;
+}
+.case-part01-title h2{
+    margin-bottom: 24px;
+}
+.list-two{
+    margin-top: 88px;
+    background: url(../images/card-bg.png) no-repeat center;
+    background-size: 100% 100%;
+    text-align: center;
+}
+.list-two .list-card img{
+    width: 100%;
+    height: 100%;
+}
+.list-two ul{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    flex-flow: row;
+    height: auto;
+}
+.list-two .list-card{
+    border-radius: 20px;
+    height: 100%;
+    flex: 1 1 0%;
+    min-height: 0;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 3px 3px #8828ff05;
+}
+.list-card-title{
+    background: #C173FF;
+    color: #fff;
+    padding: 8px 0;
+    border-radius: 20px 20px 0 0;
+}
+.list-card p{
+    line-height: 28px;
+    color: #20184E;
+    text-align: justify;
+    margin: 24px 0;
+    padding: 0 32px;
+    min-height: 200px;
+}
+/* 按钮样式 */
+.backBtn{
+    background: var(--primary-color);
+    border-radius: 60px;
+    padding: 12px 40px;
+    color: #fff;
+    border: none;
+    box-shadow: none;
+    text-align: center;
+    margin-top: 48px;
+}
+.trait{
+    background: url(../images/card-bg.png) no-repeat center;
+    background-size: 100% 100%;
+    text-align: center;
+    color: #20184E;
+    margin: 58px 0;
+}
+.trait-list {
+    background: url(../images/bg-img5.png) no-repeat center;
+    background-size: auto;
+}
+
+.trait-list ul{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 135px;
+    flex-flow: row;
+    height: auto;
+    margin-bottom: 36px;
+}
+.trait-item{
+    background: #fff;
+    border-radius: 20px;
+    height: 100%;
+    flex: 1 1 0%;
+    min-height: 0;
+    padding: 16px 24px 20px;
+    box-shadow: 0 0 3px 3px #8828ff05;
+}
+.trait-item-img{
+    margin: 0px auto;
+    width: 90px;
+    height: 90px;
+}
+.trait-item-img img{
+    width: 100%;
+    height: 100%;
+}
+.trait-item h3{
+    margin: 40px auto 24px;
+}
+.trait-item p{
+    min-height: 72px;
+}
+.case-part012 .list-two img{
+    width: 80%;
+    aspect-ratio: 66 / 23;
+}
+.case-part012 p{
+    text-align: center;
+    color: #20184E;
+    line-height: 34px;
+    margin: 54px auto 0;
+    width: 80%;
+}
+/*第三部分 */
+.other-bg{
+    background: url(../images/other-bg.png) no-repeat center;
+    background-size: cover;
+    padding: 170px 0;
+    background-position: top;
+    margin-top: -220px;
+}
+.other-bg::before,.other-bg::after{
+    content: none;
+}
+.case-part02{
+    padding: 60px 0 110px;
+    text-align: center;
+}
+.template-list{
+    margin-top: 88px;
+}
+.template-list ul{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 32px;
+    flex-flow: row;
+    height: auto;
+    margin-bottom: 36px;
+}
+.template-list ul li{
+    background: #fff;
+    border-radius: 20px;
+    height: 100%;
+    flex: 1 1 0%;
+    min-height: 0;
+    padding: 32px 32px 32px;
+    box-shadow: 0 0 3px 3px #8828ff05;
+    position: relative;
+}
+.template-title{
+    background: #C173FF;
+    color: #fff;
+    border-radius: 45px;
+    padding: 10px 0;
+    line-height: 32px;
+    position: absolute;
+    top: -26px;
+    margin: 0 auto;
+    width: 85%;
+}
+.template-img{
+    margin: 32px 0 48px;
+    width: 100%;
+    aspect-ratio: 80 / 49;
+}
+.template-img img{
+    width: 100%;
+    height: 100%;
+}
+.template-text{
+    line-height: 32px;
+    text-align: justify;
+    min-height: 230px;
+    color: #20184E;
+    margin-bottom: 0;
+}
+/* 第四部分 */
+.case-part04{
+    margin-top: -110px;
+}
+.part04-list{
+    margin-top: 64px;
+}
+.part04-list ul{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 82px;
+    flex-flow: row;
+    height: auto;
+    margin-bottom: 36px;
+}
+.part04-list-item{
+    height: 100%;
+    min-height: 0;
+    position: relative;
+}
+.item-left{
+    flex: 1 1 0%;
+    position: relative;
+    margin-top: 100px;
+}
+.item-left::before {
+    content: '';
+    display: block;
+    background: url(../images/process-bg.png) no-repeat center;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: -100px;
+    right: -100px;
+}
+.item-content{
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 3px 3px #8828ff05;
+    position: relative;
+    text-align: center;
+    color: #20184E;
+    padding: 62px 90px 90px;
+}
+.content-text:first-child{
+    margin-bottom: 76px;
+}
+.content-text h3{
+    background: #EBB702;
+    border-radius: 10px;
+    color: #fff;
+    height: 60px;
+    line-height: 60px;
+    width: 180px;
+    margin-bottom: 30px;
+}
+.content-text p{
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 0;
+}
+.item-right{
+    flex: 2 1 0%;
+}
+.item-right img{
+    width: 100%;
+    height: 100%;
+}
+.phone-img {
+    margin: 0 auto;
+    width: 328px;
+    aspect-ratio: 328 / 653;
+    position: relative;
+}
+.img-left{
+    width: 366px;
+    aspect-ratio: 427 / 178;
+    position: absolute;
+    bottom: 6%;
+    right: 50%;
+}
+.img-right{
+    width: 295px;
+    aspect-ratio: 315 / 236;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+}
+/* 移动端适配 */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 100%;
+        padding: 0 30px;
+    }
+    /* 第一部分 */
+    .contact-section::before,.contact-section::after {
+        content: none;
+    }
+    .contact-section {
+        padding: 10px 0;
+    }
+    .video-part {
+        width: 100%;
+        position: relative;
+    }
+    .company-contact {
+        padding: 210px 0 120px;
+        background-size: 200% 100%;
+    }
+    .section-title-text {
+        margin-top: 0;
+        margin-bottom: 24px;
+    }
+    .section-title-other {
+        margin-bottom: 32px;
+        margin-top: 40px;
+    }
+    .btn-big {
+        padding: 8px 32px;
+    }
+    .container-box-right{
+        padding-left: 64px;
+    }
+    /* 第二部分 */
+    .one-bg {
+        padding: 40px 0 0;
+        margin-bottom: -200px;
+    }
+    .case-part01 {
+        margin-top: 20px;
+    }
+    .list-card p {
+        line-height: 24px;
+        min-height: 220px;
+        padding: 0 24px;
+    }
+    .trait-list {
+        background-size: 70% 50%;
+    }
+    .trait-list ul {
+        gap: 40px;
+    }
+    .trait-item-img {
+        width: 72px;
+        height: 72px;
+    }
+    .trait-item h3 {
+        margin: 20px auto 16px;
+    }
+    /*第三部分 */
+    .other-bg {
+        padding: 204px 0 220px;
+        margin-top: -138px;
+    }
+    .case-part02{
+        padding: 60px 0 30px;
+    }
+    .template-list {
+        margin-top: 72px;
+    }
+    .template-list ul {
+        gap: 32px;
+    }
+    .template-list ul li {
+        padding: 24px;
+    }
+    .template-title {
+        padding: 8px 16px;
+        line-height: 32px;
+        top: -40px;
+        height: 80px;
+        text-align: center;
+        width: 80%;
+    }
+    .template-img {
+        margin: 44px 0 32px;
+    }
+    .template-text {
+        line-height: 28px;
+        min-height: 270px;
+    }
+    /* 第四部分 */
+    .case-part01-title {
+        margin-top: 40px;
+    }
+    .item-content {
+        padding: 48px;
+    }
+    .content-text:first-child {
+        margin-bottom: 40px;
+    }
+    .content-text h3 {
+        margin: 0 auto 16px;
+    }
+    .phone-img, .img-left, .img-right {
+        width: 50%;
+    } 
+}
+
+@media (max-width: 991px) {
+    body {
+        padding-top: 48px; /* 移动端导航栏高度 */
+    }
+
+    /* 联系部分适配 */
+    .contact-section {
+        padding: 40px 0;
+    }
+    /* 第一部分 */
+    .video-part {
+        width: 100%;
+        position: relative;
+    }
+    .company-contact {
+        margin-top: -48px;
+        padding: 90px 0 60px;
+        background-size: 200% 100%;
+    }
+    .section-title-text {
+        margin-top: 0;
+        margin-bottom: 24px;
+    }
+    .section-title-text-en {
+        font-size: 56px;
+        font-weight: 600;
+        line-height: 56px;
+    }
+    .section-title-other {
+        margin-bottom: 32px;
+        margin-top: 32px;
+    }
+    .btn-big {
+        padding: 8px 32px;
+        margin-right: 24px;
+    }
+    .container-box-right{
+        padding-left: 54px;
+    }
+    /* 第二部分 */
+    .one-bg {
+        padding: 40px 0 0;
+        margin-bottom: 90px;
+        z-index: 3;
+    }
+    .case-part01 {
+        margin-top: 20px;
+    }
+    .case-part01-title h2 {
+        margin-bottom: 16px;
+    }
+    .list-two {
+        margin-top: 8px;
+    }
+    .list-two ul {
+        gap: 28px;
+    }
+    .list-card p {
+        line-height: 20px;
+        margin: 16px 0;
+        min-height: 220px;
+        padding: 0 16px;
+    }
+    .case-part011 .case-part01-title {
+        margin-top: 46px;
+    }
+    .trait {
+        margin: 38px 0;
+    }
+    .trait-list {
+        background-size: 70% 50%;
+    }
+    .trait-list ul {
+        gap: 40px;
+    }
+    .trait-item {
+        border-radius: 10px;
+        padding: 16px 16px 16px;
+    }
+    .trait-item-img {
+        width: 60px;
+        height: 60px;
+    }
+    .trait-item h3 {
+        margin: 20px auto 16px;
+    }
+    .case-part012{
+        margin-top: 60px;
+        z-index: 3;
+        position: relative;
+    }
+    .case-part012 .case-part01-title {
+        margin-top: -18px;
+    }
+    .case-part012 .list-two img{
+        margin-top: 20px;
+    }
+    /*第三部分 */
+    .other-bg {
+        padding: 162px 0 190px;
+        margin-top: -160px;
+        z-index: 1;
+    }
+    .other-bg .case-part01-title {
+        margin-top: 30px;
+    }
+    .case-part02{
+        padding: 60px 0 0;
+    }
+    .template-list {
+        margin-top: 72px;
+    }
+    .template-list ul {
+        gap: 24px;
+    }
+    .template-list ul li {
+        padding: 24px;
+    }
+    .template-title {
+        padding: 8px 16px;
+        line-height: 22px;
+        top: -30px;
+        height: 60px;
+    }
+    .template-img {
+        margin: 32px 0 24px;
+    }
+    .template-text {
+        line-height: 22px;
+        min-height: 270px;
+    }
+    /* 第四部分 */
+    .case-part01-title {
+        margin-top: 0px;
+        z-index: 99;
+        position: relative;
+    }
+    .part04-list {
+        margin-top: 40px;
+        position: relative;
+        z-index: 3;
+    }
+    .part04-list ul {
+        gap: 62px;
+    }
+    .item-left::before {
+        top: -50px;
+        right: -20px;
+    }
+    .item-content {
+        border-radius: 10px;
+        padding: 32px 32px 40px;
+    }
+    .content-text:first-child {
+        margin-bottom: 40px;
+    }
+    .item-left {
+        width: 100%;
+        margin-top: 50px;
+    }
+    .content-text h3 {
+        margin: 0 auto 16px;
+        height: 48px;
+        line-height: 48px;
+        width: 150px;
+    }
+    .item-right {
+        flex: 1 1 0%;
+        width: 100%;
+    }
+    .phone-img {
+        width: 70%;
+    }
+    .img-left, .img-right {
+        width: 54%;
+    }   
+}
+
+
+
+@media (max-width: 767px) {
+    .container {
+        padding: 0 30px;
+    }
+    /* 第一部分 */
+    .half-box{
+        width: 100%;
+        padding-right: 0;
+    }
+    .company-contact {
+        margin-top: -48px;
+        padding: 80px 0 20px;
+        background-size: 200% 100%;
+    }
+    .section-title-text {
+        margin-top: 0;
+        margin-bottom: 24px;
+    }
+    .section-title-text-en{
+        font-size: 42px;
+        font-weight: 600;
+        line-height: 42px;
+    }
+    .section-title-other {
+        margin-bottom: 32px;
+        margin-top: 0px;
+    }
+    .btn-big {
+        padding: 8px 32px;
+        margin-right: 24px;
+    }
+    .container-box-right{
+        margin-top: 36px;
+        padding-left: 0;
+    }
+    /* 第二部分 */
+    .one-bg {
+        padding: 40px 0 0;
+        margin-bottom: -340px;
+        z-index: 3;
+    }
+    .case-part01 {
+        margin-top: 20px;
+    }
+    .case-part01-title h2 {
+        margin-bottom: 16px;
+    }
+    .list-two {
+        margin-top: 8px;
+    }
+    .list-two ul {
+        gap: 22px;
+        flex-flow: column;
+    }
+   
+    .list-card p {
+        line-height: 20px;
+        margin: 16px 0;
+        min-height: 90px;
+    }
+    .case-part011 .case-part01-title {
+        margin-top: 46px;
+    }
+    .case-part012{
+        margin-top: 40px;
+        z-index: 3;
+        position: relative;
+    }
+    .trait {
+        margin: 38px 0;
+    }
+    .trait-list{
+        display: flex;
+        flex-flow: row;
+        gap: 32px;
+        background: none;
+    }
+    .trait-list ul {
+        gap: 40px;
+        flex-flow: column;
+    }
+    .trait-item {
+        border-radius: 10px;
+        padding: 16px 16px 16px;
+    }
+    .trait-item-img {
+        width: 60px;
+        height: 60px;
+    }
+    .trait-item h3 {
+        margin: 20px auto 16px;
+    }
+    .case-part012 .case-part01-title {
+        margin-top: -18px;
+    }
+    .case-part012 .list-two img{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .case-part012 p{
+        line-height: 24px;
+        margin: 32px auto 20px;
+        width: 100%;
+    }
+    /*第三部分 */
+    .other-bg {
+        padding: 0px 0 190px;
+        margin-top: -360px;
+        background-size: auto 105%;
+        z-index: 1
+    }
+    .other-bg .case-part01-title {
+        margin-top: 360px;
+    }
+    .case-part02{
+        padding: 60px 0 30px;
+    }
+    .template-list {
+        margin-top: 56px;
+    }
+    .template-list ul {
+        gap: 52px;
+        flex-flow: column;
+    }
+    .template-list ul li {
+        padding: 24px 24px 24px;
+    }
+    .template-title {
+        padding: 4px 0;
+        line-height: 30px;
+        top: -19px;
+        height: auto;
+    }
+    .template-img {
+        margin: 16px 0 20px;
+    }
+    .template-text {
+        line-height: 24px;
+        min-height: 0;
+    }
+    /* 第四部分 */
+    .case-part01-title {
+        margin-top: 0px;
+        z-index: 99;
+        position: relative;
+    }
+    .part04-list {
+        margin-top: -70px;
+        position: relative;
+        z-index: 3;
+    }
+    .part04-list ul {
+        gap: 62px;
+        flex-flow: column;
+    }
+    .item-left::before {
+        top: -50px;
+        right: -20px;
+    }
+    .item-content {
+        border-radius: 10px;
+        padding: 32px 32px 40px;
+    }
+    .content-text:first-child {
+        margin-bottom: 40px;
+    }
+    .item-left {
+        width: 100%;
+    }
+    .content-text h3 {
+        margin: 0 auto 16px;
+        height: 48px;
+        line-height: 48px;
+        width: 150px;
+    }
+    .item-right {
+        flex: 1 1 0%;
+        width: 100%;
+    }
+    .phone-img {
+        width: 70%;
+    }
+    .img-left, .img-right {
+        width: 54%;
+    }
+}
