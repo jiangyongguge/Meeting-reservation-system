@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>会议预约系统</title>
+    <!-- Bootstrap CSS -->
+    <link href="lib/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="lib/bootstrap-icons/bootstrap-icons.css">
+    <!-- Navigation CSS -->
+    <link rel="stylesheet" href="css/nav.css">
+    <!-- Appointment CSS -->
+    <link rel="stylesheet" href="css/appointment.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/buy-style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="header">  <!-- 添加company-header类 -->
+        <!-- 顶部导航 -->
+        <div class="top-header">
+            <div class="container d-flex justify-content-between align-items-center">
+                <a class="logo" href="index.html">
+                    <img src="images/logo.png" alt="Logo">
+                </a>
+                <!-- 桌面端登录按钮 -->
+                <div class="d-flex align-items-center">
+                    <a href="company.html" class="other-link mr-4 d-none d-lg-block">公司简介</a>
+                    <a href="buy.html" class="other-link mr-4 d-none d-lg-block"><img src="images/buy.png" alt="">购买须知</a>
+                    <a href="login.html" class="btn btn-primary d-none d-lg-block">登录账号</a>
+                    <!-- 移动端菜单按钮 -->
+                    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- 主导航 -->
+        <nav class="main-nav navbar navbar-expand-lg">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <!-- 移动端登录按钮 -->
+                    <div class="d-lg-none mobile-login mb-3">
+                        <a href="company.html" class="other-link w-100">公司简介</a>
+                    </div>
+                    <div class="d-lg-none mobile-login mb-3">
+                        <a href="buy.html" class="other-link w-100"><img src="images/buy.png" alt="">购买须知</a>
+                    </div>
+                    <div class="d-lg-none mobile-login mb-3">
+                        <a href="login.html" class="btn btn-primary w-100">登录账号</a>
+                    </div>
+                    <!-- 导航菜单 -->
+                    <ul class="nav-list">
+                        <li class="nav-list-item"><a href="management-02.html" class="nav-item">软件中心</a></li>
+                        <li class="nav-list-item"><a href="hardware.html" class="nav-item">硬件展示</a></li>
+                        <li class="nav-list-item"><a href="solution.html" class="nav-item">解决方案</a></li>
+                        <li class="nav-list-item"><a href="customer-case.html" class="nav-item">客户案例</a></li>
+                        <li class="nav-list-item"><a href="news.html" class="nav-item">新闻资讯</a></li>
+                        <li class="nav-list-item"><a href="tutorial.html" class="nav-item">使用教程</a></li>
+                        <li class="nav-list-item"><a href="recruitment.html" class="nav-item">招商代理</a></li>
+                        <li class="nav-list-item"><a href="contactUs.html" class="nav-item">联系我们</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 主要内容区 -->
+    <main>
+        <!-- 购买详情 -->
+        <section class="contact-section">
+            <div class="container">
+                <div class="buy-title" style="font-weight: 600;">购买：KEEYAR会议预约系统+智慧门牌</div>
+                <div class="buy-content">
+                    <div class="buy-box1">
+                        <div class="box1-left">
+                            <div class="logo-box"><img src="images/logo01.png" alt=""></div>
+                            <div class="buy-title">KEEYAR会议预约系统功能介绍</div>
+                        </div>
+                        <div class="box1-right"> 
+                            <p>SAAS部署/私有化部署</p>
+                            <div class="buy-icon-group">
+                                <ul style="margin-bottom: 0;">
+                                    <li class="buy-icon"><img src="images/ioc.png" alt=""></li>
+                                    <li class="buy-icon"><img src="images/Android.png" alt=""></li>
+                                    <li class="buy-icon"><img src="images/chrome.png" alt=""></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buy-box2">
+                        <ul>
+                            <li>会议预约系统采用BS架构，支持PC网页预定、手机预定和微信预定。</li>
+                            <li>支持微信、钉钉、OA、OUTLOOK、ERP和门禁系统等第三方平台的对接开发。</li>
+                            <li>会议室显示屏可以在开会的时候显示会议信息，实时动态显示当天会议,时间，主题，下一场会议，呼叫服务等，开始会议室显示当前正在开会的内容（包括主题、主持人、
+                            会议时间等等信息）。</li>
+                            <li>会议室门口标牌显示屏完全自动显示各类会议进程，无需人为操作。</li>
+                            <li>支持查看会议日历列表、我参加的会议和我创建会议列表、可以过滤进行中、未开始、已结束，可查看具体签到情况。</li>
+                            <li>会议预览、会议审核、会议签到、上传会议附件。</li>
+                            <li>支持会议室信息展示，包括容量、设施设备等，需支持会议室照片上传；支持会议室列表管理，新建会议室支持选择所属公司、部门，自定义会议室名称、地址、人数容量、
+                            <li>资源配置和会议室状态。支持编辑、删除和会议屏显示地址获取</li>
+                            <li>支持查看会议室状态，列表中的会议室状态根据当前时间点进行判断，用不同颜色标记出会议室当前的状态，需包括预定状态及占用状态；</li>
+                            <li>支持不同会议场景的预约，包括周期会议、跨天会议、全天会议</li>
+                            <li>支持用户修改密码；支持查看和修改我的账户信息；支持样式管理，可通过缩略图查看样式，每个样式对应一个分辨率，支持修改样式，支持无会议和有会议二种样式模板；</li>
+                            <li>支持logo设置，用户可自由更换首页logo。</li>
+                            <li>支持会议邮件，短信通知，包括会议预定、会议取消，会议服务等通知；</li>
+                            <li>制定并开通小程序，可实现手机操作会议预约、取消和修改、查看；；</li>
+                            <li>支持会议信息记录和分析，按照时间段查询会议室使用率，开会情况峰值图，可以进行数据查询和数据导出。；</li>
+                            <li>支持自定义会议模板，可以自由修改，组合终端设备会议模板；</li>
+                            <li>并支持将会议信息推送至门口屏。内部通知和沟通，保证会议相关业务的顺畅进行;</li>
+                        </ul>
+                    </div>
+                    <div class="buy-box3">
+                        <div class="number">
+                            <div>1</div>
+                            <p>购买方式：云部署/私有化部署</p>
+                        </div>
+                        <button type="button" class="backBtn">了解更多</button>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="container">
+                <div class="buy-title" style="font-weight: 600;">购买：KEEYAR会议预约系统+智慧门牌</div>
+                <div class="buy-content">
+                    <div class="buy-box1">
+                        <div class="box1-left">
+                            <div class="logo-box"><img src="images/logo01.png" alt=""></div>
+                            <div class="buy-title">KEEYAR会议预约系统功能介绍</div>
+                        </div>
+                        <div class="box1-right"> 
+                            <p>SAAS部署/私有化部署</p>
+                            <div class="buy-icon-group">
+                                <ul style="margin-bottom: 0;">
+                                    <li class="buy-icon"><img src="images/ioc.png" alt=""></li>
+                                    <li class="buy-icon"><img src="images/Android.png" alt=""></li>
+                                    <li class="buy-icon"><img src="images/chrome.png" alt=""></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buy-box2">
+                        <ul>
+                            <li>会议预约系统采用BS架构，支持PC网页预定、手机预定和微信预定。</li>
+                            <li>支持微信、钉钉、OA、OUTLOOK、ERP和门禁系统等第三方平台的对接开发。</li>
+                            <li>会议室显示屏可以在开会的时候显示会议信息，实时动态显示当天会议,时间，主题，下一场会议，呼叫服务等，开始会议室显示当前正在开会的内容（包括主题、主持人、
+                            会议时间等等信息）。</li>
+                            <li>会议室门口标牌显示屏完全自动显示各类会议进程，无需人为操作。</li>
+                            <li>支持查看会议日历列表、我参加的会议和我创建会议列表、可以过滤进行中、未开始、已结束，可查看具体签到情况。</li>
+                            <li>会议预览、会议审核、会议签到、上传会议附件。</li>
+                            <li>支持会议室信息展示，包括容量、设施设备等，需支持会议室照片上传；支持会议室列表管理，新建会议室支持选择所属公司、部门，自定义会议室名称、地址、人数容量、
+                            <li>资源配置和会议室状态。支持编辑、删除和会议屏显示地址获取</li>
+                            <li>支持查看会议室状态，列表中的会议室状态根据当前时间点进行判断，用不同颜色标记出会议室当前的状态，需包括预定状态及占用状态；</li>
+                            <li>支持不同会议场景的预约，包括周期会议、跨天会议、全天会议</li>
+                            <li>支持用户修改密码；支持查看和修改我的账户信息；支持样式管理，可通过缩略图查看样式，每个样式对应一个分辨率，支持修改样式，支持无会议和有会议二种样式模板；</li>
+                            <li>支持logo设置，用户可自由更换首页logo。</li>
+                            <li>支持会议邮件，短信通知，包括会议预定、会议取消，会议服务等通知；</li>
+                            <li>制定并开通小程序，可实现手机操作会议预约、取消和修改、查看；；</li>
+                            <li>支持会议信息记录和分析，按照时间段查询会议室使用率，开会情况峰值图，可以进行数据查询和数据导出。；</li>
+                            <li>支持自定义会议模板，可以自由修改，组合终端设备会议模板；</li>
+                            <li>并支持将会议信息推送至门口屏。内部通知和沟通，保证会议相关业务的顺畅进行;</li>
+                        </ul>
+                    </div>
+                    <div class="buy-box3">
+                        <div class="number">
+                            <div>1</div>
+                            <p>购买方式：云部署/私有化部署</p>
+                        </div>
+                        <button type="button" class="backBtn">了解更多</button>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- 预约表单部分 -->
+        <section class="appointment-section">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <!-- 左侧文字说明 -->
+                    <div class="col-lg-7" style="padding-left: 0;">
+                        <div class="appointment-content">
+                            <h2>如何使用会议预约系统</h2>
+                            <p class="subtitle">我们的销售和支持人员随时准备帮助您解决各种问题</p>
+                        </div>
+                    </div>
+                    <!-- 右侧表单 -->
+                    <div class="col-lg-5" style="padding: 0;">
+                        <div class="appointment-form">
+                            <form id="appointmentForm">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="name" placeholder="请输入姓名">
+                                    <label for="name">请输入姓名</label>
+                                </div>
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" placeholder="请输入邮箱">
+                                    <label for="email">请输入邮箱</label>
+                                </div>
+                                <div class="form-floating">
+                                    <input type="tel" class="form-control" id="phone" placeholder="请输入电话">
+                                    <label for="phone">请输入电话</label>
+                                </div>
+                                <div class="form-floating">
+                                    <textarea class="form-control" id="message" placeholder="请描述您的需求"></textarea>
+                                    <label for="message">请描述您的需求</label>
+                                </div>
+                            </form>
+                            <button type="submit" class="btn btn-primary">申请试用</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row justify-content-between" style="width: 100%;">
+                <!-- 左侧联系方式 -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="footer-info">
+                        <div class="footer-contact">
+                            <div class="contact-info-item">
+                                <img src="images/email.png" alt="Email">
+                                <span>joykey2024@126.com</span>
+                            </div>
+                            <div class="contact-info-item">
+                                <div class="d-flex gap-3 mb-2">
+                                    <img src="images/phone.png" alt="Phone">
+                                    <img src="images/chart.png" alt="WeChat">
+                                </div>
+                                <span>13995508268</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 右侧三列链接 -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="row g-4">
+                        <!-- 获取我们的消息 -->
+                        <div class="col-md-4">
+                            <div class="footer-links">
+                                <h5>获取我们的消息</h5>
+                                <ul>
+                                    <li><a href="#">在线咨询</a></li>
+                                    <li><a href="#">部署预览</a></li>
+                                    <li>
+                                        <a href="#">微信公众号</a>
+                                        <div class="wei-code"><img src="images/wei-code.png" alt=""></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- More链接 -->
+                        <div class="col-md-4">
+                            <div class="footer-links">
+                                <h5>More</h5>
+                                <ul>
+                                    <li><a href="#">会议预约系统</a></li>
+                                    <li><a href="#">解决方案</a></li>
+                                    <li><a href="#">会议门牌</a></li>
+                                    <li><a href="#">客户案例</a></li>
+                                    <li><a href="#">新闻资讯</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Help链接 -->
+                        <div class="col-md-4">
+                            <div class="footer-links">
+                                <h5>Help</h5>
+                                <ul>
+                                    <li><a href="#">帮助 & 技术支持</a></li>
+                                    <li><a href="#">客户服务</a></li>
+                                    <li><a href="#">联系我们</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="lib/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script>
+        // 控制导航栏滚动阴影
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 0) {
+                header.style.boxShadow = '#792dd51a 0px 2px 10px';
+            } else {
+                header.style.boxShadow = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
